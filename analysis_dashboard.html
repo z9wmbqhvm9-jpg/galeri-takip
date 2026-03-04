@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATUHAN KAYA OTOMOTİV Analiz</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+            color: #111;
+            min-height: 100vh;
+            padding: 12px;
+        }
+        .container { max-width: 1500px; margin: 0 auto; }
+        .header, .card, .table-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+        }
+        .header {
+            padding: 16px;
+            margin-bottom: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .header h1 { font-size: 1.4rem; color: #111; }
+        .header p { color: #555; font-size: 0.95rem; margin-top: 2px; }
+        .btn {
+            border: 0;
+            background: #111;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .btn:hover { background: #2a2a2a; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+        .card { padding: 14px; }
+        .card .label { color: #666; font-size: 0.85rem; margin-bottom: 6px; }
+        .card .value { font-size: 1.5rem; font-weight: 700; color: #111; }
+
+        .table-card { padding: 14px; }
+        .table-title { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; color: #111; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        thead { background: #111; color: #fff; }
+        th, td { padding: 9px 8px; text-align: left; border-bottom: 1px solid #ececec; vertical-align: top; }
+        tbody tr:hover { background: #f8f8f8; }
+        .muted { color: #666; }
+        .pill {
+            display: inline-block;
+            padding: 2px 7px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-right: 4px;
+            margin-top: 3px;
+        }
+        .plus { background: #dcfce7; color: #166534; }
+        .minus { background: #fee2e2; color: #991b1b; }
+
+        @media (max-width: 900px) {
+            table { font-size: 0.82rem; }
+            .header h1 { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>📈 BATUHAN KAYA OTOMOTİV Karşılaştırma & Analiz</h1>
+                <p>Marka, paket ve yıl bazında ilan adedi, fiyat ve performans analizi</p>
+            </div>
+            <button class="btn" onclick="window.location.href='advanced_dashboard.html'">← Dashboard'a Dön</button>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="label">Toplam İlan</div>
+                <div class="value" id="totalAds">-</div>
+            </div>
+            <div class="card">
+                <div class="label">Toplam Marka</div>
+                <div class="value" id="totalBrands">-</div>
+            </div>
+            <div class="card">
+                <div class="label">En Çok İlan Markası</div>
+                <div class="value" id="topBrand">-</div>
+            </div>
+            <div class="card">
+                <div class="label">Genel Ortalama Fiyat</div>
+                <div class="value" id="overallAvg">-</div>
+            </div>
+        </div>
+
+        <div class="table-card">
+            <div class="table-title">Marka Karşılaştırması</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Marka</th>
+                        <th>Öne Çıkan Paket</th>
+                        <th>Yıl Aralığı</th>
+                        <th>İlan Sayısı</th>
+                        <th>Pay (%)</th>
+                        <th>Ort. Fiyat</th>
+                        <th>Satılan</th>
+                        <th>Aktif</th>
+                        <th>Artıları / Eksileri</th>
+                    </tr>
+                </thead>
+                <tbody id="analysisBody">
+                    <tr><td colspan="9" class="muted">Yükleniyor...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-card" style="margin-top:14px;">
+            <div class="table-title">Marka + Paket + Yıl Karşılaştırması</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Marka</th>
+                        <th>Paket</th>
+                        <th>Yıl</th>
+                        <th>İlan Sayısı</th>
+                        <th>Pay (%)</th>
+                        <th>Ort. Fiyat</th>
+                        <th>Satılan</th>
+                        <th>Aktif</th>
+                    </tr>
+                </thead>
+                <tbody id="comboBody">
+                    <tr><td colspan="8" class="muted">Yükleniyor...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function formatPrice(value) {
+            if (!Number.isFinite(value) || value <= 0) return '-';
+            return new Intl.NumberFormat('tr-TR').format(Math.round(value)) + ' TL';
+        }
+
+        function getPrice(vehicle) {
+            const keysToTry = ['price', 'Fiyat'];
+            for (const key of keysToTry) {
+                const val = vehicle?.[key] || (vehicle?.vehicle && vehicle.vehicle[key]);
+                if (!val) continue;
+
+                if (typeof val === 'number') return val;
+                
+                if (typeof val === 'object' && val.amount) {
+                    return Number(val.amount);
+                }
+
+                if (typeof val === 'string') {
+                    const normalized = Number(val.replace(/[^\d]/g, ''));
+                    if (Number.isFinite(normalized) && normalized > 0) return normalized;
+                }
+            }
+            return 0;
+        }
+
+        function buildInsights(brandStat, averageCountPerBrand, overallAvgPrice, totalVehicles) {
+            const plus = [];
+            const minus = [];
+
+            if (brandStat.count >= averageCountPerBrand) {
+                plus.push(`Piyasada görünürlüğü yüksek (${brandStat.count} ilan)`);
+            } else {
+                minus.push(`İlan adedi düşük (${brandStat.count})`);
+            }
+
+            if (brandStat.avgPrice > overallAvgPrice * 1.15) {
+                plus.push('Fiyat seviyesi segment ortalamasının üstünde');
+            } else if (brandStat.avgPrice < overallAvgPrice * 0.85) {
+                minus.push('Fiyat seviyesi segment ortalamasının altında');
+            }
+
+            const soldRate = brandStat.count > 0 ? (brandStat.sold / brandStat.count) : 0;
+            if (soldRate >= 0.2) {
+                plus.push('Satışa dönüşüm oranı güçlü');
+            } else if (brandStat.count >= 3) {
+                minus.push('Satışa dönüşüm oranı zayıf');
+            }
+
+            const share = (brandStat.count / totalVehicles) * 100;
+            if (share >= 15) {
+                plus.push('Portföyde güçlü paya sahip');
+            }
+
+            return { plus, minus };
+        }
+
+        async function loadAnalysis() {
+            try {
+                const res = await fetch(`cars_data.json?t=${Date.now()}`);
+                const data = await res.json();
+                const vehicles = data.vehicles || [];
+                const totalVehicles = vehicles.length;
+
+                if (!totalVehicles) {
+                    document.getElementById('analysisBody').innerHTML = '<tr><td colspan="9" class="muted">Analiz için araç bulunamadı.</td></tr>';
+                    document.getElementById('comboBody').innerHTML = '<tr><td colspan="8" class="muted">Analiz için araç bulunamadı.</td></tr>';
+                    document.getElementById('totalAds').textContent = '0';
+                    document.getElementById('totalBrands').textContent = '0';
+                    document.getElementById('topBrand').textContent = '-';
+                    document.getElementById('overallAvg').textContent = '-';
+                    return;
+                }
+
+                const byBrand = new Map();
+                const byCombo = new Map();
+                let totalPrice = 0;
+                let pricedCount = 0;
+
+                for (const vehicle of vehicles) {
+                    const brand = String(vehicle?.vehicle?.brand || vehicle?.Marka || 'Bilinmiyor').trim();
+                    const pkg = String(vehicle?.vehicle?.package || vehicle?.Paket || '-').trim() || '-';
+                    const year = Number(vehicle?.vehicle?.year || vehicle?.['Yıl']) || '-';
+                    const price = getPrice(vehicle);
+                    const status = vehicle?.status === 'sold' ? 'sold' : 'active';
+
+                    if (!byBrand.has(brand)) {
+                        byBrand.set(brand, {
+                            brand,
+                            count: 0,
+                            sold: 0,
+                            active: 0,
+                            totalPrice: 0,
+                            pricedCount: 0,
+                            packageCounts: {},
+                            minYear: null,
+                            maxYear: null
+                        });
+                    }
+
+                    const item = byBrand.get(brand);
+                    item.count += 1;
+                    item[status] += 1;
+                    item.packageCounts[pkg] = (item.packageCounts[pkg] || 0) + 1;
+                    if (typeof year === 'number') {
+                        item.minYear = item.minYear === null ? year : Math.min(item.minYear, year);
+                        item.maxYear = item.maxYear === null ? year : Math.max(item.maxYear, year);
+                    }
+
+                    const comboKey = `${brand}||${pkg}||${year}`;
+                    if (!byCombo.has(comboKey)) {
+                        byCombo.set(comboKey, {
+                            brand,
+                            package: pkg,
+                            year,
+                            count: 0,
+                            sold: 0,
+                            active: 0,
+                            totalPrice: 0,
+                            pricedCount: 0
+                        });
+                    }
+                    const combo = byCombo.get(comboKey);
+                    combo.count += 1;
+                    combo[status] += 1;
+
+                    if (price > 0) {
+                        item.totalPrice += price;
+                        item.pricedCount += 1;
+                        combo.totalPrice += price;
+                        combo.pricedCount += 1;
+                        totalPrice += price;
+                        pricedCount += 1;
+                    }
+                }
+
+                const stats = Array.from(byBrand.values()).map(s => ({
+                    ...s,
+                    avgPrice: s.pricedCount > 0 ? s.totalPrice / s.pricedCount : 0,
+                    share: (s.count / totalVehicles) * 100,
+                    topPackage: Object.entries(s.packageCounts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'tr'))[0]?.[0] || '-',
+                    yearRange: s.minYear === null ? '-' : (s.minYear === s.maxYear ? `${s.minYear}` : `${s.minYear}-${s.maxYear}`)
+                }));
+
+                const comboStats = Array.from(byCombo.values()).map(s => ({
+                    ...s,
+                    avgPrice: s.pricedCount > 0 ? s.totalPrice / s.pricedCount : 0,
+                    share: (s.count / totalVehicles) * 100
+                }));
+
+                stats.sort((a, b) => b.count - a.count || a.brand.localeCompare(b.brand, 'tr'));
+                comboStats.sort((a, b) => b.count - a.count || a.brand.localeCompare(b.brand, 'tr'));
+
+                const overallAvgPrice = pricedCount > 0 ? totalPrice / pricedCount : 0;
+                const avgCountPerBrand = totalVehicles / stats.length;
+                const top = stats[0];
+
+                document.getElementById('totalAds').textContent = String(totalVehicles);
+                document.getElementById('totalBrands').textContent = String(stats.length);
+                document.getElementById('topBrand').textContent = `${top.brand} (${top.count})`;
+                document.getElementById('overallAvg').textContent = formatPrice(overallAvgPrice);
+
+                const rows = stats.map(s => {
+                    const insights = buildInsights(s, avgCountPerBrand, overallAvgPrice, totalVehicles);
+                    const plusHtml = insights.plus.map(t => `<span class="pill plus">+ ${t}</span>`).join('');
+                    const minusHtml = insights.minus.map(t => `<span class="pill minus">- ${t}</span>`).join('');
+
+                    return `
+                        <tr>
+                            <td><strong>${s.brand}</strong></td>
+                            <td>${s.topPackage}</td>
+                            <td>${s.yearRange}</td>
+                            <td>${s.count}</td>
+                            <td>${s.share.toFixed(1)}%</td>
+                            <td>${formatPrice(s.avgPrice)}</td>
+                            <td>${s.sold}</td>
+                            <td>${s.active}</td>
+                            <td>${plusHtml || ''}${minusHtml || '' || '-'}</td>
+                        </tr>
+                    `;
+                }).join('');
+
+                document.getElementById('analysisBody').innerHTML = rows;
+
+                const comboRows = comboStats.map(s => `
+                    <tr>
+                        <td><strong>${s.brand}</strong></td>
+                        <td>${s.package}</td>
+                        <td>${s.year}</td>
+                        <td>${s.count}</td>
+                        <td>${s.share.toFixed(1)}%</td>
+                        <td>${formatPrice(s.avgPrice)}</td>
+                        <td>${s.sold}</td>
+                        <td>${s.active}</td>
+                    </tr>
+                `).join('');
+
+                document.getElementById('comboBody').innerHTML = comboRows;
+            } catch (error) {
+                document.getElementById('analysisBody').innerHTML = '<tr><td colspan="9" class="muted">Veri yüklenemedi.</td></tr>';
+                document.getElementById('comboBody').innerHTML = '<tr><td colspan="8" class="muted">Veri yüklenemedi.</td></tr>';
+                console.error(error);
+            }
+        }
+
+        loadAnalysis();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Takip Sistemi - Tablo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            padding: 40px;
+            border-radius: 12px;
+            color: white;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .stats {
+            margin-top: 20px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .stat-item {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .stat-item strong {
+            font-size: 20px;
+        }
+
+        .filter-section {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .filter-input, .filter-select {
+            padding: 12px 15px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+
+        .filter-input:focus, .filter-select:focus {
+            outline: none;
+            border-color: #14b8a6;
+            box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+        }
+
+        .filter-btn {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+        }
+
+        .table-wrapper {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+        }
+
+        th {
+            padding: 18px 15px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #14b8a6;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.2s ease;
+        }
+
+        th:hover {
+            background: rgba(20, 184, 166, 0.1);
+        }
+
+        .sort-icon {
+            font-size: 12px;
+            margin-left: 5px;
+            opacity: 0.6;
+        }
+
+        .sort-icon.asc::after {
+            content: " ▲";
+        }
+
+        .sort-icon.desc::after {
+            content: " ▼";
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e5e7eb;
+            transition: background 0.2s ease;
+        }
+
+        tbody tr:hover {
+            background: #f9fafb;
+        }
+
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .price {
+            font-weight: 600;
+            color: #10b981;
+        }
+
+        .days-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .days-0 {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .days-1 {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .days-2plus {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .status-active {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .status-sold {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .status-btn {
+            padding: 6px 10px;
+            background: #0ea5e9;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 12px;
+            margin-left: 6px;
+        }
+
+        .status-btn:hover {
+            background: #0284c7;
+        }
+
+        .vehicle-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .vehicle-link:hover {
+            text-decoration: underline;
+        }
+
+        .link-btn {
+            padding: 8px 15px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+            transition: background 0.3s ease;
+        }
+
+        .link-btn:hover {
+            background: #5568d3;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background: white;
+            margin: 2% auto;
+            padding: 20px;
+            border-radius: 12px;
+            width: 1000px;
+            max-width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #14b8a6;
+        }
+
+        .modal-title-section h2 {
+            font-size: 24px;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+
+        .modal-title-section p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #64748b;
+            transition: color 0.2s;
+        }
+
+        .close-btn:hover {
+            color: #1e293b;
+        }
+
+        .modal-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .detail-section {
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #14b8a6;
+        }
+
+        .detail-section h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #1e293b;
+        }
+
+        .detail-row {
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        .detail-value {
+            color: #1e293b;
+            font-size: 14px;
+        }
+
+        .damage-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 15px;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 8px;
+            border-left: 4px solid #14b8a6;
+            margin-bottom: 10px;
+        }
+
+        .damage-part-name {
+            font-weight: 600;
+            font-size: 13px;
+            color: #1e293b;
+        }
+
+        .damage-badge {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+
+        .link-btn-modal {
+            margin-top: 15px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Galeri Takip Sistemi</h1>
+            <p>Araçların taşınabilir ve hızlı takibi</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span>📊 Toplam Araç:</span>
+                    <strong id="total-vehicles">0</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <input type="text" id="searchInput" class="filter-input" placeholder="Marka/Model ara...">
+            <input type="text" id="adNoInput" class="filter-input" placeholder="İlan No ile aç" onkeydown="handleAdNoKey(event)">
+            <select id="galleryFilter" class="filter-select">
+                <option value="">Tüm Galeriler</option>
+            </select>
+            <input type="number" id="priceMin" class="filter-input" placeholder="Min Fiyat (TL)">
+            <input type="number" id="priceMax" class="filter-input" placeholder="Max Fiyat (TL)">
+            <button class="filter-btn" onclick="applyFilters()">Filtrele</button>
+            <button class="filter-btn" onclick="openAdByNo()" style="background: #3b82f6;">İlanı Aç</button>
+            <button class="filter-btn" onclick="resetFilters()" style="background: #999;">Sıfırla</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="vehicleTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable('marka')">Marka <span class="sort-icon" id="sort-marka"></span></th>
+                        <th onclick="sortTable('model')">Model <span class="sort-icon" id="sort-model"></span></th>
+                        <th onclick="sortTable('yil')">Yıl <span class="sort-icon" id="sort-yil"></span></th>
+                        <th onclick="sortTable('fuel')">Yakıt <span class="sort-icon" id="sort-fuel"></span></th>
+                        <th onclick="sortTable('motor')">Motor <span class="sort-icon" id="sort-motor"></span></th>
+                        <th onclick="sortTable('km')">KM <span class="sort-icon" id="sort-km"></span></th>
+                        <th onclick="sortTable('fiyat')">Fiyat <span class="sort-icon" id="sort-fiyat"></span></th>
+                        <th onclick="sortTable('galeri')">Galeri <span class="sort-icon" id="sort-galeri"></span></th>
+                        <th onclick="sortTable('gun')">İlanda <span class="sort-icon" id="sort-gun"></span></th>
+                        <th>İlan No</th>
+                        <th>Durum</th>
+                        <th>Kontrol</th>
+                        <th>Aksiyonlar</th>
+                    </tr>
+                </thead>
+                <tbody id="vehicleTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-section">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalSubtitle"></p>
+                </div>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="leftColumn"></div>
+                <div id="rightColumn"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allVehicles = [];
+        let filteredVehicles = [];
+        let vehicleCache = {};
+        let currentSort = { column: null, direction: 'asc' };
+        let lastOpenedIndex = null;
+
+        function parsePublishDate(publishDate) {
+            if (!publishDate) return null;
+            if (publishDate instanceof Date) return publishDate;
+
+            const trimmed = String(publishDate).trim();
+            const trMatch = trimmed.match(/^(\d{1,2})[./-](\d{1,2})[./-](\d{4})$/);
+            if (trMatch) {
+                const day = Number(trMatch[1]);
+                const month = Number(trMatch[2]) - 1;
+                const year = Number(trMatch[3]);
+                return new Date(year, month, day);
+            }
+
+            const parsed = new Date(trimmed);
+            if (!Number.isNaN(parsed.getTime())) return parsed;
+            return null;
+        }
+
+        function calculateDaysListed(publishDate) {
+            const pubDate = parsePublishDate(publishDate);
+            if (!pubDate) return 0;
+
+            const today = new Date();
+            const startToday = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+            const startPub = new Date(pubDate.getFullYear(), pubDate.getMonth(), pubDate.getDate());
+            const diffTime = startToday - startPub;
+            return Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+        }
+
+        function refreshDashboard() {
+            renderTable(filteredVehicles);
+
+            const modal = document.getElementById('detailModal');
+            if (modal.style.display === 'block' && lastOpenedIndex !== null) {
+                showDetail(lastOpenedIndex);
+            }
+        }
+
+        function scheduleDailyRefresh() {
+            const now = new Date();
+            const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+            const timeToMidnight = nextMidnight - now;
+
+            setTimeout(() => {
+                refreshDashboard();
+                setInterval(refreshDashboard, 24 * 60 * 60 * 1000);
+            }, timeToMidnight);
+        }
+
+        function parseNumber(value) {
+            if (value === null || value === undefined) return 0;
+            if (typeof value === 'number') return Number.isFinite(value) ? value : 0;
+            const cleaned = String(value).replace(/\./g, '').replace(/,/g, '.').replace(/[^\d.\-]/g, '');
+            const parsed = Number(cleaned);
+            return Number.isFinite(parsed) ? parsed : 0;
+        }
+
+        function normalizeVehicle(raw) {
+            if (raw && raw.vehicle && raw.seller) {
+                return {
+                    ...raw,
+                    adNo: raw.adNo || raw.ilan_no || raw['İlan No'] || '-',
+                    adUrl: raw.adUrl || raw.url || raw.ilan_url || '',
+                    publishDate: raw.publishDate || raw['İlan Tarihi'] || raw.tarih || '-',
+                    price: parseNumber(raw.price ?? raw.fiyat ?? raw['Fiyat']),
+                    seller: {
+                        name: raw.seller?.name || raw.galeri || raw['Galeri'] || raw['Kimden'] || 'Bilinmiyor',
+                        phone: raw.seller?.phone || raw.telefon || raw.phone || '-'
+                    },
+                    vehicle: {
+                        ...raw.vehicle,
+                        brand: raw.vehicle?.brand || '-',
+                        model: raw.vehicle?.model || '-',
+                        year: raw.vehicle?.year || '-',
+                        fuel: raw.vehicle?.fuel || '-',
+                        engine: raw.vehicle?.engine || '-',
+                        km: parseNumber(raw.vehicle?.km),
+                        transmission: raw.vehicle?.transmission || '-',
+                        body_type: raw.vehicle?.body_type || '-',
+                        hp: raw.vehicle?.hp || '-',
+                        package: raw.vehicle?.package || raw.package || '-'
+                    },
+                    inspection: raw.inspection || {}
+                };
+            }
+
+            return {
+                adNo: raw?.adNo || raw?.ilan_no || raw?.['İlan No'] || '-',
+                adUrl: raw?.adUrl || raw?.url || raw?.ilan_url || '',
+                publishDate: raw?.publishDate || raw?.['İlan Tarihi'] || raw?.tarih || '-',
+                price: parseNumber(raw?.price ?? raw?.fiyat ?? raw?.['Fiyat']),
+                seller: {
+                    name: raw?.galeri || raw?.['Galeri'] || raw?.seller?.name || raw?.['Kimden'] || 'Bilinmiyor',
+                    phone: raw?.telefon || raw?.phone || raw?.seller?.phone || '-'
+                },
+                vehicle: {
+                    brand: raw?.brand || raw?.marka || raw?.['Marka'] || '-',
+                    model: raw?.model || raw?.['Model'] || '-',
+                    year: raw?.year || raw?.yil || raw?.['Yıl'] || '-',
+                    fuel: raw?.fuel || raw?.yakit || raw?.['Yakıt Tipi'] || raw?.['Yakıt'] || '-',
+                    engine: raw?.engine || raw?.motor || raw?.['Motor'] || '-',
+                    km: parseNumber(raw?.km || raw?.['KM']),
+                    transmission: raw?.transmission || raw?.vites || raw?.['Vites'] || '-',
+                    body_type: raw?.body_type || raw?.kasa_tipi || raw?.['Kasa Tipi'] || '-',
+                    hp: raw?.hp || raw?.['HP'] || '-',
+                    package: raw?.package || raw?.paket || raw?.['Paket'] || '-'
+                },
+                inspection: raw?.inspection || raw?.ekspertiz_ozeti || {}
+            };
+        }
+
+        async function loadDashboard() {
+            try {
+                const response = await fetch(`cars_data.json?v=${Date.now()}`);
+                const data = await response.json();
+                const rawVehicles = Array.isArray(data) ? data : (data?.vehicles || []);
+                allVehicles = rawVehicles.map(normalizeVehicle);
+                filteredVehicles = [...allVehicles];
+                syncAdUrlsFromData();
+
+                const galleries = [...new Set(allVehicles.map(v => v.seller?.name).filter(Boolean))].sort();
+                const gallerySelect = document.getElementById('galleryFilter');
+                galleries.forEach(gallery => {
+                    const option = document.createElement('option');
+                    option.value = gallery;
+                    option.textContent = gallery;
+                    gallerySelect.appendChild(option);
+                });
+
+                document.getElementById('total-vehicles').textContent = allVehicles.length;
+                renderTable(allVehicles);
+                scheduleDailyRefresh();
+            } catch (error) {
+                console.error('Hata:', error);
+                document.getElementById('vehicleTableBody').innerHTML =
+                    '<tr><td colspan="13" style="text-align:center; padding:30px; color:#ef4444;">❌ Veriler yüklenemedi. Dashboard\'u http://localhost:8080 üzerinden açın.</td></tr>';
+            }
+        }
+
+        function getDaysBadge(days) {
+            if (days === 0) return '<span class="days-badge days-0">0 gün</span>';
+            if (days === 1) return '<span class="days-badge days-1">1 gün</span>';
+            return '<span class="days-badge days-2plus">' + days + ' gün</span>';
+        }
+
+        function getStatusStore() {
+            try {
+                return JSON.parse(localStorage.getItem('adStatus')) || {};
+            } catch (error) {
+                return {};
+            }
+        }
+
+        function saveStatusStore(store) {
+            localStorage.setItem('adStatus', JSON.stringify(store));
+        }
+
+        function getAdStatus(adNo) {
+            const store = getStatusStore();
+            return store[String(adNo)] || 'aktif';
+        }
+
+        function toggleAdStatus(adNo) {
+            const store = getStatusStore();
+            const key = String(adNo);
+            const current = store[key] || 'aktif';
+            store[key] = current === 'aktif' ? 'satildi' : 'aktif';
+            saveStatusStore(store);
+            refreshDashboard();
+        }
+
+        function getAdUrlStore() {
+            try {
+                return JSON.parse(localStorage.getItem('adUrl')) || {};
+            } catch (error) {
+                return {};
+            }
+        }
+
+        function saveAdUrlStore(store) {
+            localStorage.setItem('adUrl', JSON.stringify(store));
+        }
+
+        function getAdUrl(adNo) {
+            const store = getAdUrlStore();
+            return store[String(adNo)] || '';
+        }
+
+        function syncAdUrlsFromData() {
+            const store = getAdUrlStore();
+            let changed = false;
+
+            allVehicles.forEach(vehicle => {
+                const url = normalizeAdUrl(vehicle.adUrl);
+                const key = String(vehicle.adNo);
+                if (url && store[key] !== url) {
+                    store[key] = url;
+                    changed = true;
+                }
+            });
+
+            if (changed) {
+                saveAdUrlStore(store);
+            }
+        }
+
+        function getAdUrlFromData(adNo) {
+            const match = allVehicles.find(vehicle => String(vehicle.adNo) === String(adNo));
+            if (!match || !match.adUrl) return '';
+            return normalizeAdUrl(match.adUrl);
+        }
+
+        function normalizeAdUrl(url) {
+            if (!url) return '';
+            const trimmed = String(url).trim();
+            if (!trimmed) return '';
+            if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return trimmed;
+            return `https://${trimmed}`;
+        }
+
+        function openAdLink(adNo, event) {
+            if (event) event.preventDefault();
+            const id = String(adNo || '').trim();
+            if (!id) return;
+
+            let url = getAdUrl(id) || getAdUrlFromData(id);
+            if (!url) {
+                alert('Bu ilana direkt link eklenmemiş.');
+                return;
+            }
+
+            if (url && !getAdUrl(id)) {
+                const store = getAdUrlStore();
+                store[String(id)] = url;
+                saveAdUrlStore(store);
+            }
+
+            window.open(url, '_blank');
+        }
+
+        function getPartNameTR(partName) {
+            const partMap = {
+                'frontBumper': 'Ön Tampon',
+                'leftFender': 'Sol Ön Çamurluk',
+                'rightFender': 'Sağ Ön Çamurluk',
+                'hood': 'Kaput',
+                'leftDoor': 'Sol Ön Kapı',
+                'rightDoor': 'Sağ Ön Kapı',
+                'leftRearDoor': 'Sol Arka Kapı',
+                'rightRearDoor': 'Sağ Arka Kapı',
+                'roof': 'Tavan',
+                'trunk': 'Bagaj',
+                'rearBumper': 'Arka Tampon',
+                'leftRearFender': 'Sol Arka Çamurluk',
+                'rightRearFender': 'Sağ Arka Çamurluk',
+            };
+            return partMap[partName] || partName;
+        }
+
+        function renderTable(vehicles) {
+            const tbody = document.getElementById('vehicleTableBody');
+            tbody.innerHTML = '';
+
+            if (vehicles.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="13" style="text-align: center; padding: 30px; color: #999;">Araç bulunamadı</td></tr>';
+                return;
+            }
+
+            vehicles.forEach((vehicle, index) => {
+                vehicleCache[index] = vehicle;
+                const v = vehicle.vehicle;
+                const days = calculateDaysListed(vehicle.publishDate);
+                const status = getAdStatus(vehicle.adNo);
+                const statusLabel = status === 'satildi' ? 'Satıldı' : 'Aktif';
+                const statusClass = status === 'satildi' ? 'status-sold' : 'status-active';
+                const toggleLabel = status === 'satildi' ? 'Aktif Yap' : 'Satıldı Yap';
+                const adUrl = getAdUrl(vehicle.adNo) || normalizeAdUrl(vehicle.adUrl);
+                const adHref = adUrl || '#';
+                const row = document.createElement('tr');
+
+                // Yakıt tipi için ikon ve renk
+                let fuelIcon = '';
+                let fuelText = v.fuel || '-';
+                if (fuelText.toLowerCase().includes('benzin')) fuelIcon = '⛽';
+                if (fuelText.toLowerCase().includes('dizel')) fuelIcon = '🛢️';
+                if (fuelText.toLowerCase().includes('lpg')) fuelIcon += ' 🔋';
+                if (fuelText !== '-' && fuelIcon === '') fuelIcon = '✔️';
+
+                row.innerHTML = `
+                    <td><strong>${v.brand}</strong></td>
+                    <td>${v.model}</td>
+                    <td>${v.year}</td>
+                    <td>${fuelIcon} ${fuelText}</td>
+                    <td><small>${v.engine}</small></td>
+                    <td>${v.km ? v.km.toLocaleString('tr-TR') : '-'}</td>
+                    <td class="price">${vehicle.price ? vehicle.price.toLocaleString('tr-TR') : '-'} TL</td>
+                    <td><strong style="color: #14b8a6;">${vehicle.seller.name}</strong></td>
+                    <td>${getDaysBadge(days)}</td>
+                    <td><a href="${adHref}" target="_blank" class="vehicle-link" onclick="openAdLink('${vehicle.adNo}', event)">🔗 ${vehicle.adNo}</a></td>
+                    <td><span class="status-badge ${statusClass}">${statusLabel}</span><button class="status-btn" onclick="toggleAdStatus('${vehicle.adNo}')">${toggleLabel}</button></td>
+                    <td><button class="link-btn" onclick="openAdLink('${vehicle.adNo}')">İlanı Kontrol Et</button></td>
+                    <td><button class="link-btn" onclick="showDetail(${index}, ${days})">Detay</button></td>
+                `;
+
+                tbody.appendChild(row);
+            });
+        }
+
+        function showDetail(vehicleIndex, days) {
+            const vehicle = vehicleCache[vehicleIndex];
+            if (!vehicle) return;
+
+            lastOpenedIndex = vehicleIndex;
+            if (days === undefined) {
+                days = calculateDaysListed(vehicle.publishDate);
+            }
+
+            const v = vehicle.vehicle;
+            const detailModal = document.getElementById('detailModal');
+            document.getElementById('modalTitle').textContent = `${v.year} ${v.brand} ${v.model}`;
+            document.getElementById('modalSubtitle').textContent = `${v.engine}${v.package ? ' • ' + v.package : ''} • ${vehicle.seller.name}`;
+
+            const publishDate = parsePublishDate(vehicle.publishDate);
+            const publishDateText = publishDate ? publishDate.toLocaleDateString('tr-TR') : '-';
+
+            let leftHTML = `
+                <div class="detail-section">
+                    <h3>📋 Temel Bilgiler</h3>
+                    <div class="detail-row">
+                        <span class="detail-label">Yıl:</span>
+                        <span class="detail-value">${v.year}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Motor:</span>
+                        <span class="detail-value">${v.engine}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Paket:</span>
+                        <span class="detail-value">${v.package || '-'}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">KM:</span>
+                        <span class="detail-value">${v.km ? v.km.toLocaleString('tr-TR') : '-'}</span>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3>🛠️ Teknik Özellikler</h3>
+                    <div class="detail-row">
+                        <span class="detail-label">Yakıt:</span>
+                        <span class="detail-value">${v.fuel}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Vites:</span>
+                        <span class="detail-value">${v.transmission || '-'}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Kasa Tipi:</span>
+                        <span class="detail-value">${v.body_type || '-'}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">HP:</span>
+                        <span class="detail-value">${v.hp || '-'}</span>
+                    </div>
+                </div>
+            `;
+
+            let rightHTML = `
+                <div class="detail-section">
+                    <h3>💰 Fiyat & Satıcı</h3>
+                    <div class="detail-row">
+                        <span class="detail-label">Fiyat:</span>
+                        <span class="detail-value" style="color: #10b981; font-size: 1.2em;">${vehicle.price ? vehicle.price.toLocaleString('tr-TR') : '-'} TL</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Galeri:</span>
+                        <span class="detail-value">${vehicle.seller.name}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Telefon:</span>
+                        <span class="detail-value"><a href="tel:${vehicle.seller.phone}" style="color: #667eea;">${vehicle.seller.phone}</a></span>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3>📅 İlan Bilgisi</h3>
+                    <div class="detail-row">
+                        <span class="detail-label">Yayın Tarihi:</span>
+                        <span class="detail-value">${publishDateText}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">İlanda:</span>
+                        <span class="detail-value">${getDaysBadge(days)}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">İlan No:</span>
+                        <span class="detail-value">${vehicle.adNo}</span>
+                    </div>
+                </div>
+            `;
+
+            if (vehicle.inspection && Object.keys(vehicle.inspection).length > 0) {
+                rightHTML += `<div class="detail-section"><h3>🔍 Hasar Durumu</h3>`;
+                
+                Object.entries(vehicle.inspection).forEach(([part, status]) => {
+                    const statusLower = status.toLowerCase();
+                    let statusColor = '#10b981';
+                    let statusBg = '#ecfdf5';
+                    let statusText = 'Orijinal';
+
+                    if (statusLower.includes('boyalı') && !statusLower.includes('lokal')) {
+                        statusColor = '#f59e0b';
+                        statusBg = '#fffbeb';
+                        statusText = 'Boyalı';
+                    } else if (statusLower.includes('değişti')) {
+                        statusColor = '#ef4444';
+                        statusBg = '#fef2f2';
+                        statusText = 'Değişmiş';
+                    } else if (statusLower.includes('lokal')) {
+                        statusColor = '#16a34a';
+                        statusBg = '#dcfce7';
+                        statusText = 'L. Boyalı';
+                    } else if (statusLower.includes('tramer') || statusLower.includes('tl')) {
+                        statusColor = '#ef6123';
+                        statusBg = '#fff7ed';
+                        statusText = 'Tramer';
+                    }
+
+                    rightHTML += `
+                        <div class="damage-item">
+                            <div class="damage-part-name">${getPartNameTR(part)}</div>
+                            <span class="damage-badge" style="background: ${statusBg}; color: ${statusColor}; border: 2px solid ${statusColor};">${statusText}</span>
+                        </div>
+                    `;
+                });
+
+                rightHTML += `</div>`;
+            }
+
+            const modalAdUrl = getAdUrl(vehicle.adNo) || normalizeAdUrl(vehicle.adUrl) || '#';
+            rightHTML += `<a href="${modalAdUrl}" target="_blank" class="link-btn link-btn-modal" onclick="openAdLink('${vehicle.adNo}', event)">Sahibinden'de Aç</a>`;
+
+            document.getElementById('leftColumn').innerHTML = leftHTML;
+            document.getElementById('rightColumn').innerHTML = rightHTML;
+            detailModal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('detailModal').style.display = 'none';
+            lastOpenedIndex = null;
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('detailModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        function applyFilters() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const gallery = document.getElementById('galleryFilter').value;
+            const priceMin = parseInt(document.getElementById('priceMin').value) || 0;
+            const priceMax = parseInt(document.getElementById('priceMax').value) || Infinity;
+
+            filteredVehicles = allVehicles.filter(vehicle => {
+                const v = vehicle.vehicle;
+
+                if (search) {
+                    const fullName = `${v.brand} ${v.model}`.toLowerCase();
+                    if (!fullName.includes(search)) return false;
+                }
+
+                if (gallery && vehicle.seller.name !== gallery) return false;
+                if (vehicle.price < priceMin || vehicle.price > priceMax) return false;
+
+                return true;
+            });
+
+            currentSort = { column: null, direction: 'asc' };
+            clearSortIcons();
+            renderTable(filteredVehicles);
+        }
+
+        function openAdByNo() {
+            const input = document.getElementById('adNoInput');
+            const adNo = input.value.trim();
+            if (!adNo) return;
+
+            const match = allVehicles.find(vehicle => String(vehicle.adNo) === adNo);
+            const finalAdNo = match ? match.adNo : adNo;
+            openAdSearch(finalAdNo);
+        }
+
+        function openAdSearch(adNo) {
+            const id = String(adNo || '').trim();
+            if (!id) return;
+
+            const exact = getAdUrl(id) || getAdUrlFromData(id);
+            if (exact) {
+                window.open(exact, '_blank');
+                return;
+            }
+
+            const searchUrl = `https://www.sahibinden.com/kelime-ile-arama?query_text=${encodeURIComponent(id)}`;
+            window.open(searchUrl, '_blank');
+        }
+
+        function handleAdNoKey(event) {
+            if (event.key === 'Enter') {
+                openAdByNo();
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('adNoInput').value = '';
+            document.getElementById('galleryFilter').value = '';
+            document.getElementById('priceMin').value = '';
+            document.getElementById('priceMax').value = '';
+            currentSort = { column: null, direction: 'asc' };
+            clearSortIcons();
+            renderTable(allVehicles);
+        }
+
+        function sortTable(column) {
+            const columns = ['marka', 'model', 'yil', 'motor', 'km', 'fiyat', 'galeri', 'gun'];
+
+            if (currentSort.column === column) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.column = column;
+                currentSort.direction = 'asc';
+            }
+
+            const sorted = [...filteredVehicles].sort((a, b) => {
+                let aVal, bVal;
+
+                switch(column) {
+                    case 'marka':
+                        aVal = a.vehicle.brand.toLowerCase();
+                        bVal = b.vehicle.brand.toLowerCase();
+                        break;
+                    case 'model':
+                        aVal = a.vehicle.model.toLowerCase();
+                        bVal = b.vehicle.model.toLowerCase();
+                        break;
+                    case 'yil':
+                        aVal = parseInt(a.vehicle.year);
+                        bVal = parseInt(b.vehicle.year);
+                        break;
+                    case 'fuel':
+                        aVal = (a.vehicle.fuel || '').toLowerCase();
+                        bVal = (b.vehicle.fuel || '').toLowerCase();
+                        break;
+                    case 'motor':
+                        aVal = a.vehicle.engine.toLowerCase();
+                        bVal = b.vehicle.engine.toLowerCase();
+                        break;
+                    case 'km':
+                        aVal = parseInt(a.vehicle.km) || 0;
+                        bVal = parseInt(b.vehicle.km) || 0;
+                        break;
+                    case 'fiyat':
+                        aVal = parseInt(a.price) || 0;
+                        bVal = parseInt(b.price) || 0;
+                        break;
+                    case 'galeri':
+                        aVal = a.seller.name.toLowerCase();
+                        bVal = b.seller.name.toLowerCase();
+                        break;
+                    case 'gun':
+                        aVal = calculateDaysListed(a.publishDate);
+                        bVal = calculateDaysListed(b.publishDate);
+                        break;
+                }
+
+                if (currentSort.direction === 'asc') {
+                    return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
+                } else {
+                    return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
+                }
+            });
+
+            updateSortIcons();
+            renderTable(sorted);
+        }
+
+        function clearSortIcons() {
+            document.querySelectorAll('.sort-icon').forEach(icon => {
+                icon.classList.remove('asc', 'desc');
+            });
+        }
+
+        function updateSortIcons() {
+            clearSortIcons();
+            if (currentSort.column) {
+                const icon = document.getElementById(`sort-${currentSort.column}`);
+                if (icon) {
+                    icon.classList.add(currentSort.direction);
+                }
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', loadDashboard);
+    </script>
+</body>
+</html>

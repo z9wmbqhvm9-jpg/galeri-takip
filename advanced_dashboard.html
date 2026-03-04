@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATUHAN KAYA OTOMOTİV Gelişmiş Galeri Takip</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            padding: 10px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 98%;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            color: #111;
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .live-time {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #111111 0%, #2a2a2a 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+        }
+
+        .live-time .pulse {
+            width: 8px;
+            height: 8px;
+            background: #4ade80;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
+        }
+
+        /* İstatistik Kartları */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card .icon {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .stat-card .value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 3px;
+        }
+
+        .stat-card .label {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* Kontrol Paneli */
+        .controls {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .controls h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-group label {
+            color: #666;
+            font-size: 0.75rem;
+            margin-bottom: 3px;
+            font-weight: 600;
+        }
+
+        .filter-group select,
+        .filter-group input {
+            padding: 6px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+        }
+
+        .btn-success {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #38a169;
+            transform: scale(1.05);
+        }
+
+        .btn-danger {
+            background: #f56565;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #e53e3e;
+            transform: scale(1.05);
+        }
+
+        /* Grafik Alanı */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .chart-card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 250px;
+        }
+
+        /* Tablo */
+        .table-card {
+            background: white;
+            padding: 4px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow-x: auto;
+            max-width: 100vw;
+        }
+
+        .table-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.75rem;
+            table-layout: fixed;
+        }
+
+        thead {
+            background: #667eea;
+            color: white;
+        }
+
+        thead th {
+            padding: 4px 2px;
+            text-align: left;
+            cursor: pointer;
+            user-select: none;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            max-width: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        thead th:hover {
+            background: #5568d3;
+        }
+
+        .sort-icon {
+            display: inline-block;
+            margin-left: 4px;
+            opacity: 0.8;
+        }
+
+        .sort-icon.active {
+            opacity: 1;
+            font-weight: 700;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+            transition: background 0.2s ease;
+        }
+
+        tbody tr:hover {
+            background: #f7fafc;
+        }
+
+        tbody td {
+            padding: 6px 6px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            max-width: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        tbody td:hover {
+            overflow: visible;
+            white-space: normal;
+        }
+
+        .status-badge {
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .status-active {
+            background: #c6f6d5;
+            color: #22543d;
+        }
+
+        .status-sold {
+            background: #fed7d7;
+            color: #742a2a;
+        }
+
+        .price-cell {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .days-cell {
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 0.75rem;
+        }
+
+        .days-new {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .days-medium {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .days-old {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .detail-toggle {
+            padding: 4px 8px;
+            border: 0;
+            border-radius: 8px;
+            background: #eef2ff;
+            color: #4a5bd4;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.75rem;
+        }
+
+        .detail-toggle:hover {
+            background: #e0e7ff;
+        }
+
+        .detail-row {
+            background: #fafafa;
+        }
+
+        .detail-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px 0;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .badge-paint {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge-local {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .badge-replace {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .badge-tramer {
+            background: #dbeafe;
+            color: #1e3a8a;
+        }
+
+        .badge-other {
+            background: #e5e7eb;
+            color: #374151;
+        }
+
+        .ad-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.75rem;
+        }
+
+        .ad-link:hover {
+            text-decoration: underline;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            align-items: center;
+        }
+
+        .btn-sold {
+            padding: 3px 8px;
+            border: 0;
+            border-radius: 8px;
+            background: #ef4444;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.75rem;
+        }
+
+        .btn-sold:hover {
+            background: #dc2626;
+        }
+
+        .btn-active {
+            padding: 3px 8px;
+            border: 0;
+            border-radius: 8px;
+            background: #10b981;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.75rem;
+        }
+
+        .btn-active:hover {
+            background: #059669;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                padding-top: 55px;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .live-time {
+                position: static;
+                margin: 0 auto 10px;
+                width: fit-content;
+            }
+
+            .stat-card .value {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            table {
+                font-size: 0.68rem;
+            }
+
+            thead th,
+            tbody td {
+                max-width: 45px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            table {
+                font-size: 0.6rem;
+            }
+
+            thead th,
+            tbody td {
+                max-width: 35px;
+            }
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #667eea;
+            font-size: 1.5rem;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 50px;
+            color: #999;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="mb-3 d-flex justify-content-end">
+        </div>
+        <div class="header">
+            <h1>🚗 BATUHAN KAYA OTOMOTİV Gelişmiş Galeri Takip</h1>
+            <p>Profesyonel İlan Analizi & Fiyat Takibi</p>
+            <div class="live-time">
+                <span class="pulse"></span>
+                <span id="liveDateTime">25 Şubat 2026, 05:06</span>
+            </div>
+        </div>
+
+        <!-- İstatistik Kartları -->
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <div class="icon">📊</div>
+                <div class="value" id="totalAds">0</div>
+                <div class="label">Toplam İlan</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">✅</div>
+                <div class="value" id="activeAds">0</div>
+                <div class="label">Aktif İlan</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">❌</div>
+                <div class="value" id="soldAds">0</div>
+                <div class="label">Satılan İlan</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">💰</div>
+                <div class="value" id="avgPrice">0 ₺</div>
+                <div class="label">Ortalama Fiyat</div>
+            </div>
+        </div>
+
+        <!-- Kontrol Paneli -->
+        <div class="controls">
+            <h3>🔍 Filtrele & Ara</h3>
+
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label for="searchInput">Arama</label>
+                    <input type="text" id="searchInput" placeholder="Marka, model, galeri...">
+                </div>
+
+                <div class="filter-group">
+                    <label for="brandFilter">Marka</label>
+                    <select id="brandFilter">
+                        <option value="">Tümü</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="statusFilter">Durum</label>
+                    <select id="statusFilter">
+                        <option value="">Tümü</option>
+                        <option value="active">Aktif</option>
+                        <option value="sold">Satıldı</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="minPrice">Min Fiyat</label>
+                    <input type="number" id="minPrice" placeholder="Minimum">
+                </div>
+
+                <div class="filter-group">
+                    <label for="maxPrice">Max Fiyat</label>
+                    <input type="number" id="maxPrice" placeholder="Maximum">
+                </div>
+
+                <div class="filter-group">
+                    <label for="yearFilter">Yıl</label>
+                    <select id="yearFilter">
+                        <option value="">Tümü</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="applyFilters()">🔍 Filtrele</button>
+                <button class="btn btn-primary" onclick="window.location.href='analysis_dashboard.html'">📊
+                    Karşılaştırma & Analiz</button>
+                <button class="btn btn-success" onclick="exportToExcel()">📊 Excel'e Aktar</button>
+                <button class="btn btn-danger" onclick="resetFilters()">🔄 Sıfırla</button>
+            </div>
+            <div style="display:flex; justify-content:flex-end; margin-top:10px;">
+                <!-- Galericiler butonu kaldırıldı -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Grafikler -->
+    <div class="charts-grid">
+        <div class="chart-card">
+            <h3>📈 Marka Dağılımı</h3>
+            <div class="chart-container">
+                <canvas id="brandChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>💰 Fiyat Dağılımı</h3>
+            <div class="chart-container">
+                <canvas id="priceChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>📅 Yıl Dağılımı</h3>
+            <div class="chart-container">
+                <canvas id="yearChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>🎯 Durum Dağılımı</h3>
+            <div class="chart-container">
+                <canvas id="statusChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tablo -->
+    <div class="table-card">
+        <h3>📋 İlan Listesi (<span id="visibleCount">0</span> ilan)</h3>
+        <table id="vehicleTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable('adNo')">İlan No <span class="sort-icon" id="sort-adNo">↕</span></th>
+                    <th>Tarih</th>
+                    <th onclick="sortTable('days')">Gün <span class="sort-icon" id="sort-days">↕</span></th>
+                    <th onclick="sortTable('brand')">Marka <span class="sort-icon" id="sort-brand">↕</span></th>
+                    <th onclick="sortTable('model')">Model <span class="sort-icon" id="sort-model">↕</span></th>
+                    <th onclick="sortTable('year')">Yıl <span class="sort-icon" id="sort-year">↕</span></th>
+                    <th onclick="sortTable('fuel')">Yakıt <span class="sort-icon" id="sort-fuel">↕</span></th>
+                    <th>Paket</th>
+                    <th>Vites</th>
+                    <th>Renk</th>
+                    <th onclick="sortTable('km')">KM <span class="sort-icon" id="sort-km">↕</span></th>
+                    <th onclick="sortTable('price')">Fiyat <span class="sort-icon" id="sort-price">↕</span></th>
+                    <th onclick="sortTable('gallery')">Galeri <span class="sort-icon" id="sort-gallery">↕</span></th>
+                    <th>Hasar</th>
+                    <th>Durum</th>
+                    <th>Link</th>
+                    <th>İşlem</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td colspan="16" class="loading">Yükleniyor...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <script>
+        // Global değişkenler
+        let allVehicles = [];
+        let filteredVehicles = [];
+        let charts = {};
+        let currentSort = { column: null, direction: 'desc' };
+
+        // Sayfa yüklendiğinde
+        window.addEventListener('DOMContentLoaded', async function () {
+            await loadData();
+            initializeFilters();
+            createCharts();
+            applyFilters();
+
+            // Canlı saat göstergesi
+            function updateLiveTime() {
+                const now = new Date();
+                const options = {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                };
+                const dateTimeStr = now.toLocaleDateString('tr-TR', options);
+                document.getElementById('liveDateTime').textContent = dateTimeStr;
+            }
+
+            // İlk güncelleme
+            updateLiveTime();
+
+            // Her saniye güncelle
+            setInterval(updateLiveTime, 1000);
+
+            // Gerçek zamanlı ilan süresi güncellemesi
+            // Her 1 dakikada bir kontrol et, gece yarısını geçtiyse yenile
+            let lastUpdateDate = new Date().toDateString();
+
+            setInterval(() => {
+                const currentDate = new Date().toDateString();
+
+                // Gün değiştiyse ilan sürelerini yeniden hesapla
+                if (currentDate !== lastUpdateDate) {
+                    console.log('📅 Gün değişti! İlan süreleri güncelleniyor...');
+                    calculateDaysListed();
+                    applyFilters(); // Tabloyu yenile
+                    lastUpdateDate = currentDate;
+                }
+            }, 60000); // Her 1 dakika (60000 ms)
+
+            console.log('✅ Otomatik güncelleme aktif: İlan süreleri her gün otomatik yenilenecek');
+        });
+
+        // Veriyi yükle
+        // İlan sürelerini hesapla (gerçek zamana göre)
+        function calculateDaysListed() {
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            allVehicles.forEach(vehicle => {
+                if (vehicle.publishDate) {
+                    const publishDate = new Date(vehicle.publishDate);
+                    publishDate.setHours(0, 0, 0, 0);
+                    const diffTime = today - publishDate;
+                    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+                    vehicle.daysListed = diffDays >= 0 ? diffDays : 0;
+                }
+            });
+        }
+
+        async function loadData() {
+            try {
+                const timestamp = new Date().getTime();
+                const response = await fetch(`cars_data.json?t=${timestamp}`);
+                const data = await response.json();
+
+                // VERİ NORMALİZASYONU
+                // cars_data.json formatı hem {vehicles:[]} hem de direkt [] olabilir
+                let rawVehicles = data.vehicles || (Array.isArray(data) ? data : []);
+
+                // Her bir aracı standart nesne formatına dönüştür
+                allVehicles = rawVehicles.map(v => normalizeVehicle(v));
+
+                // İlan sürelerini hesapla
+                calculateDaysListed();
+                console.log('Yüklenen araç sayısı:', allVehicles.length);
+            } catch (error) {
+                console.error('Veri yükleme hatası:', error);
+                document.getElementById('tableBody').innerHTML =
+                    '<tr><td colspan="16" class="no-results">❌ Veri yüklenemedi! (cars_data.json eksik veya hatalı)</td></tr>';
+            }
+        }
+
+        function normalizeVehicle(v) {
+            // Eğer zaten beklenen iç içe (nested) formattaysa dokunma
+            if (v.vehicle && v.vehicle.brand && typeof v.vehicle === 'object') {
+                return v;
+            }
+
+            // Düz (flat) ve Türkçe anahtarlı veriyi standart formata dönüştür
+            // KM temizleme
+            let kmRaw = v["KM"] || v["km"] || '0';
+            let km = parseInt(kmRaw.toString().replace(/\./g, '').replace(/[^\d]/g, '')) || 0;
+
+            // Fiyat temizleme
+            let rawPrice = v["Fiyat"] || v["fiyat"] || 0;
+
+            // Daha agresif fiyat bulma (Eğer Fiyat boşsa veya bildirim yazısıysa)
+            if (!rawPrice || (typeof rawPrice === 'string' && (rawPrice.includes('Fiyat bildirimlerini') || rawPrice.trim() === ''))) {
+                const baslik = v["Baslik"] || v["baslik"] || "";
+                const priceMatch = baslik.match(/(\d[\d\.]*)\s*TL/);
+                if (priceMatch) {
+                    rawPrice = priceMatch[1] + " TL";
+                }
+            }
+
+            // Durum normalleştirme
+            let status = 'active';
+            const durumRaw = (v["Durum"] || v["Araç Durumu"] || v["status"] || v["durum"] || '').toLowerCase();
+            if (durumRaw.includes('satıldı') || durumRaw.includes('sold')) {
+                status = 'sold';
+            }
+
+            // Paket (Variant)
+            let seri = v["Seri"] || v["seri"] || "";
+            let modelRaw = v["Model"] || v["model"] || "";
+            let paket = v["Paket"] || v["varyant"] || v["package"] || v["model_paket"] || "-";
+
+            if (paket === "-" && modelRaw && modelRaw !== seri) {
+                paket = modelRaw;
+            }
+
+            // Hasar / Ekspertiz
+            let inspection = v["ekspertiz_ozeti"] || v["inspection"] || {};
+            if (v["Ağır Hasar Kayıtlı"] === "Evet") {
+                inspection["Ağır Hasar"] = "Evet";
+            }
+
+            // ID ve adNo garantisi
+            const finalId = v["İlan No"] || v["ilan_no"] || v["id"] || Math.random().toString(36).substr(2, 9);
+
+            return {
+                id: finalId,
+                adNo: finalId,
+                publishDate: v["İlan Tarihi"] || v["Tarih"] || v["date"] || v["ilk_gorulme"] || '',
+                vehicle: {
+                    brand: v["Marka"] || v["marka"] || v["brand"] || 'Bilinmiyor',
+                    model: seri || modelRaw || '',
+                    year: parseInt(v["Yıl"] || v["yil"] || v["year"]) || 0,
+                    km: km,
+                    fuel: v["Yakıt Tipi"] || v["yakit"] || v["fuel"] || v["fuelType"] || '-',
+                    transmission: v["Vites"] || v["vites"] || v["transmission"] || '-',
+                    color: v["Renk"] || v["renk"] || v["color"] || '-',
+                    package: paket,
+                    engine: v["Motor Hacmi"] || v["engine"] || '-',
+                    hp: v["Motor Gücü"] || v["hp"] || '-'
+                },
+                price: rawPrice,
+                seller: {
+                    name: v["Kimden"] || v["Galeri"] || v["galeri"] || (v["seller"]?.name) || 'Galeriden'
+                },
+                location: {
+                    region: v["Bölge"] || v["region"] || v["sehir"] || v["sehir"] || (v["location"]?.region) || '-'
+                },
+                adUrl: v["url"] || v["Link"] || v["ilan_url"] || v["adUrl"] || '#',
+                status: status,
+                inspection: inspection
+            };
+        }
+
+        // Filtreleri başlat
+        function initializeFilters() {
+            // Markaları çıkar
+            const brands = [...new Set(allVehicles.map(v => v.vehicle?.brand).filter(Boolean))];
+            brands.sort();
+
+            const brandSelect = document.getElementById('brandFilter');
+            brands.forEach(brand => {
+                const option = document.createElement('option');
+                option.value = brand;
+                option.textContent = brand;
+                brandSelect.appendChild(option);
+            });
+
+            // Yılları çıkar
+            const years = [...new Set(allVehicles.map(v => v.vehicle?.year).filter(Boolean))];
+            years.sort((a, b) => b - a);
+
+            const yearSelect = document.getElementById('yearFilter');
+            years.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            });
+
+            // Enter tuşu ile ara
+            document.getElementById('searchInput').addEventListener('keyup', function (e) {
+                if (e.key === 'Enter') {
+                    applyFilters();
+                }
+            });
+        }
+
+        // Filtreleri uygula
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+            const brand = document.getElementById('brandFilter').value;
+            const status = document.getElementById('statusFilter').value;
+            const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
+            const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
+            const year = document.getElementById('yearFilter').value;
+
+            function normalize(str) {
+                // Türkçe karakterleri İngilizce'ye çevir, harfleri küçült, özel karakterleri kaldır
+                return (str || '')
+                    .toLowerCase()
+                    .replace(/ğ/g, 'g')
+                    .replace(/ü/g, 'u')
+                    .replace(/ş/g, 's')
+                    .replace(/ı/g, 'i')
+                    .replace(/ö/g, 'o')
+                    .replace(/ç/g, 'c')
+                    .replace(/[^a-z0-9]/g, '');
+            }
+
+            filteredVehicles = allVehicles.filter(vehicle => {
+                // Gelişmiş Arama: Tüm alanları normalize edip birleştir
+                if (searchTerm) {
+                    const searchableText = [
+                        vehicle.vehicle?.brand || '',
+                        vehicle.vehicle?.model || '',
+                        vehicle.seller?.name || '',
+                        vehicle.location?.region || '',
+                        vehicle.seller?.gallery_name || '',
+                        vehicle.seller?.gallery || ''
+                    ].join(' ');
+                    const searchableNorm = normalize(searchableText);
+                    const searchNorm = normalize(searchTerm);
+                    // 1. Tam normalize eşleşme
+                    if (searchableNorm === searchNorm) {
+                        // eşleşti
+                    } else {
+                        // 2. Parça eşleşme (her kelime normalize edilmiş metinde geçmeli)
+                        const kelimelerNorm = searchTerm.split(/\s+/).filter(Boolean).map(normalize);
+                        const allNormWords = kelimelerNorm.every(kelime => searchableNorm.includes(kelime));
+                        if (!allNormWords) {
+                            return false;
+                        }
+                    }
+                }
+
+                // Marka
+                if (brand && vehicle.vehicle?.brand !== brand) {
+                    return false;
+                }
+
+                // Durum
+                if (status && vehicle.status !== status) {
+                    return false;
+                }
+
+                // Fiyat aralığı
+                const price = getPrice(vehicle);
+                if (price < minPrice || price > maxPrice) {
+                    return false;
+                }
+
+                // Yıl
+                if (year && vehicle.vehicle?.year != year) {
+                    return false;
+                }
+
+                return true;
+            });
+
+            updateStats();
+            updateTable();
+            updateCharts();
+        }
+
+        // İstatistikleri güncelle
+        function updateStats() {
+            const total = filteredVehicles.length;
+            const active = filteredVehicles.filter(v => v.status !== 'sold').length;
+            const sold = filteredVehicles.filter(v => v.status === 'sold').length;
+
+            const prices = filteredVehicles.map(v => getPrice(v)).filter(p => p > 0);
+            const avgPrice = prices.length > 0 ?
+                Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
+
+            document.getElementById('totalAds').textContent = total;
+            document.getElementById('activeAds').textContent = active;
+            document.getElementById('soldAds').textContent = sold;
+            document.getElementById('avgPrice').textContent = formatPrice(avgPrice);
+        }
+
+        // Tabloyu güncelle
+        function updateTable() {
+            const tbody = document.getElementById('tableBody');
+            document.getElementById('visibleCount').textContent = filteredVehicles.length;
+
+            if (filteredVehicles.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="16" class="no-results">Sonuç bulunamadı</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = filteredVehicles.map(vehicle => {
+                const v = vehicle.vehicle || {};
+                const adNo = vehicle.adNo || vehicle.id || '';
+                const publishDate = vehicle.publishDate ? formatDate(vehicle.publishDate) : '';
+                const daysListed = vehicle.daysListed !== undefined ? vehicle.daysListed : '';
+                const brand = v.brand || '';
+                const model = v.model || '';
+                const year = v.year || '';
+                const fuel = v.fuel || '';
+                const packageName = v.package || '';
+                const transmission = v.transmission || '';
+                const color = v.color || '';
+                const km = v.km !== undefined ? v.km : '';
+                const price = getPrice(vehicle);
+                const priceText = price ? formatPrice(price) : '';
+                const gallery = vehicle.seller && vehicle.seller.name ? vehicle.seller.name : '';
+                // Hasar sütunu: inspection varsa detaylı göster, yoksa 'Yok' yaz
+                let hasar = 'Yok';
+                if (vehicle.inspection) {
+                    let detaylar = [];
+                    for (const [k, v] of Object.entries(vehicle.inspection)) {
+                        if (v && v !== 'Yok' && v !== '-') {
+                            detaylar.push(`${k}: ${v}`);
+                        }
+                    }
+                    hasar = detaylar.length > 0 ? detaylar.join(', ') : 'Yok';
+                }
+                // Link sütunu: adUrl (string ve boş değilse) veya seller.url (http ile başlıyorsa) varsa göster, yoksa 'Yok' yaz
+                let link = 'Yok';
+                if (vehicle.adUrl && typeof vehicle.adUrl === 'string' && vehicle.adUrl.startsWith('http')) {
+                    link = `<a href="${vehicle.adUrl}" target="_blank" class="ad-link">🔗 Link</a>`;
+                } else if (vehicle.seller && vehicle.seller.url && typeof vehicle.seller.url === 'string' && vehicle.seller.url.startsWith('http')) {
+                    link = `<a href="${vehicle.seller.url}" target="_blank" class="ad-link">🔗 Link</a>`;
+                }
+                const status = vehicle.status === 'sold' ? 'sold' : 'active';
+                const statusText = status === 'sold' ? 'Satıldı' : 'Aktif';
+                const detailHtml = renderInspectionBadges(vehicle);
+                const detailId = `detail-${adNo}`;
+                const detailButton = detailHtml ? `<button class="detail-toggle" onclick="toggleDetail('${detailId}')">Detay</button>` : '';
+                const detailRow = detailHtml ? `
+                    <tr class="detail-row" id="${detailId}" style="display:none;">
+                        <td colspan="17">
+                            <div class="detail-badges">${detailHtml}</div>
+                        </td>
+                    </tr>
+                ` : '';
+                // Kaç gün sütunu için renk belirleme
+                let daysClass = 'days-new';
+                let daysText = '';
+                if (daysListed !== '' && daysListed !== undefined) {
+                    daysText = daysListed + ' gün';
+                    if (daysListed <= 3) {
+                        daysClass = 'days-new';
+                    } else if (daysListed <= 14) {
+                        daysClass = 'days-medium';
+                    } else {
+                        daysClass = 'days-old';
+                    }
+                }
+                return `
+                    <tr>
+                        <td style="font-size:0.75rem;">${adNo}</td>
+                        <td style="font-size:0.75rem;">${publishDate}</td>
+                        <td><span class="days-cell ${daysClass}">${daysText}</span></td>
+                        <td><strong>${brand}</strong></td>
+                        <td>${model}</td>
+                        <td>${year}</td>
+                        <td style="font-size:0.95rem; white-space:nowrap;">${fuel}</td>
+                        <td style="font-size:0.75rem;">${packageName}</td>
+                        <td style="font-size:0.75rem;">${transmission}</td>
+                        <td style="font-size:0.75rem;">${color}</td>
+                        <td style="font-size:0.75rem;">${km}</td>
+                        <td class="price-cell" style="font-size:0.85rem;"><strong>${priceText}</strong></td>
+                        <td style="font-size:0.75rem;">${gallery}</td>
+                        <td>${detailButton}</td>
+                        <td><span class="status-badge status-${status}">${statusText}</span></td>
+                        <td>${link}</td>
+                        <td>
+                            <div class="action-buttons">
+                                ${status === 'active' ?
+                        `<button class="btn-sold" onclick="markAsSold('${adNo}')">Satıldı</button>` :
+                        `<button class="btn-active" onclick="markAsActive('${adNo}')">Aktif</button>`
+                    }
+                            </div>
+                        </td>
+                    </tr>
+                    ${detailRow}
+                `;
+            }).join('');
+        }
+
+        // Grafikleri oluştur
+        function createCharts() {
+            // Marka grafiği (Pie)
+            const brandCtx = document.getElementById('brandChart').getContext('2d');
+            charts.brand = new Chart(brandCtx, {
+                type: 'pie',
+                data: { labels: [], datasets: [{ data: [] }] },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+
+            // Fiyat grafiği (Bar)
+            const priceCtx = document.getElementById('priceChart').getContext('2d');
+            charts.price = new Chart(priceCtx, {
+                type: 'bar',
+                data: { labels: [], datasets: [{ label: 'Araç Sayısı', data: [] }] },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+
+            // Yıl grafiği (Bar)
+            const yearCtx = document.getElementById('yearChart').getContext('2d');
+            charts.year = new Chart(yearCtx, {
+                type: 'bar',
+                data: { labels: [], datasets: [{ label: 'Araç Sayısı', data: [] }] },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+
+            // Durum grafiği (Doughnut)
+            const statusCtx = document.getElementById('statusChart').getContext('2d');
+            charts.status = new Chart(statusCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Aktif', 'Satıldı'],
+                    datasets: [{
+                        data: [0, 0],
+                        backgroundColor: ['#48bb78', '#f56565']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        // Grafikleri güncelle
+        function updateCharts() {
+            // Marka dağılımı
+            const brandCounts = {};
+            filteredVehicles.forEach(v => {
+                const brand = v.vehicle?.brand || 'Bilinmiyor';
+                brandCounts[brand] = (brandCounts[brand] || 0) + 1;
+            });
+
+            charts.brand.data.labels = Object.keys(brandCounts);
+            charts.brand.data.datasets[0].data = Object.values(brandCounts);
+            charts.brand.data.datasets[0].backgroundColor = generateColors(Object.keys(brandCounts).length);
+            charts.brand.update();
+
+            // Fiyat dağılımı (aralıklar)
+            const priceRanges = {
+                '0-500K': 0,
+                '500K-1M': 0,
+                '1M-1.5M': 0,
+                '1.5M-2M': 0,
+                '2M+': 0
+            };
+
+            filteredVehicles.forEach(v => {
+                const price = getPrice(v);
+                if (price < 500000) priceRanges['0-500K']++;
+                else if (price < 1000000) priceRanges['500K-1M']++;
+                else if (price < 1500000) priceRanges['1M-1.5M']++;
+                else if (price < 2000000) priceRanges['1.5M-2M']++;
+                else priceRanges['2M+']++;
+            });
+
+            charts.price.data.labels = Object.keys(priceRanges);
+            charts.price.data.datasets[0].data = Object.values(priceRanges);
+            charts.price.data.datasets[0].backgroundColor = '#667eea';
+            charts.price.update();
+
+            // Yıl dağılımı
+            const yearCounts = {};
+            filteredVehicles.forEach(v => {
+                const year = v.vehicle?.year || 'Bilinmiyor';
+                yearCounts[year] = (yearCounts[year] || 0) + 1;
+            });
+
+            const sortedYears = Object.keys(yearCounts).sort();
+            charts.year.data.labels = sortedYears;
+            charts.year.data.datasets[0].data = sortedYears.map(y => yearCounts[y]);
+            charts.year.data.datasets[0].backgroundColor = '#764ba2';
+            charts.year.update();
+
+            // Durum dağılımı
+            const active = filteredVehicles.filter(v => v.status !== 'sold').length;
+            const sold = filteredVehicles.filter(v => v.status === 'sold').length;
+
+            charts.status.data.datasets[0].data = [active, sold];
+            charts.status.update();
+        }
+
+        // Sıralama
+        function sortTable(column) {
+            if (currentSort.column === column) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.column = column;
+                currentSort.direction = 'desc';
+            }
+
+            filteredVehicles.sort((a, b) => {
+                let aVal, bVal;
+                switch (column) {
+                    case 'adNo':
+                        aVal = a.adNo || '';
+                        bVal = b.adNo || '';
+                        break;
+                    case 'brand':
+                        aVal = a.vehicle?.brand || '';
+                        bVal = b.vehicle?.brand || '';
+                        break;
+                    case 'model':
+                        aVal = a.vehicle?.model || '';
+                        bVal = b.vehicle?.model || '';
+                        break;
+                    case 'year':
+                        aVal = a.vehicle?.year || 0;
+                        bVal = b.vehicle?.year || 0;
+                        break;
+                    case 'km':
+                        aVal = Number(a.vehicle?.km) || 0;
+                        bVal = Number(b.vehicle?.km) || 0;
+                        break;
+                    case 'price':
+                        aVal = typeof a.price === 'number' ? a.price : (a.price?.amount || 0);
+                        bVal = typeof b.price === 'number' ? b.price : (b.price?.amount || 0);
+                        break;
+                    case 'days':
+                        aVal = a.daysListed ?? -1;
+                        bVal = b.daysListed ?? -1;
+                        break;
+                    case 'gallery':
+                        aVal = a.seller?.name || '';
+                        bVal = b.seller?.name || '';
+                        break;
+                    case 'fuel':
+                        aVal = (a.vehicle?.fuel || a.vehicle?.fuelType || '').toLowerCase();
+                        bVal = (b.vehicle?.fuel || b.vehicle?.fuelType || '').toLowerCase();
+                        break;
+                    default:
+                        return 0;
+                }
+                if (typeof aVal === 'string') {
+                    return currentSort.direction === 'asc' ?
+                        aVal.localeCompare(bVal, 'tr') :
+                        bVal.localeCompare(aVal, 'tr');
+                } else {
+                    return currentSort.direction === 'asc' ?
+                        aVal - bVal :
+                        bVal - aVal;
+                }
+            });
+
+            updateSortIcons();
+
+            updateTable();
+        }
+
+        function updateSortIcons() {
+            document.querySelectorAll('.sort-icon').forEach(icon => {
+                icon.textContent = '↕';
+                icon.classList.remove('active');
+            });
+
+            if (!currentSort.column) {
+                return;
+            }
+
+            const activeIcon = document.getElementById(`sort-${currentSort.column}`);
+            if (activeIcon) {
+                activeIcon.textContent = currentSort.direction === 'asc' ? '↑' : '↓';
+                activeIcon.classList.add('active');
+            }
+        }
+
+        // Excel'e aktar
+        function exportToExcel() {
+            let csv = 'İlan No,İlan Tarihi,Kaç Gün,Marka,Model,Yıl,Motor,Paket,Vites,Renk,Yakıt,KM,Fiyat,Galeri,Bölge,Detay,Durum\n';
+
+            filteredVehicles.forEach(vehicle => {
+                const v = vehicle.vehicle || {};
+                const row = [
+                    vehicle.adNo || '',
+                    vehicle.publishDate || '',
+                    vehicle.daysListed !== undefined ? vehicle.daysListed : '',
+                    v.brand || '',
+                    v.model || '',
+                    v.year || '',
+                    v.engine || '',
+                    v.package || '',
+                    v.transmission || '',
+                    v.color || '',
+                    v.fuel || v.fuelType || '',
+                    v.km || '',
+                    getPrice(vehicle) || '',
+                    vehicle.seller?.name || '',
+                    vehicle.location?.region || '',
+                    formatInspectionText(vehicle),
+                    vehicle.status === 'sold' ? 'Satıldı' : 'Aktif'
+                ];
+
+                csv += row.map(cell => `"${cell}"`).join(',') + '\n';
+            });
+
+            // BOM ekle (Türkçe karakterler için)
+            const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `galeri_takip_${new Date().toISOString().split('T')[0]}.csv`;
+            link.click();
+        }
+
+        // Filtreleri sıfırla
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('brandFilter').value = '';
+            document.getElementById('statusFilter').value = '';
+            document.getElementById('minPrice').value = '';
+            document.getElementById('maxPrice').value = '';
+            document.getElementById('yearFilter').value = '';
+            applyFilters();
+        }
+
+        // Yardımcı fonksiyonlar
+        function getPrice(vehicle) {
+            if (!vehicle) return 0;
+            let p = vehicle.price;
+
+            // Eğer sayı ise direkt dön
+            if (typeof p === 'number') return p;
+
+            // Eğer nesne ise (amount/currency)
+            if (p && typeof p === 'object' && p.amount) return p.amount;
+
+            // Eğer string ise
+            if (typeof p === 'string') {
+                // HTML blob içindeki karmaşayı temizle veya "669.000 TL" formatını çöz
+                // Önce "TL" içeren sayıları ara
+                const tlMatch = p.match(/(\d[\d\.]*)\s*TL/);
+                if (tlMatch) {
+                    return parseInt(tlMatch[1].replace(/\./g, '')) || 0;
+                }
+
+                // Sadece rakamları al
+                const digits = p.replace(/[^\d]/g, '');
+                const val = parseInt(digits);
+
+                // Mantıklı bir fiyat aralığı mı? (10 bin - 50 milyon arası)
+                // Değilse muhtemelen HTML içindeki başka bir sayıdır
+                if (val > 10000 && val < 50000000) return val;
+
+                // Eğer çok büyükse (HTML içindeki İlan No vs olabilir), 0 dön
+                if (val >= 50000000) return 0;
+
+                return val || 0;
+            }
+
+            return 0;
+        }
+
+        function getInspectionParts(vehicle) {
+            const inspection = vehicle.inspection || {};
+            const entries = Object.entries(inspection);
+            const parts = {
+                painted: [],
+                localPainted: [],
+                replaced: [],
+                tramer: [],
+                other: []
+            };
+
+            entries.forEach(([key, value]) => {
+                // Eğer value bir dizi ise (yeni scraper formatı)
+                if (Array.isArray(value)) {
+                    if (value.length === 0) return; // Boş dizileri gösterme
+
+                    const list = value.join(', ');
+                    if (key === 'boya') parts.painted.push(list);
+                    else if (key === 'degisen') parts.replaced.push(list);
+                    else parts.other.push(`${key}: ${list}`);
+                    return;
+                }
+
+                const valText = String(value || '').toLowerCase();
+                const keyText = String(key || '');
+
+                if (!valText || valText === '-' || valText === 'yok' || valText === 'belirtilmemiş') return;
+
+                if (valText.includes('tramer') || keyText.toLowerCase().includes('tramer')) {
+                    parts.tramer.push(`${keyText}: ${value}`.trim());
+                } else if (valText.includes('lokal')) {
+                    parts.localPainted.push(keyText);
+                } else if (valText.includes('boyalı') || valText.includes('boya')) {
+                    parts.painted.push(keyText);
+                } else if (valText.includes('değiş') || valText.includes('degis')) {
+                    parts.replaced.push(keyText);
+                } else {
+                    parts.other.push(`${keyText}: ${value}`.trim());
+                }
+            });
+
+            return parts;
+        }
+
+        function formatInspectionText(vehicle) {
+            const parts = getInspectionParts(vehicle);
+            const sections = [];
+            if (parts.localPainted.length) sections.push(`Lokal Boya: ${parts.localPainted.join(', ')}`);
+            if (parts.painted.length) sections.push(`Boya: ${parts.painted.join(', ')}`);
+            if (parts.replaced.length) sections.push(`Değişen: ${parts.replaced.join(', ')}`);
+            if (parts.tramer.length) sections.push(`Tramer: ${parts.tramer.join(', ')}`);
+            if (parts.other.length) sections.push(parts.other.join(' | '));
+            return sections.length ? sections.join(' | ') : '-';
+        }
+
+        function renderInspectionBadges(vehicle) {
+            const parts = getInspectionParts(vehicle);
+            const badges = [];
+            if (parts.localPainted.length) {
+                badges.push(`<span class="badge badge-local">Lokal Boya: ${parts.localPainted.join(', ')}</span>`);
+            }
+            if (parts.painted.length) {
+                badges.push(`<span class="badge badge-paint">Boya: ${parts.painted.join(', ')}</span>`);
+            }
+            if (parts.replaced.length) {
+                badges.push(`<span class="badge badge-replace">Değişen: ${parts.replaced.join(', ')}</span>`);
+            }
+            if (parts.tramer.length) {
+                badges.push(`<span class="badge badge-tramer">Tramer: ${parts.tramer.join(', ')}</span>`);
+            }
+            if (parts.other.length) {
+                badges.push(`<span class="badge badge-other">${parts.other.join(' | ')}</span>`);
+            }
+            // If no badges were created, it means the car is completely clean (Hatasız)
+            if (badges.length === 0) {
+                badges.push(`<span class="badge badge-success" style="background-color: #48bb78; color: white;">Hatasız / Orijinal</span>`);
+            }
+            return badges.join(' ');
+        }
+
+        function toggleDetail(detailId) {
+            const row = document.getElementById(detailId);
+            if (!row) return;
+            row.style.display = row.style.display === 'none' ? 'table-row' : 'none';
+        }
+
+        function formatPrice(price) {
+            return price > 0 ? price.toLocaleString('tr-TR') + ' ₺' : '-';
+        }
+
+        function formatNumber(num) {
+            return num.toLocaleString('tr-TR');
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return '-';
+
+            // Eğer dateString "09 Şubat 2026" gibi bir format ise
+            let date;
+            if (dateString.includes('Şubat') || dateString.includes('Ocak') || dateString.includes('Mart')) {
+                date = parseTurkishDate(dateString);
+            } else {
+                date = new Date(dateString);
+            }
+
+            if (isNaN(date.getTime())) return dateString;
+
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const year = date.getFullYear();
+            return `${day}.${month}.${year}`;
+        }
+
+        function parseTurkishDate(dateStr) {
+            const months = {
+                'Ocak': 0, 'Şubat': 1, 'Mart': 2, 'Nisan': 3, 'Mayıs': 4, 'Haziran': 5,
+                'Temmuz': 6, 'Ağustos': 7, 'Eylül': 8, 'Ekim': 9, 'Kasım': 10, 'Aralık': 11
+            };
+            const parts = dateStr.split(' ');
+            if (parts.length >= 3) {
+                const day = parseInt(parts[0]);
+                const month = months[parts[1]] !== undefined ? months[parts[1]] : 0;
+                const year = parseInt(parts[2]);
+                return new Date(year, month, day);
+            }
+            return new Date(dateStr);
+        }
+
+        function generateColors(count) {
+            const colors = [
+                '#667eea', '#764ba2', '#f093fb', '#4facfe',
+                '#43e97b', '#fa709a', '#fee140', '#30cfd0',
+                '#a8edea', '#fed6e3', '#c471f5', '#fa71cd'
+            ];
+
+            return Array(count).fill(0).map((_, i) => colors[i % colors.length]);
+        }
+
+        // Aracı satıldı olarak işaretle
+        async function markAsSold(adNo) {
+            if (!confirm('Bu aracı satıldı olarak işaretlemek istediğinize emin misiniz?')) {
+                return;
+            }
+
+            try {
+                const response = await fetch('http://192.168.1.6:5000/api/mark-sold', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ adNo: adNo })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert('✅ Araç satıldı olarak işaretlendi!');
+                    // Sayfayı yenile
+                    await loadData();
+                    applyFilters();
+                } else {
+                    alert('❌ Hata: ' + result.error);
+                }
+            } catch (error) {
+                console.error('API hatası:', error);
+                alert('❌ API sunucusuna bağlanılamadı. api_server.py çalıştırıldığından emin olun!');
+            }
+        }
+
+        // Aracı aktif olarak işaretle
+        async function markAsActive(adNo) {
+            if (!confirm('Bu aracı tekrar aktif olarak işaretlemek istediğinize emin misiniz?')) {
+                return;
+            }
+
+            try {
+                const response = await fetch('http://192.168.1.6:5000/api/mark-active', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ adNo: adNo })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert('✅ Araç aktif olarak işaretlendi!');
+                    // Sayfayı yenile
+                    await loadData();
+                    applyFilters();
+                } else {
+                    alert('❌ Hata: ' + result.error);
+                }
+            } catch (error) {
+                console.error('API hatası:', error);
+                alert('❌ API sunucusuna bağlanılamadı. api_server.py çalıştırıldığından emin olun!');
+            }
+        }
+    </script>
+</body>
+
+</html>

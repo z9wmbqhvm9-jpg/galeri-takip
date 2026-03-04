@@ -1,0 +1,227 @@
+{
+  "vehicles": [
+    {
+      "name": "BATUHAN KAYA OTOMOTİV",
+      "type": "Galeri",
+      "phone": "(530) 384 93 00",
+      "url": "https://batuhankayaotomotiv.sahibinden.com/"
+    },
+    {
+      "city": "Kocaeli",
+      "district": "Çayırova",
+      "region": "Çayırova",
+      "neighborhood": "Çayırova Mh."
+    },
+    {
+      "status": "İkinci El",
+      "heavyDamaged": false,
+      "warranty": false,
+      "exchange": true
+    },
+    {
+      "frontBumper": "Değişti",
+      "leftFender": "Boyalı",
+      "rightRearDoor": "Boyalı",
+      "hood": "Değişen"
+    },
+    {
+      "name": "GÜNDOĞDU OTOMOTİV",
+      "type": "Galeri",
+      "phone": "(541) 862 18 18",
+      "url": ""
+    },
+    {
+      "city": "Kocaeli",
+      "district": "Çayırova",
+      "region": "Çayırova",
+      "neighborhood": ""
+    },
+    {
+      "status": "İkinci El",
+      "heavyDamaged": false,
+      "warranty": false,
+      "exchange": false
+    },
+    {
+      "Motor Kaputu": "Boyalı",
+      "Sol Ön Çamurluk": "Boyalı",
+      "Sol Arka Çamurluk": "Boyalı",
+      "Tramer": "2.500 TL"
+    },
+    {
+      "name": "Ömer Faruk Yeşilbaş",
+      "type": "Galeri",
+      "phone": "(542) 544 60 17",
+      "url": ""
+    },
+    {
+      "city": "Kocaeli",
+      "district": "Çayırova",
+      "region": "Çayırova",
+      "neighborhood": ""
+    },
+    {
+      "status": "İkinci El",
+      "heavyDamaged": false,
+      "warranty": false,
+      "exchange": false
+    },
+    {
+      "Sağ Arka Çamurluk Ağzı": "Lokal Boyalı"
+    },
+    {
+      "name": "GARANTİ OTOMOTİV",
+      "type": "Galeri",
+      "phone": "(543) 598 26 18",
+      "url": ""
+    },
+    {
+      "city": "Kocaeli",
+      "district": "Çayırova",
+      "region": "Çayırova",
+      "neighborhood": ""
+    },
+    {
+      "status": "İkinci El",
+      "heavyDamaged": false,
+      "warranty": false,
+      "exchange": false
+    },
+    {
+      "Motor Kaputu": "Lokal Boyalı",
+      "Sol Arka Kapı": "Lokal Boyalı",
+      "Sağ Ön Çamurluk": "Boyalı",
+      "Sol Ön Çamurluk": "Boyalı",
+      "Sol Arka Çamurluk": "Boyalı",
+      "Tramer": "5 Bin TL"
+    },
+    {
+      "name": "GARANTİ OTOMOTİV",
+      "type": "Galeri",
+      "phone": "(543) 598 26 18",
+      "url": ""
+    },
+    {
+      "city": "Kocaeli",
+      "district": "Çayırova",
+      "region": "Çayırova",
+      "neighborhood": ""
+    },
+    {
+      "status": "İkinci El",
+      "heavyDamaged": false,
+      "warranty": false,
+      "exchange": false
+    },
+    {
+      "Motor Kaputu": "Lokal Boyalı",
+      "Sol Arka Çamurluk": "Lokal Boyalı",
+      "Sağ Arka Kapı": "Boyalı",
+      "Sağ Arka Çamurluk": "Boyalı",
+      "Bagaj Kapağı": "Değişti",
+      "Tramer": "34 Bin TL"
+    },
+    {
+      "name": "GARANTİ OTOMOTİV",
+      "type": "Galeri",
+      "phone": "(535) 458 20 87",
+      "url": ""
+    },
+    {
+      "city": "Kocaeli",
+      "district": "Çayırova",
+      "region": "Çayırova",
+      "neighborhood": ""
+    },
+    {
+      "status": "İkinci El",
+      "heavyDamaged": false,
+      "warranty": false,
+      "exchange": false
+    },
+    {
+      "Sol Arka Kapı": "Değişti",
+      "Sol Arka Çamurluk": "Lokal Boyalı",
+      "Tramer": "8200 TL"
+    },
+    {
+      "name": "GARANTİ OTOMOTİV",
+      "type": "Galeri",
+      "phone": "(535) 458 20 87",
+      "url": ""
+    },
+    {
+      "city": "Kocaeli",
+      "district": "Çayırova",
+      "region": "Çayırova",
+      "neighborhood": ""
+    },
+    {
+      "status": "İkinci El",
+      "heavyDamaged": false,
+      "warranty": false,
+      "exchange": false
+    },
+    {
+      "Sol Arka Kapı": "Değişti",
+      "Sol Arka Çamurluk": "Lokal Boyalı"
+    },
+    {
+      "name": "GARANTİ OTOMOTİV",
+      "type": "Galeri",
+      "phone": "(535) 458 20 87",
+      "url": ""
+    },
+    {
+      "city": "Kocaeli",
+      "district": "Çayırova",
+      "region": "Çayırova",
+      "neighborhood": ""
+    },
+    {
+      "status": "İkinci El",
+      "heavyDamaged": false,
+      "warranty": false,
+      "exchange": false
+    },
+    {
+      "Sol Ön Çamurluk": "Değişti",
+      "Sağ Ön Çamurluk": "Lokal Boyalı",
+      "Kaput": "Söktaklı"
+    },
+    {
+      "name": "GARANTİ OTOMOTİV",
+      "type": "Galeri",
+      "phone": "(535) 458 20 87",
+      "url": ""
+    },
+    {
+      "city": "Kocaeli",
+      "district": "Çayırova",
+      "region": "Çayırova",
+      "neighborhood": ""
+    },
+    {
+      "status": "İkinci El",
+      "heavyDamaged": false,
+      "warranty": false,
+      "exchange": false
+    },
+    {
+      "Motor Kaputu": "Boyalı",
+      "Sağ Ön Çamurluk": "Boyalı",
+      "Sağ Ön Kapı": "Boyalı",
+      "Sol Ön Çamurluk": "Boyalı",
+      "Bagaj Kapağı": "Boyalı",
+      "Sağ Arka Çamurluk": "Lokal Boyalı",
+      "Sol Arka Çamurluk": "Lokal Boyalı"
+    }
+  ],
+  "regions": {
+    "Çayırova": [],
+    "Gebze": [],
+    "DerÇiftliği": [],
+    "İzmit": [],
+    "Diğer": []
+  }
+}

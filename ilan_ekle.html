@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni İlan Ekle - Galeri Takip</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .form-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-section h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            color: #333;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group label.required::after {
+            content: " *";
+            color: #ef4444;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .inspection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .inspection-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .submit-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .btn-success {
+            background: #10b981;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+        }
+
+        .btn-success:hover {
+            background: #059669;
+        }
+
+        .btn-danger {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #dc2626;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .alert-success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 2px solid #10b981;
+        }
+
+        .alert-error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 2px solid #ef4444;
+        }
+
+        .help-text {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Yeni İlan Ekle</h1>
+            <p>Tüm bilgileri eksiksiz doldurun</p>
+            <div class="nav-buttons">
+                <a href="advanced_dashboard.html" class="btn btn-secondary">← Dashboard'a Dön</a>
+            </div>
+        </div>
+
+        <div id="alertBox" class="alert"></div>
+
+        <div class="form-card">
+            <form id="vehicleForm">
+                <!-- Temel Bilgiler -->
+                <div class="form-section">
+                    <h3>📋 Temel Bilgiler</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="adNo">İlan No</label>
+                            <input type="text" id="adNo" name="adNo" placeholder="1234567890">
+                            <span class="help-text">Sahibinden.com ilan numarası</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="publishDate">İlan Tarihi</label>
+                            <input type="date" id="publishDate" name="publishDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="adUrl">İlan URL</label>
+                            <input type="url" id="adUrl" name="adUrl" placeholder="https://sahibinden.com/...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Araç Bilgileri -->
+                <div class="form-section">
+                    <h3>🚙 Araç Bilgileri</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="brand" class="required">Marka</label>
+                            <input type="text" id="brand" name="brand" required placeholder="Renault">
+                        </div>
+                        <div class="form-group">
+                            <label for="model" class="required">Model</label>
+                            <input type="text" id="model" name="model" required placeholder="Symbol">
+                        </div>
+                        <div class="form-group">
+                            <label for="year" class="required">Yıl</label>
+                            <input type="number" id="year" name="year" required placeholder="2015" min="1990" max="2026">
+                        </div>
+                        <div class="form-group">
+                            <label for="engine">Motor</label>
+                            <input type="text" id="engine" name="engine" placeholder="1.5 DCI">
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Paket</label>
+                            <input type="text" id="package" name="package" placeholder="Joy">
+                        </div>
+                        <div class="form-group">
+                            <label for="fuel">Yakıt</label>
+                            <select id="fuel" name="fuel">
+                                <option value="">Seçiniz</option>
+                                <option value="Benzin">Benzin</option>
+                                <option value="Dizel">Dizel</option>
+                                <option value="LPG">LPG</option>
+                                <option value="Hibrit">Hibrit</option>
+                                <option value="Elektrik">Elektrik</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="transmission">Vites</label>
+                            <select id="transmission" name="transmission">
+                                <option value="">Seçiniz</option>
+                                <option value="Manuel">Manuel</option>
+                                <option value="Otomatik">Otomatik</option>
+                                <option value="Yarı Otomatik">Yarı Otomatik</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="km" class="required">KM</label>
+                            <input type="number" id="km" name="km" required placeholder="140000">
+                        </div>
+                        <div class="form-group">
+                            <label for="hp">Motor Gücü (HP)</label>
+                            <input type="number" id="hp" name="hp" placeholder="75">
+                        </div>
+                        <div class="form-group">
+                            <label for="color">Renk</label>
+                            <input type="text" id="color" name="color" placeholder="Beyaz">
+                        </div>
+                        <div class="form-group">
+                            <label for="bodyType">Kasa Tipi</label>
+                            <select id="bodyType" name="bodyType">
+                                <option value="">Seçiniz</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="Hatchback">Hatchback</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Station Wagon">Station Wagon</option>
+                                <option value="Minivan">Minivan</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fiyat -->
+                <div class="form-section">
+                    <h3>💰 Fiyat Bilgisi</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="price" class="required">Fiyat (TL)</label>
+                            <input type="number" id="price" name="price" required placeholder="700000">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Satıcı Bilgileri -->
+                <div class="form-section">
+                    <h3>🏢 Satıcı Bilgileri</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="sellerName" class="required">Galeri Adı</label>
+                            <input type="text" id="sellerName" name="sellerName" required placeholder="BATUHAN KAYA OTOMOTİV">
+                        </div>
+                        <div class="form-group">
+                            <label for="sellerPhone">Telefon</label>
+                            <input type="tel" id="sellerPhone" name="sellerPhone" placeholder="(530) 384 93 00">
+                        </div>
+                        <div class="form-group">
+                            <label for="sellerUrl">Galeri URL</label>
+                            <input type="url" id="sellerUrl" name="sellerUrl" placeholder="https://batuhankayaotomotiv.sahibinden.com/">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Konum Bilgileri -->
+                <div class="form-section">
+                    <h3>📍 Konum Bilgileri</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="city">İl</label>
+                            <input type="text" id="city" name="city" placeholder="Kocaeli">
+                        </div>
+                        <div class="form-group">
+                            <label for="district">İlçe</label>
+                            <input type="text" id="district" name="district" placeholder="Çayırova">
+                        </div>
+                        <div class="form-group">
+                            <label for="region" class="required">Bölge</label>
+                            <input type="text" id="region" name="region" required placeholder="Çayırova">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Durum Bilgileri -->
+                <div class="form-section">
+                    <h3>🔍 Araç Durumu</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="tramerCost">Tramer (TL)</label>
+                            <input type="number" id="tramerCost" name="tramerCost" placeholder="3250">
+                        </div>
+                        <div class="form-group">
+                            <label for="heavyDamaged">Ağır Hasarlı</label>
+                            <select id="heavyDamaged" name="heavyDamaged">
+                                <option value="false">Hayır</option>
+                                <option value="true">Evet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exchange">Takas</label>
+                            <select id="exchange" name="exchange">
+                                <option value="true">Evet</option>
+                                <option value="false">Hayır</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasar/Muayene Detayları -->
+                <div class="form-section">
+                    <h3>🔧 Hasar & Muayene Detayları</h3>
+                    <p style="color: #666; margin-bottom: 15px;">Boyalı, değişen veya hasarlı parçaları belirtin</p>
+                    <div class="inspection-grid">
+                        <div class="inspection-item">
+                            <label>Ön Tampon</label>
+                            <select name="inspection_frontBumper">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Kaput</label>
+                            <select name="inspection_hood">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Arka Tampon</label>
+                            <select name="inspection_rearBumper">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Bagaj Kapağı</label>
+                            <select name="inspection_trunk">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Sol Ön Çamurluk</label>
+                            <select name="inspection_leftFender">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Sağ Ön Çamurluk</label>
+                            <select name="inspection_rightFender">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Sol Arka Çamurluk</label>
+                            <select name="inspection_leftRearFender">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Sağ Arka Çamurluk</label>
+                            <select name="inspection_rightRearFender">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Sol Ön Kapı</label>
+                            <select name="inspection_leftFrontDoor">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Sağ Ön Kapı</label>
+                            <select name="inspection_rightFrontDoor">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Sol Arka Kapı</label>
+                            <select name="inspection_leftRearDoor">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Sağ Arka Kapı</label>
+                            <select name="inspection_rightRearDoor">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                                <option value="Değişti">Değişti</option>
+                            </select>
+                        </div>
+                        <div class="inspection-item">
+                            <label>Tavan</label>
+                            <select name="inspection_roof">
+                                <option value="">Orijinal</option>
+                                <option value="Boyalı">Boyalı</option>
+                                <option value="Lokal Boyalı">Lokal Boyalı</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Açıklama -->
+                <div class="form-section">
+                    <h3>📝 Açıklama</h3>
+                    <div class="form-group">
+                        <textarea id="description" name="description" placeholder="Aracın genel durumu ve özellikler..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="submit-section">
+                    <button type="button" class="btn btn-danger" onclick="window.location.href='advanced_dashboard.html'">İptal</button>
+                    <button type="submit" class="btn btn-success">✅ İlanı Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Bugünün tarihini default olarak ayarla
+        document.getElementById('publishDate').valueAsDate = new Date();
+
+        // Form submit
+        document.getElementById('vehicleForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const vehicleData = {
+                id: formData.get('adNo') || generateId(),
+                adNo: formData.get('adNo') || generateId(),
+                adUrl: formData.get('adUrl') || '',
+                publishDate: formData.get('publishDate'),
+                daysListed: 0,
+                vehicle: {
+                    year: parseInt(formData.get('year')),
+                    brand: formData.get('brand'),
+                    model: formData.get('model'),
+                    engine: formData.get('engine'),
+                    package: formData.get('package'),
+                    fuel: formData.get('fuel'),
+                    transmission: formData.get('transmission'),
+                    km: parseInt(formData.get('km')),
+                    hp: parseInt(formData.get('hp')) || null,
+                    color: formData.get('color'),
+                    body_type: formData.get('bodyType')
+                },
+                price: parseInt(formData.get('price')),
+                seller: {
+                    name: formData.get('sellerName'),
+                    type: 'Galeri',
+                    phone: formData.get('sellerPhone'),
+                    url: formData.get('sellerUrl')
+                },
+                location: {
+                    city: formData.get('city'),
+                    district: formData.get('district'),
+                    region: formData.get('region'),
+                    neighborhood: formData.get('district') ? formData.get('district') + ' Mh.' : ''
+                },
+                condition: {
+                    status: 'İkinci El',
+                    heavyDamaged: formData.get('heavyDamaged') === 'true',
+                    warranty: false,
+                    exchange: formData.get('exchange') === 'true'
+                },
+                description: formData.get('description'),
+                features: [],
+                inspection: {}
+            };
+
+            // Muayene detaylarını ekle
+            for (let [key, value] of formData.entries()) {
+                if (key.startsWith('inspection_') && value) {
+                    const partName = key.replace('inspection_', '');
+                    vehicleData.inspection[partName] = value;
+                }
+            }
+
+            // Tramer varsa ekle
+            const tramer = formData.get('tramerCost');
+            if (tramer) {
+                vehicleData.inspection.tramer = parseInt(tramer) + ' TL';
+            }
+
+            try {
+                // API'ye gönder
+                const response = await fetch('http://localhost:5000/api/add-vehicle', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(vehicleData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showAlert('✅ İlan başarıyla eklendi!', 'success');
+                    setTimeout(() => {
+                        window.location.href = 'advanced_dashboard.html';
+                    }, 2000);
+                } else {
+                    showAlert('❌ Hata: ' + result.error, 'error');
+                }
+            } catch (error) {
+                showAlert('❌ API sunucusuna bağlanılamadı. api_server.py çalıştığından emin olun!', 'error');
+            }
+        });
+
+        function generateId() {
+            return 'MANUAL_' + Date.now();
+        }
+
+        function showAlert(message, type) {
+            const alertBox = document.getElementById('alertBox');
+            alertBox.textContent = message;
+            alertBox.className = 'alert alert-' + type;
+            alertBox.style.display = 'block';
+            
+            setTimeout(() => {
+                alertBox.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

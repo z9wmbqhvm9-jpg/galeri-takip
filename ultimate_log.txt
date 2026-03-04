@@ -1,0 +1,23 @@
+﻿============================================================
+T▄M JSON DOSYALARI TARANIYOR
+============================================================
+  all_data.json: 62 ham kayit, 62 yeni/guncel eklendi
+  all_data_backup_before_clear.json: 1 ham kayit, 1 yeni/guncel eklendi
+  cars_data.json: 62 ham kayit, 61 yeni/guncel eklendi
+  cars_data_backup_before_clear.json: 38 ham kayit, 12 yeni/guncel eklendi
+  cars_data_cleaned.json: 36 ham kayit, 0 yeni/guncel eklendi
+  cars_data_dashboard_ready.json: 38 ham kayit, 0 yeni/guncel eklendi
+  cars_data_final.json: 9 ham kayit, 9 yeni/guncel eklendi
+  cars_data_final_invalid.json: 0 ham kayit, 0 yeni/guncel eklendi
+  cars_data_firstblock.json: 9 ham kayit, 0 yeni/guncel eklendi
+  cars_data_fixed.json: 0 ham kayit, 0 yeni/guncel eklendi
+  cars_data_fixed_clean.json: 0 ham kayit, 0 yeni/guncel eklendi
+  cars_data_secondblock_invalid.json: 1 ham kayit, 0 yeni/guncel eklendi
+  ilan_sonuc.json: 3 ham kayit, 0 yeni/guncel eklendi
+  rich_data_input.json: 21 ham kayit, 0 yeni/guncel eklendi
+
+============================================================
+TOPLAM BENZERS¦Z ARAÃ: 62
+============================================================
+cars_data.json guncellendi: 62 arac
+all_data.json guncellendi: 62 arac

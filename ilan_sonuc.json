@@ -1,0 +1,59 @@
+[
+  {
+    "ilan_no": "1301761057",
+    "marka": "Renault",
+    "seri": "Clio",
+    "model_paket": "1.5 dCi Joy",
+    "yil": 2016,
+    "km": "169.000",
+    "yakit": "Dizel",
+    "ilan_tarihi": "23 Şubat 2026",
+    "agir_hasar": "Hayır",
+    "kimden": "Galeriden",
+    "vites": "Manuel",
+    "fiyat": 669000,
+    "ekspertiz_ozeti": {
+      "tramer": "HASAR KAYDI 34 BIN",
+      "boya": "Boyalı veya Değişen Parça, Lokal Boyalı, Boyalı, Lokal Boyalı Parçalar, Boyalı Parçalar",
+      "degisen": "Belirtilmemiş"
+    }
+  },
+  {
+    "ilan_no": "1301754916",
+    "marka": "Renault",
+    "seri": "Clio",
+    "model_paket": "1.5 dCi Icon",
+    "yil": 2013,
+    "km": "96.000",
+    "yakit": "Dizel",
+    "ilan_tarihi": "23 Şubat 2026",
+    "agir_hasar": "Hayır",
+    "kimden": "Galeriden",
+    "vites": "Manuel",
+    "fiyat": 799000,
+    "ekspertiz_ozeti": {
+      "tramer": "HASAR KAYDI 8200 TL",
+      "boya": "SOL ARKA ÇAMURLUK LOKAL, Boyalı veya Değişen Parça, Lokal Boyalı, Boyalı, Lokal Boyalı Parçalar",
+      "degisen": "SOL ÖN KAPI SÖKTAK, SOL ARKA KAPI DEĞİŞEN"
+    }
+  },
+  {
+    "ilan_no": "1301743539",
+    "marka": "Citroen",
+    "seri": "C-Elysée",
+    "model_paket": "1.5 BlueHDI Shine",
+    "yil": 2020,
+    "km": "130.000",
+    "yakit": "Dizel",
+    "ilan_tarihi": "23 Şubat 2026",
+    "agir_hasar": "Hayır",
+    "kimden": "Galeriden",
+    "vites": "Manuel",
+    "fiyat": 799000,
+    "ekspertiz_ozeti": {
+      "tramer": "HASAR KAYDI YOK",
+      "boya": "+SAĞ ÖN ÇAMURLUK LOKAL, +Boyalı veya Değişen Parça, +Lokal Boyalı, +Boyalı, +Lokal Boyalı Parçalar",
+      "degisen": "+SOL ÖN ÇAMURLUK DEĞİŞEN, +KAPUT SÖK TAK"
+    }
+  }
+]

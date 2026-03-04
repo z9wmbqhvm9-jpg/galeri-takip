@@ -1,0 +1,21 @@
+﻿Toplam id bulundu: 206
+Benzersiz id: 201
+adNo toplam: 206 benzersiz: 201
+ilan_no toplam: 0 benzersiz: 0
+TUM BENZERSIZ ID: 201
+all_data.json: 62 benzersiz ID
+all_data_backup_before_clear.json: 1 benzersiz ID
+cars_data.json: 62 benzersiz ID
+cars_data_backup_before_clear.json: 38 benzersiz ID
+cars_data_dashboard_ready.json: 38 benzersiz ID
+cars_data_final.json: 9 benzersiz ID
+cars_data_final_invalid.json: 201 benzersiz ID
+cars_data_firstblock.json: 9 benzersiz ID
+cars_data_fixed.json: 201 benzersiz ID
+cars_data_fixed_clean.json: 201 benzersiz ID
+cars_data_secondblock_invalid.json: 5 benzersiz ID
+check_report_20260225_050617.json: 27 benzersiz ID
+ilan_sonuc.json: 3 benzersiz ID
+rich_data_input.json: 21 benzersiz ID
+
+TUM DOSYALARDAKI TOPLAM BENZERSIZ ID: 239

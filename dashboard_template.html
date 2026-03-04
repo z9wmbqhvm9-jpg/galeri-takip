@@ -1,0 +1,791 @@
+& "C:\Program Files\Google\Chrome\Application\chrome.exe" --user-data-dir="$env:USERPROFILE\chrome_debug_profile" --remote-debugging-port=9222<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚗 Galeri Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            --accent: #3b82f6;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --accent-yellow: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .stat-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .stat-card .label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .section-header .badge {
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .car-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .car-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-color: var(--accent);
+        }
+
+        .car-header {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .car-header .galeri {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .galeri-piranlar { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+        .galeri-yenikoy { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+
+        .car-header h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .car-body {
+            padding: 1.25rem;
+        }
+
+        .car-specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .spec {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .spec-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .spec-value.price {
+            color: var(--accent-green);
+            font-size: 1.125rem;
+        }
+
+        .color-dot {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .car-footer {
+            padding: 1rem 1.25rem;
+            background: rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .car-footer a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .car-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .date-badge {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .brand-section {
+            margin-bottom: 3rem;
+        }
+
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, var(--bg-card), var(--bg-card-hover));
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .brand-logo {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-dark);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .brand-info h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .brand-info p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0,0,0,0.3);
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        tr:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 2rem;
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .tab {
+            flex: 1;
+            padding: 1rem;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .tab:hover {
+            color: var(--text-primary);
+        }
+
+        .tab.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .cars-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚗 Galeri Takip Dashboard</h1>
+            <p>Son güncelleme: <span id="lastUpdate"></span></p>
+        </header>
+
+        <div class="stats-grid" id="statsGrid"></div>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="cards">📋 Kart Görünümü</div>
+            <div class="tab" data-tab="brands">🏷️ Marka Bazlı</div>
+            <div class="tab" data-tab="table">📊 Tablo</div>
+            <div class="tab" data-tab="timeline">📅 Zaman Çizelgesi</div>
+        </div>
+
+        <div class="tab-content active" id="cards">
+            <div class="filters" id="filters"></div>
+            <div class="cars-grid" id="carsGrid"></div>
+        </div>
+
+        <div class="tab-content" id="brands">
+            <div id="brandsContent"></div>
+        </div>
+
+        <div class="tab-content" id="table">
+            <div id="tableContent"></div>
+        </div>
+
+        <div class="tab-content" id="timeline">
+            <div id="timelineContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // Data
+        const data = PLACEHOLDER_DATA;
+
+        // Color mapping
+        const colorMap = {
+            'Siyah': '#1a1a2e',
+            'Beyaz': '#f5f5f5',
+            'Gri': '#6b7280',
+            'Gümüş Gri': '#9ca3af',
+            'Lacivert': '#1e3a5f',
+            'Mavi': '#3b82f6',
+            'Kırmızı': '#ef4444',
+            'Turuncu': '#f97316',
+            'Sarı': '#eab308',
+            'Yeşil': '#22c55e',
+            'Kahverengi': '#78350f',
+            'Pembe': '#ec4899'
+        };
+
+        // Brand logos/emojis
+        const brandLogos = {
+            'BMW': '🔵',
+            'Mercedes': '⭐',
+            'Audi': '◆',
+            'Porsche': '🏎️',
+            'Ferrari': '🐎',
+            'Lamborghini': '🐂',
+            'Land Rover': '🏔️',
+            'Range Rover': '🏔️',
+            'Jaguar': '🐆',
+            'Volvo': '🛡️',
+            'Mini': '🇬🇧',
+            'Lotus': '🌸',
+            'Maserati': '🔱',
+            'Ford': '🔷',
+            'Hyundai': '🇰🇷',
+            'Kia': '🇰🇷',
+            'Peugeot': '🦁',
+            'Skoda': '🏭',
+            'Dodge': '🐏',
+            'Volkswagen': '🚗',
+            'SsangYong': '🇰🇷'
+        };
+
+        // Extract brand from title/url
+        function getBrand(item) {
+            const url = item.ilan_url.toLowerCase();
+            const title = (item.baslik || '').toLowerCase();
+            
+            const brands = ['bmw', 'mercedes', 'audi', 'porsche', 'ferrari', 'lamborghini', 
+                           'land-rover', 'range-rover', 'jaguar', 'volvo', 'mini', 'lotus',
+                           'maserati', 'ford', 'hyundai', 'kia', 'peugeot', 'skoda',
+                           'dodge', 'volkswagen', 'ssangyong'];
+            
+            for (const brand of brands) {
+                if (url.includes(brand) || title.includes(brand)) {
+                    return brand.charAt(0).toUpperCase() + brand.slice(1).replace('-', ' ');
+                }
+            }
+            return 'Diğer';
+        }
+
+        // Format price
+        function formatPrice(price) {
+            if (!price) return '-';
+            return new Intl.NumberFormat('tr-TR').format(price) + ' TL';
+        }
+
+        // Format KM
+        function formatKM(km) {
+            if (km === null || km === undefined) return '-';
+            if (km === 0) return 'Sıfır';
+            return new Intl.NumberFormat('tr-TR').format(km) + ' km';
+        }
+
+        // Get title
+        function getTitle(item) {
+            if (item.baslik) return item.baslik.replace('PİRANLAR |', '').replace('YENİKÖY |', '').trim();
+            
+            // Extract from URL
+            const urlParts = item.ilan_url.split('/');
+            const slug = urlParts.find(p => p.includes('-') && p.length > 30) || '';
+            const parts = slug.split('-').slice(2, -1);
+            return parts.join(' ').replace(/^\w/, c => c.toUpperCase());
+        }
+
+        // Render stats
+        function renderStats() {
+            const stats = [
+                { icon: '🚗', value: data.length, label: 'Toplam İlan' },
+                { icon: '🏢', value: new Set(data.map(d => d.galeri)).size, label: 'Galeri' },
+                { icon: '🏷️', value: new Set(data.map(getBrand)).size, label: 'Marka' },
+                { icon: '💰', value: formatPrice(Math.max(...data.filter(d => d.fiyat).map(d => d.fiyat))), label: 'En Pahalı' },
+                { icon: '🆕', value: data.filter(d => d.km === 0).length, label: 'Sıfır Araç' },
+                { icon: '📅', value: new Date().toLocaleDateString('tr-TR'), label: 'Bugün' }
+            ];
+
+            document.getElementById('statsGrid').innerHTML = stats.map(s => `
+                <div class="stat-card">
+                    <div class="icon">${s.icon}</div>
+                    <div class="value">${s.value}</div>
+                    <div class="label">${s.label}</div>
+                </div>
+            `).join('');
+        }
+
+        // Render filters
+        function renderFilters() {
+            const galeris = [...new Set(data.map(d => d.galeri))];
+            const brands = [...new Set(data.map(getBrand))].sort();
+            
+            let html = `<button class="filter-btn active" data-filter="all">Tümü</button>`;
+            html += galeris.map(g => `<button class="filter-btn" data-filter="galeri-${g}">${g}</button>`).join('');
+            html += brands.slice(0, 8).map(b => `<button class="filter-btn" data-filter="brand-${b}">${b}</button>`).join('');
+            
+            document.getElementById('filters').innerHTML = html;
+            
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    filterCars(btn.dataset.filter);
+                });
+            });
+        }
+
+        // Filter cars
+        function filterCars(filter) {
+            const cards = document.querySelectorAll('.car-card');
+            cards.forEach(card => {
+                if (filter === 'all') {
+                    card.style.display = 'block';
+                } else if (filter.startsWith('galeri-')) {
+                    const galeri = filter.replace('galeri-', '');
+                    card.style.display = card.dataset.galeri === galeri ? 'block' : 'none';
+                } else if (filter.startsWith('brand-')) {
+                    const brand = filter.replace('brand-', '');
+                    card.style.display = card.dataset.brand === brand ? 'block' : 'none';
+                }
+            });
+        }
+
+        // Render car cards
+        function renderCards() {
+            const sorted = [...data].sort((a, b) => new Date(b.ilk_gorulme) - new Date(a.ilk_gorulme));
+            
+            document.getElementById('carsGrid').innerHTML = sorted.map(item => {
+                const brand = getBrand(item);
+                const colorStyle = colorMap[item.renk] || '#6b7280';
+                
+                return `
+                    <div class="car-card" data-galeri="${item.galeri}" data-brand="${brand}" onclick="window.open('${item.ilan_url}', '_blank')">
+                        <div class="car-header">
+                            <span class="galeri galeri-${item.galeri.toLowerCase()}">${item.galeri}</span>
+                            <h3>${getTitle(item)}</h3>
+                        </div>
+                        <div class="car-body">
+                            <div class="car-specs">
+                                <div class="spec">
+                                    <span class="spec-label">Fiyat</span>
+                                    <span class="spec-value price">${formatPrice(item.fiyat)}</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Kilometre</span>
+                                    <span class="spec-value">${formatKM(item.km)}</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Yıl</span>
+                                    <span class="spec-value">${item.yil || '-'}</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Renk</span>
+                                    <span class="spec-value">
+                                        <span class="color-dot" style="background: ${colorStyle}"></span>
+                                        ${item.renk || '-'}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-footer">
+                            <a href="${item.ilan_url}" target="_blank" onclick="event.stopPropagation()">
+                                İlana Git →
+                            </a>
+                            <span class="date-badge">${brand}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Render brands
+        function renderBrands() {
+            const byBrand = {};
+            data.forEach(item => {
+                const brand = getBrand(item);
+                if (!byBrand[brand]) byBrand[brand] = [];
+                byBrand[brand].push(item);
+            });
+
+            const sortedBrands = Object.entries(byBrand).sort((a, b) => b[1].length - a[1].length);
+
+            document.getElementById('brandsContent').innerHTML = sortedBrands.map(([brand, items]) => `
+                <div class="brand-section">
+                    <div class="brand-header">
+                        <div class="brand-logo">${brandLogos[brand] || '🚗'}</div>
+                        <div class="brand-info">
+                            <h3>${brand}</h3>
+                            <p>${items.length} araç</p>
+                        </div>
+                    </div>
+                    <div class="cars-grid">
+                        ${items.slice(0, 6).map(item => {
+                            const colorStyle = colorMap[item.renk] || '#6b7280';
+                            return `
+                                <div class="car-card" onclick="window.open('${item.ilan_url}', '_blank')">
+                                    <div class="car-header">
+                                        <span class="galeri galeri-${item.galeri.toLowerCase()}">${item.galeri}</span>
+                                        <h3>${getTitle(item)}</h3>
+                                    </div>
+                                    <div class="car-body">
+                                        <div class="car-specs">
+                                            <div class="spec">
+                                                <span class="spec-label">Fiyat</span>
+                                                <span class="spec-value price">${formatPrice(item.fiyat)}</span>
+                                            </div>
+                                            <div class="spec">
+                                                <span class="spec-label">KM</span>
+                                                <span class="spec-value">${formatKM(item.km)}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Render table
+        function renderTable() {
+            const sorted = [...data].sort((a, b) => (b.fiyat || 0) - (a.fiyat || 0));
+
+            document.getElementById('tableContent').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Galeri</th>
+                            <th>Araç</th>
+                            <th>Marka</th>
+                            <th>Yıl</th>
+                            <th>KM</th>
+                            <th>Renk</th>
+                            <th>Fiyat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${sorted.map(item => `
+                            <tr onclick="window.open('${item.ilan_url}', '_blank')" style="cursor:pointer">
+                                <td><span class="galeri galeri-${item.galeri.toLowerCase()}">${item.galeri}</span></td>
+                                <td>${getTitle(item).substring(0, 50)}${getTitle(item).length > 50 ? '...' : ''}</td>
+                                <td>${getBrand(item)}</td>
+                                <td>${item.yil || '-'}</td>
+                                <td>${formatKM(item.km)}</td>
+                                <td>
+                                    <span class="color-dot" style="background: ${colorMap[item.renk] || '#6b7280'}"></span>
+                                    ${item.renk || '-'}
+                                </td>
+                                <td style="color: var(--accent-green); font-weight: 600">${formatPrice(item.fiyat)}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+        }
+
+        // Render timeline
+        function renderTimeline() {
+            const sorted = [...data].sort((a, b) => new Date(b.ilk_gorulme) - new Date(a.ilk_gorulme));
+            const newest = sorted.slice(0, 10);
+            const oldest = [...sorted].reverse().slice(0, 10);
+
+            document.getElementById('timelineContent').innerHTML = `
+                <div class="section">
+                    <div class="section-header">
+                        <h2>🆕 En Son Eklenenler</h2>
+                        <span class="badge">${newest.length}</span>
+                    </div>
+                    <div class="cars-grid">
+                        ${newest.map(item => `
+                            <div class="car-card" onclick="window.open('${item.ilan_url}', '_blank')">
+                                <div class="car-header">
+                                    <span class="galeri galeri-${item.galeri.toLowerCase()}">${item.galeri}</span>
+                                    <h3>${getTitle(item)}</h3>
+                                </div>
+                                <div class="car-body">
+                                    <div class="car-specs">
+                                        <div class="spec">
+                                            <span class="spec-label">Fiyat</span>
+                                            <span class="spec-value price">${formatPrice(item.fiyat)}</span>
+                                        </div>
+                                        <div class="spec">
+                                            <span class="spec-label">KM</span>
+                                            <span class="spec-value">${formatKM(item.km)}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car-footer">
+                                    <span class="date-badge">📅 ${new Date(item.ilk_gorulme).toLocaleDateString('tr-TR')}</span>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-header">
+                        <h2>📅 En Eski İlanlar</h2>
+                        <span class="badge">${oldest.length}</span>
+                    </div>
+                    <div class="cars-grid">
+                        ${oldest.map(item => `
+                            <div class="car-card" onclick="window.open('${item.ilan_url}', '_blank')">
+                                <div class="car-header">
+                                    <span class="galeri galeri-${item.galeri.toLowerCase()}">${item.galeri}</span>
+                                    <h3>${getTitle(item)}</h3>
+                                </div>
+                                <div class="car-body">
+                                    <div class="car-specs">
+                                        <div class="spec">
+                                            <span class="spec-label">Fiyat</span>
+                                            <span class="spec-value price">${formatPrice(item.fiyat)}</span>
+                                        </div>
+                                        <div class="spec">
+                                            <span class="spec-label">KM</span>
+                                            <span class="spec-value">${formatKM(item.km)}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car-footer">
+                                    <span class="date-badge">📅 ${new Date(item.ilk_gorulme).toLocaleDateString('tr-TR')}</span>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Tab switching
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Init
+        document.getElementById('lastUpdate').textContent = new Date().toLocaleString('tr-TR');
+        renderStats();
+        renderFilters();
+        renderCards();
+        renderBrands();
+        renderTable();
+        renderTimeline();
+    </script>
+</body>
+</html>

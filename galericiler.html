@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galericiler Listesi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f7f7f7; }
+        .galeri-card { min-width: 260px; max-width: 340px; margin: 12px auto; box-shadow: 0 2px 12px #0001; border-radius: 12px; border: none; transition: transform 0.15s; }
+        .galeri-card:hover { transform: translateY(-4px) scale(1.03); box-shadow: 0 4px 18px #0002; }
+        .galeri-title { font-size: 1.2rem; font-weight: 600; color: #1976d2; }
+        .search-bar { max-width: 400px; margin: 0 auto 24px auto; }
+        .close-btn { position: fixed; top: 24px; right: 32px; z-index: 10; }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <button class="btn btn-outline-danger close-btn d-none d-md-block" onclick="window.close()">Kapat ✖</button>
+        <h2 class="text-center mb-4">Galericiler Listesi</h2>
+        <div class="search-bar mb-4">
+            <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Galeri adı ile ara..." onkeyup="filterGaleriler()">
+        </div>
+                <div class="row" id="galeriListesi">
+                        <!-- Galeri kartları buraya gelecek -->
+                </div>
+                <!-- Galeri Detay Modal -->
+                <div class="modal fade" id="galeriDetayModal" tabindex="-1" aria-labelledby="galeriDetayLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="galeriDetayLabel">Galeri Detayları</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                            </div>
+                            <div class="modal-body" id="galeriDetayBody">
+                                <!-- Dinamik içerik -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <button class="btn btn-danger w-100 d-md-none mt-4" onclick="window.close()">Kapat ✖</button>
+    </div>
+    <script>
+    // Galerici isimleri
+    const galeriler = [
+        "ANKA AUTO ÇAYIROVA","AS AUTO CAR SALES","ASİL MOTORS","AUTO MEHMET ÇAYIROVA","AYAZ OTO","AYF OTO","AYHAN YAZICI AUTO","BALCIOĞLU OTO","BAŞ OTO","BAYRAK MOTORS","BERKAY MOTORS","BK","CENTER MOTORS","CESA GROUP","CNG PRESTİJ AUTO","CR AUTO","DAŞKIN İNŞAAT OTO","DAYF OTO","DEMİRCAN OTO","DEVRAN İNŞAAT","DMR ÇAYIROVA","EA AUTO","EFADAŞ OTO","ELİT OTO ÇAYIROVA","EMR MOTORS TURİZM","ERAT AUTO","ERGO OTO","ERGİNLER OTO","FEDA OTO","FER AUTO","FMH AUTO","FMH OTO","FUAT DMR FD AUTO","GALERİ ÇAYIROVA","GALİP OTO","GARANTİ OTO","GLR OTO","GLR OTOMOTİV","GMG MOTORS","GÖK GARAGE","GÖKAY OTO","GÜLBAŞ OTOMOTİV","GÜNDOĞDU OTO","GÜNEŞ OTO","HAS OTOMOTİV","IŞIK OTO","İSMAİL ÇİÇEK","KARABACAKLAR OTO","KARACA MOTORS","KARACA MOTOS","KARAT OTO","KIZILKIŞ AUTO","KOÇERLER AUTO","LİDER OTO","LOFT CARS","MERTSAN 2.EL","MESA GROUP OTO","MGK OTO","MTK","OKAN OTOMOTİV","OSMANLI OTO","OSMANLI OTO ÇAYIROVA","ÖMER FARUK YEŞİL BAŞ","ÖZ BAYAR OTO","ÖZAY MOTORS","ÖZBAYAR OTO","PİRİ MOTO","POLAT AUTO","REPAS ÇAYIROVA","SAFİR AUTO","SEREN AUTO KOCAELİ","SERRA GALERİ","SEYİR OTO","SHN GROUP OTO","SOYLU OTOMOTİV","ST MOTORS ÇAYIROVA","ŞEMSETTİN","TABAN MOTORS","TAŞKIRAN OTO","TECMEN OTO","TEK AUTO","TUFAN MOTORS","TUNÇ OTO","TUNCAY GENÇ OTO","UĞUR MOTO","UĞUR MOTORS","ÜNAL OTO","VENTURE MOTORS","YILDIZ AUTO","YILMAZ MOTORS","YUNUS AUTO","YSR MOTORS","ZEK- CAR"
+    ];
+
+    // Günlük anahtar (her gün için farklı olsun)
+    function getTodayKey() {
+        const d = new Date();
+        return 'galeriKontrol_' + d.getFullYear() + '_' + (d.getMonth()+1) + '_' + d.getDate();
+    }
+
+    // localStorage'dan bugünkü kontrol durumlarını al
+    function getKontrolDurum() {
+        const key = getTodayKey();
+        const data = localStorage.getItem(key);
+        return data ? JSON.parse(data) : {};
+    }
+    // localStorage'a bugünkü kontrol durumunu kaydet
+    function setKontrolDurum(obj) {
+        const key = getTodayKey();
+        localStorage.setItem(key, JSON.stringify(obj));
+    }
+
+    function renderGaleriler(list) {
+        const galeriListesi = document.getElementById('galeriListesi');
+                    // Galerici isimleri ve araçlar cars_data.json'dan dinamik alınacak
+                    let galeriler = [];
+                    let galeriAracMap = {};
+                    let allVehicles = [];
+                    async function loadGaleriler() {
+                        let resp = await fetch('cars_data.json');
+                        let data = await resp.json();
+                        allVehicles = data.vehicles;
+                        galeriAracMap = {};
+                        data.vehicles.forEach(v => {
+                            let galeri = v.seller && v.seller.name ? v.seller.name.trim() : 'Bilinmeyen';
+                            if (!galeriAracMap[galeri]) galeriAracMap[galeri] = [];
+                            galeriAracMap[galeri].push(v);
+                        });
+                        galeriler = Object.keys(galeriAracMap).sort();
+                        renderGaleriler(galeriler);
+                    }
+            galeriListesi.innerHTML += `
+            <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+                <div class="card galeri-card w-100 mb-3" style="cursor:pointer;" onclick="showGaleriDetay('${galeri.replace(/'/g, "\\'")}')">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="d-flex align-items-center mb-2">
+                            <input type="checkbox" class="form-check-input me-2" id="chk_${idx}" ${checked} onchange="event.stopPropagation();kontrolTikla('${galeri.replace(/'/g, "\\'")}', this.checked)">
+                            <span class="galeri-title">${galeri}</span>
+                        </div>
+                        <div class="mt-auto">
+                            <button class="btn btn-outline-primary btn-sm w-100 mt-2" onclick="event.stopPropagation();showGaleriDetay('${galeri.replace(/'/g, "\\'")}')">Detay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        });
+    }
+        // Galeri Detay Modalı aç (gerçek veriyle)
+        async function showGaleriDetay(galeri) {
+                // cars_data.json dosyasından ilgili galeriye ait araçları çek
+                let resp = await fetch('cars_data.json');
+                let data = await resp.json();
+                let ilanlar = data.vehicles.filter(v => v.seller && v.seller.name && v.seller.name.trim().toLowerCase() === galeri.trim().toLowerCase());
+                // İletişim bilgisi (ilk araçtan al)
+                    // Galeri Detay Modalı aç (gerçek veriyle, önceden yüklenmiş veriyle)
+                    function showGaleriDetay(galeri) {
+                        let ilanlar = galeriAracMap[galeri] || [];
+                        // İletişim bilgisi (ilk araçtan al)
+                        let iletisim = { yetkili: galeri, tel: '', mail: '' };
+                        if (ilanlar.length > 0 && ilanlar[0].seller) {
+                            iletisim.tel = ilanlar[0].seller.phone || '';
+                            iletisim.mail = ilanlar[0].seller.url || '';
+                        }
+                        // İstatistikler
+                        let toplamSatis = ilanlar.filter(v => v.status && v.status.toLowerCase() === 'sold').length;
+                        let aktifler = ilanlar.filter(v => v.status && v.status.toLowerCase() === 'active');
+                        let ortFiyat = aktifler.length > 0 ? (aktifler.reduce((a,b)=>a+b.price,0)/aktifler.length).toLocaleString('tr-TR', {style:'currency',currency:'TRY',maximumFractionDigits:0}) : '-';
+                        // Modal içeriği oluştur
+                        let html = `<div class=\"row\">\n          <div class=\"col-md-7\">\n            <h5 class=\"mb-2\">Araçlar (${ilanlar.length})</h5>\n            <div class=\"table-responsive\">\n              <table class=\"table table-bordered table-sm align-middle\">\n                <thead class=\"table-light\">\n                  <tr><th>ID</th><th>Model</th><th>Fiyat</th><th>Stok Süresi (gün)</th><th>Durum</th></tr>\n                </thead>\n                <tbody>\n                  ${ilanlar.map(ilan=>{\n                    let kayboldu = ilan.status && ilan.status.toLowerCase() !== 'active';\n                    let model = ilan.vehicle ? (ilan.vehicle.model || '-') : '-';\n                    let fiyat = ilan.price ? ilan.price.toLocaleString('tr-TR', {style:'currency',currency:'TRY',maximumFractionDigits:0}) : '-';\n                    let stok = ilan.daysListed !== undefined ? ilan.daysListed : (ilan.publishDate ? Math.floor((new Date()-new Date(ilan.publishDate))/(1000*60*60*24)) : '-');\n                    return `<tr${kayboldu?' style=\\\"background:#ffeaea\\\"':''}><td>${ilan.id||ilan.adNo||'-'}</td><td>${model}</td><td>${fiyat}</td><td>${stok}</td><td>${kayboldu?'<span class=\\\"badge bg-danger\\\">Pasif</span>':'<span class=\\\"badge bg-success\\\">Aktif</span>'}</td></tr>`;\n                  }).join('')}\n                </tbody>\n              </table>\n            </div>\n          </div>\n          <div class=\"col-md-5\">\n            <h5 class=\"mb-2\">İletişim</h5>\n            <ul class=\"list-group mb-3\">\n              <li class=\"list-group-item\"><b>Yetkili:</b> ${iletisim.yetkili}</li>\n              <li class=\"list-group-item\"><b>Telefon:</b> ${iletisim.tel}</li>\n              <li class=\"list-group-item\"><b>Web:</b> ${iletisim.mail}</li>\n            </ul>\n            <h5 class=\"mb-2\">İstatistikler</h5>\n            <ul class=\"list-group\">\n              <li class=\"list-group-item\"><b>Toplam Araç:</b> ${ilanlar.length}</li>\n              <li class=\"list-group-item\"><b>Aktif Araç:</b> ${aktifler.length}</li>\n              <li class=\"list-group-item\"><b>Toplam Satış:</b> ${toplamSatis}</li>\n              <li class=\"list-group-item\"><b>Ortalama Fiyat:</b> ${ortFiyat}</li>\n            </ul>\n          </div>\n        </div>`;
+                        document.getElementById('galeriDetayBody').innerHTML = html;
+                        var modal = new bootstrap.Modal(document.getElementById('galeriDetayModal'));
+                        modal.show();
+                    }
+                                        let fiyat = ilan.price ? ilan.price.toLocaleString('tr-TR', {style:'currency',currency:'TRY',maximumFractionDigits:0}) : '-';
+                    // Sayfa yüklenince galeriler ve araçlar otomatik yüklensin
+                    loadGaleriler();
+                                    }).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h5 class="mb-2">İletişim</h5>
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item"><b>Yetkili:</b> ${iletisim.yetkili}</li>
+                            <li class="list-group-item"><b>Telefon:</b> ${iletisim.tel}</li>
+                            <li class="list-group-item"><b>Web:</b> ${iletisim.mail}</li>
+                        </ul>
+                        <h5 class="mb-2">İstatistikler</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><b>Toplam Araç:</b> ${ilanlar.length}</li>
+                            <li class="list-group-item"><b>Aktif Araç:</b> ${aktifler.length}</li>
+                            <li class="list-group-item"><b>Toplam Satış:</b> ${toplamSatis}</li>
+                            <li class="list-group-item"><b>Ortalama Fiyat:</b> ${ortFiyat}</li>
+                        </ul>
+                    </div>
+                </div>`;
+                document.getElementById('galeriDetayBody').innerHTML = html;
+                var modal = new bootstrap.Modal(document.getElementById('galeriDetayModal'));
+                modal.show();
+        }
+
+    function kontrolTikla(galeri, checked) {
+        const durum = getKontrolDurum();
+        if (checked) {
+            durum[galeri] = true;
+        } else {
+            delete durum[galeri];
+        }
+        setKontrolDurum(durum);
+    }
+
+    function filterGaleriler() {
+        const q = document.getElementById('searchInput').value.toLowerCase();
+        const filtered = galeriler.filter(g => g.toLowerCase().includes(q));
+        renderGaleriler(filtered);
+    }
+
+    // Sayfa yüklenince tüm galeriler gösterilsin
+    renderGaleriler(galeriler);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+[2026-02-25 11:52:44] İlan No: 1301651260 - Durum: BELİRSİZ - Otomatik kontrol edilemedi
+[2026-02-25 11:54:44] İlan No: 1301385006 - Durum: BELİRSİZ - Otomatik kontrol edilemedi
+[2026-02-25 11:57:04] İlan No: 1301346338 - Durum: BELİRSİZ - Otomatik kontrol edilemedi
+[2026-02-25 11:58:56] İlan No: 1301754916 - Durum: BELİRSİZ - Otomatik kontrol edilemedi
+[2026-02-25 12:01:44] İlan No: 1301643996 - Durum: BELİRSİZ - Otomatik kontrol edilemedi
+[2026-02-25 12:04:02] İlan No: 1300247033 - Durum: BELİRSİZ - Otomatik kontrol edilemedi
+[2026-02-25 12:05:06] İlan No: 1301761057 - Durum: BELİRSİZ - Otomatik kontrol edilemedi
+[2026-02-25 12:06:57] İlan No: 1301518413 - Durum: BELİRSİZ - Otomatik kontrol edilemedi
+[2026-02-25 12:06:57] İlan No: ÖZET - Durum: TAMAMLANDI - Bugün: 8/8, Aktif: 0, Satıldı: 0, Belirsiz: 8
+[2026-02-25 12:06:57] İlan No: SİSTEM - Durum: HATA - Beklenmeyen hata: 'int' object has no attribute 'get'
+[2026-02-25 14:36:15] İlan No: SİSTEM - Durum: LİMİT - Günlük limit doldu: 8/8
+[2026-02-25 17:58:19] İlan No: SİSTEM - Durum: LİMİT - Günlük limit doldu: 8/8
+[2026-02-25 18:01:53] İlan No: SİSTEM - Durum: LİMİT - Günlük limit doldu: 8/8
+[2026-02-25 18:02:24] İlan No: SİSTEM - Durum: LİMİT - Günlük limit doldu: 8/8
+[2026-02-26 12:39:46] İlan No: SİSTEM - Durum: HATA - Beklenmeyen hata: <urlopen error [Errno 11001] getaddrinfo failed>
+[2026-02-26 13:11:08] İlan No: SİSTEM - Durum: HATA - Beklenmeyen hata: Message: session not created: cannot connect to chrome at 127.0.0.1:64345
+from session not created: This version of ChromeDriver only supports Chrome version 146
+Current browser version is 145.0.7632.111; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x64e813+10ad3]
+	undetected_chromedriver!GetHandleVerifier [0x64e944+10c04]
+	undetected_chromedriver!(No symbol) [0x461fc0]
+	undetected_chromedriver!(No symbol) [0x49d502]
+	undetected_chromedriver!(No symbol) [0x49c52c]
+	undetected_chromedriver!(No symbol) [0x492625]
+	undetected_chromedriver!(No symbol) [0x492446]
+	undetected_chromedriver!(No symbol) [0x4d96cf]
+	undetected_chromedriver!(No symbol) [0x4d8ee7]
+	undetected_chromedriver!(No symbol) [0x4cd766]
+	undetected_chromedriver!(No symbol) [0x4a00e9]
+	undetected_chromedriver!(No symbol) [0x4a0ea4]
+	undetected_chromedriver!GetHandleVerifier [0x8d1359+293619]
+	undetected_chromedriver!GetHandleVerifier [0x8cca7d+28ed3d]
+	undetected_chromedriver!GetHandleVerifier [0x8eab9b+2ace5b]
+	undetected_chromedriver!GetHandleVerifier [0x6689a8+2ac68]
+	undetected_chromedriver!GetHandleVerifier [0x67049d+3275d]
+	undetected_chromedriver!GetHandleVerifier [0x657328+195e8]
+	undetected_chromedriver!GetHandleVerifier [0x6574f2+197b2]
+	undetected_chromedriver!GetHandleVerifier [0x64065a+291a]
+	KERNEL32!BaseThreadInitThunk [0x76775d49+19]
+	ntdll!RtlInitializeExceptionChain [0x779ad83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x779ad7c1+231]
+

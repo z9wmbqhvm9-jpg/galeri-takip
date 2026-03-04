@@ -1,0 +1,5361 @@
+{
+  "vehicles": [
+    {
+      "ilan_no": "1301761057",
+      "İlan No": "1301761057",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Joy",
+      "Yıl": "2016",
+      "KM": "169000",
+      "Fiyat": "710.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2016-model-1.5-dizel-169.000-km-k.kart-12-taksit-0.99-kredi-imka-1301761057/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [
+          "Bagaj Kapağı"
+        ],
+        "tramer": "34 Bin TL",
+        "lokal_boya": [
+          "Motor Kaputu",
+          "Sol Arka Çamurluk"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "ilan_no": "1301754916",
+      "İlan No": "1301754916",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Icon",
+      "Yıl": "2013",
+      "KM": "96000",
+      "Fiyat": "799.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2013-model-1.5-dizel-icon-96.000-km-k.kart-12-taksit-1301754916/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Icon",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Sol Arka Kapı",
+          "Sol Ön Kapı (Sök-Tak)"
+        ],
+        "tramer": "8200 TL",
+        "lokal_boya": [
+          "Sol Arka Çamurluk"
+        ]
+      },
+      "status": "sold"
+    },
+    {
+      "ilan_no": "1301743539",
+      "İlan No": "1301743539",
+      "Marka": "Citroen",
+      "Seri": "C-Elysée",
+      "Model": "Shine",
+      "Yıl": "2020",
+      "KM": "130000",
+      "Fiyat": "789.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-citroen-2020-model-130.000-km-shine-k.kartina-12-tkst-0.99-kredi-imkani-1301743539/detay",
+      "Baslik": "Citroen C-Elysée",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Shine",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Sol Ön Çamurluk",
+          "Kaput (Sök-Tak)"
+        ],
+        "tramer": "0 TL",
+        "lokal_boya": [
+          "Sağ Ön Çamurluk"
+        ]
+      },
+      "status": "sold"
+    },
+    {
+      "ilan_no": "1302004975",
+      "İlan No": "1302004975",
+      "Marka": "Renault",
+      "Seri": "Symbol",
+      "Model": "Joy",
+      "Yıl": "2015",
+      "KM": "140000",
+      "Fiyat": "700.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2015-model-1.5-dizel-90-hp-joy-paket-140-bin-km-tertemiz-1302004975/detay",
+      "Baslik": "Renault Symbol",
+      "Kimden": "BATUHAN KAYA OTOMOTİV",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sağ Arka Kapı"
+        ],
+        "degisen": [
+          "Kaput",
+          "Ön Tampon"
+        ],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1940026587",
+      "İlan No": "1940026587",
+      "Marka": "Honda",
+      "Seri": "Civic",
+      "Model": "Eco Elegance",
+      "Yıl": "2018",
+      "KM": "149000",
+      "Fiyat": "1.389.018 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-1940026587/detay",
+      "Baslik": "Honda Civic",
+      "Kimden": "GÜNDOĞDU OTOMOTİV",
+      "Paket": "Eco Elegance",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Motor Kaputu",
+          "Sol Ön Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "2.500 TL"
+      }
+    },
+    {
+      "ilan_no": "1940334985",
+      "İlan No": "1940334985",
+      "Marka": "Toyota",
+      "Seri": "Corolla",
+      "Model": "Dream",
+      "Yıl": "2022",
+      "KM": "97000",
+      "Fiyat": "1.410.000 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Mavi",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-1940334985/detay",
+      "Baslik": "Toyota Corolla",
+      "Kimden": "Ömer Faruk Yeşilbaş",
+      "Paket": "Dream",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Çamurluk Ağzı"
+        ],
+        "degisen": [],
+        "tramer": ""
+      }
+    },
+    {
+      "ilan_no": "1941268701",
+      "İlan No": "1941268701",
+      "Marka": "Citroen",
+      "Seri": "C-Elysée",
+      "Model": "Confort",
+      "Yıl": "2015",
+      "KM": "129000",
+      "Fiyat": "659.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-1941268701/detay",
+      "Baslik": "Citroen C-Elysée",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Confort",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Motor Kaputu",
+          "Sol Arka Kapı",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "5 Bin TL"
+      }
+    },
+    {
+      "ilan_no": "1941426096",
+      "İlan No": "1941426096",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Joy",
+      "Yıl": "2016",
+      "KM": "169000",
+      "Fiyat": "710.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-1941426096/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Motor Kaputu",
+          "Sol Arka Çamurluk",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [
+          "Bagaj Kapağı"
+        ],
+        "tramer": "34 Bin TL"
+      }
+    },
+    {
+      "ilan_no": "1941609108",
+      "İlan No": "1941609108",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Icon",
+      "Yıl": "2013",
+      "KM": "96000",
+      "Fiyat": "799.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-1941609108/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Icon",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sol Arka Kapı"
+        ],
+        "tramer": "8200 TL"
+      }
+    },
+    {
+      "ilan_no": "1941765888",
+      "İlan No": "1941765888",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Icon",
+      "Yıl": "2013",
+      "KM": "96000",
+      "Fiyat": "799.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-1941765888/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Icon",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sol Arka Kapı"
+        ],
+        "tramer": ""
+      }
+    },
+    {
+      "ilan_no": "1941785769",
+      "İlan No": "1941785769",
+      "Marka": "Citroen",
+      "Seri": "C-Elysée",
+      "Model": "Shine",
+      "Yıl": "2020",
+      "KM": "130000",
+      "Fiyat": "789.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-1941785769/detay",
+      "Baslik": "Citroen C-Elysée",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Shine",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": ""
+      }
+    },
+    {
+      "ilan_no": "1941886543",
+      "İlan No": "1941886543",
+      "Marka": "Peugeot",
+      "Seri": "301",
+      "Model": "Active",
+      "Yıl": "2017",
+      "KM": "151000",
+      "Fiyat": "659.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-1941886543/detay",
+      "Baslik": "Peugeot 301",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Active",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Motor Kaputu",
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Çamurluk",
+          "Bagaj Kapağı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": ""
+      }
+    },
+    {
+      "ilan_no": "1262913791",
+      "İlan No": "1262913791",
+      "Marka": "Renault",
+      "Seri": "Clio 1.5 dCi Authentique",
+      "Model": "Authentique",
+      "Yıl": "2008",
+      "KM": "290000",
+      "Fiyat": "339.700 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-degisensiz-sifir-garantili-motor-muyene-4-lastik-sifir-exper-ack-1262913791/detay",
+      "Baslik": "Renault Clio 1.5 dCi Authentique",
+      "Kimden": "ANKA AUTO ÇAYIROVA",
+      "Paket": "Authentique",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      },
+      "description": "\nSıfır motor 130 bin tl harcandl Motor garantiye tabidir istenirse yapılan listeyi sunabilirz 1 lira masrafl olmayan 4 lastik slflr muayyene slflr tabiri caizse arac A dan Z ye sıfırlanmlştlr. Exper e usta ya aclktlr\nNot...pazarlksz tek fiat 350 bin tl\n"
+    },
+    {
+      "ilan_no": "1286078096",
+      "İlan No": "1286078096",
+      "Marka": "Hyundai",
+      "Seri": "Accent Era 1.4 Team",
+      "Model": "Team",
+      "Yıl": "2009",
+      "KM": "260000",
+      "Fiyat": "375.750 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-tr-en-uygun-son-24-saat-10-indirm-masrafsz-temz-servis-bakimli-1286078096/detay",
+      "Baslik": "Hyundai Accent Era 1.4 Team",
+      "Kimden": "ANKA AUTO ÇAYIROVA",
+      "Paket": "Team",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "Belirtilmemiş (Ağır Hasar Kayıtlı)"
+      }
+    },
+    {
+      "ilan_no": "1300745923",
+      "İlan No": "1300745923",
+      "Marka": "Fiat",
+      "Seri": "Egea",
+      "Model": "Easy",
+      "Yıl": "2023",
+      "KM": "108000",
+      "Fiyat": "1.090.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Füme",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-1300745923/detay",
+      "Baslik": "Fiat Egea",
+      "Kimden": "DAŞKIN İNŞAAT OTOMOTİV",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": ""
+      }
+    },
+    {
+      "ilan_no": "1302428980",
+      "İlan No": "1302428980",
+      "Marka": "Fiat",
+      "Seri": "Linea 1.6 Multijet Lounge",
+      "Model": "Lounge",
+      "Yıl": "2013",
+      "KM": "208000",
+      "Fiyat": "630.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-26",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-cr-autodan-degisensiz,boyasiz-hatasiz-fiat-linea-1302428980/detay",
+      "Baslik": "Fiat Linea 1.6 Multijet Lounge",
+      "Kimden": "CR AUTO",
+      "Paket": "Lounge",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1294361515",
+      "İlan No": "1294361515",
+      "Marka": "Renault",
+      "Seri": "Symbol 1.5 DCI Joy",
+      "Model": "Joy",
+      "Yıl": "2017",
+      "KM": "160000",
+      "Fiyat": "649.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-13",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-safir-auto-2017-renault-seymbol-1.5-dizel-yeni-kasa-160-bin-kmde-1294361515/detay",
+      "Baslik": "Renault Symbol 1.5 DCI Joy",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Boyalı",
+          "Sağ Ön Çamurluk, Sol Ön Kapı, Sol Arka Kapı, Bagaj Kapağı, 5 Parça Boya"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk, Sağ Ön Çamurluk"
+        ],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1296964371",
+      "İlan No": "1296964371",
+      "Marka": "Honda",
+      "Seri": "CR-V 1.6 i-DTEC Executive",
+      "Model": "Executive",
+      "Yıl": "2015",
+      "KM": "175000",
+      "Fiyat": "1.530.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-honda-safir-auto-2015-honda-cr-v-1.6i-dtec-dizel-executive-cam-tavan-1296964371/detay",
+      "Baslik": "Honda CR-V 1.6 i-DTEC Executive",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Executive",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı, Sağ Arka Kapı"
+        ],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1297813431",
+      "İlan No": "1297813431",
+      "Marka": "Mercedes-Benz",
+      "Seri": "C 200 AMG",
+      "Model": "AMG",
+      "Yıl": "2022",
+      "KM": "37200",
+      "Fiyat": "3.850.000 TL",
+      "Yakıt Tipi": "Hibrit",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-mercedes-benz-safir-auto-2022-c200-4matic-burmester-navi-hafiza-isitma-boyasiz-1297813431/detay",
+      "Baslik": "Mercedes-Benz C 200 AMG",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "AMG",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1298803130",
+      "İlan No": "1298803130",
+      "Marka": "Toyota",
+      "Seri": "Corolla Cross 1.8 Hybrid Flame X-Pack",
+      "Model": "Flame X-Pack",
+      "Yıl": "2023",
+      "KM": "95000",
+      "Fiyat": "2.050.000 TL",
+      "Yakıt Tipi": "Hibrit",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-toyota-safir-auto-2023-toyota-corola-cross-flame-x-pack-cam-tavan-hybrt-1298803130/detay",
+      "Baslik": "Toyota Corolla Cross 1.8 Hybrid Flame X-Pack",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Flame X-Pack",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Arka Kapı, Sol Arka Çamurluk, Bagaj Kapağı (Lokal)"
+        ],
+        "degisen": [],
+        "tramer": "35.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1297639242",
+      "İlan No": "1297639242",
+      "Marka": "BYD",
+      "Seri": "Seal U DM-i 1.5 Phev Design",
+      "Model": "Design",
+      "Yıl": "2025",
+      "KM": "9900",
+      "Fiyat": "2.475.000 TL",
+      "Yakıt Tipi": "Hibrit",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-byd-9.900-kmde-sifirdan-farksiz-hatasiz-boyasiz-2.900-faturali-1297639242/detay",
+      "Baslik": "BYD Seal U DM-i 1.5 Phev Design",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Design",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1212035810",
+      "İlan No": "1212035810",
+      "Marka": "Ford",
+      "Seri": "Mondeo 2.0 TDCi Ghia",
+      "Model": "Ghia",
+      "Yıl": "2007",
+      "KM": "409000",
+      "Fiyat": "452.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Füme",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-ford-10-indirimm-hatasz-zenon-far-motor-yazilm-gunceleme-sifrlanms-1212035810/detay",
+      "Baslik": "Ford Mondeo 2.0 TDCi Ghia",
+      "Kimden": "ANKA AUTO ÇAYIROVA",
+      "Paket": "Ghia",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Bel Altı (Yüzeysel)"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1292171594",
+      "İlan No": "1292171594",
+      "Marka": "BMW",
+      "Seri": "316i Sport Line",
+      "Model": "Sport Line",
+      "Yıl": "2013",
+      "KM": "185000",
+      "Fiyat": "985.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-bmw-ic-dis-m-sport-2013-model-1292171594/detay",
+      "Baslik": "BMW 316i Sport Line",
+      "Kimden": "DAŞKIN İNŞAAT OTOMOTİV",
+      "Paket": "Sport Line",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Motor Kaputu, Sol Ön Çamurluk, Sol Ön Kapı"
+        ],
+        "tramer": ""
+      }
+    },
+    {
+      "ilan_no": "1294572008",
+      "İlan No": "1294572008",
+      "Marka": "Ford",
+      "Seri": "Focus 1.6 Ti-VCT Trend X",
+      "Model": "Trend X",
+      "Yıl": "2012",
+      "KM": "160000",
+      "Fiyat": "795.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-ford-160,000-km-de-plus2025-yili-sifir-lpg-plus.bakimlari-sifir-plusdegisen-yok-1294572008/detay",
+      "Baslik": "Ford Focus 1.6 Ti-VCT Trend X",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Trend X",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk, Sağ Ön Kapı, Sağ Arka Kapı, Sol Ön Çamurluk, Sol Ön Kapı, Sol Arka Kapı"
+        ],
+        "degisen": [],
+        "tramer": "3.200 TL"
+      }
+    },
+    {
+      "ilan_no": "1279374253",
+      "İlan No": "1279374253",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.3 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2016",
+      "KM": "154000",
+      "Fiyat": "659.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-01-28",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2016-model-1279374253/detay",
+      "Baslik": "Fiat Egea 1.3 Multijet Easy",
+      "Kimden": "ERAT AUTO",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk, Bagaj Kapağı, Sağ Arka Çamurluk (Lokal)"
+        ],
+        "degisen": [
+          "Motor Kaputu"
+        ],
+        "tramer": "57.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1296866638",
+      "İlan No": "1296866638",
+      "Marka": "Ford",
+      "Seri": "C-Max 1.6 Trend",
+      "Model": "Trend",
+      "Yıl": "2004",
+      "KM": "168000",
+      "Fiyat": "445.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-01-28",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-ford-168-bin-km-degisensiz-c-max-cam-tavan-1296866638/detay",
+      "Baslik": "Ford C-Max 1.6 Trend",
+      "Kimden": "ERAT AUTO",
+      "Paket": "Trend",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Motor Kaputu, Tavan, Sağ Ön Çamurluk, Sağ Ön Kapı, Sağ Arka Kapı, Sağ Arka Çamurluk, Sol Ön Çamurluk, Sol Ön Kapı, Sol Arka Kapı, Sol Arka Çamurluk, Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "12.300 TL"
+      }
+    },
+    {
+      "ilan_no": "1297711352",
+      "İlan No": "1297711352",
+      "Marka": "Mercedes-Benz",
+      "Seri": "GLA 180 d Urban",
+      "Model": "Urban",
+      "Yıl": "2017",
+      "KM": "149000",
+      "Fiyat": "1.700.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Lacivert",
+      "İlan Tarihi": "2026-02-01",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-mercedes-benz-ici-bej-2017-gla-180-dizel-1297711352/detay",
+      "Baslik": "Mercedes-Benz GLA 180 d Urban",
+      "Kimden": "ERAT AUTO",
+      "Paket": "Urban",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı (Lokal)"
+        ],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1288033650",
+      "İlan No": "1288033650",
+      "Marka": "Ford Otosan",
+      "Seri": "Transit 16+1",
+      "Model": "-",
+      "Yıl": "2017",
+      "KM": "330000",
+      "Fiyat": "910.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-08",
+      "url": "https://www.sahibinden.com/ilan/vasita-ticari-araclar-minibus-midibus-2017-model-transit-1288033650/detay",
+      "Baslik": "Ford Otosan Transit 16+1",
+      "Kimden": "ERAT AUTO",
+      "Paket": "-",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Boyalı",
+          "Tavan hariç yanlarda çiziklerden dolayı hemen hemen her tarafında boya vardır"
+        ],
+        "degisen": [
+          "Değişen",
+          "Motor sandık motor olarak yeni değişti, şanzıman yeni takıldı, baskı balata seti yeni değişti, dört tane sıfır enjektör yeni takıldı"
+        ],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1299220457",
+      "İlan No": "1299220457",
+      "Marka": "Fiat",
+      "Seri": "Palio 1.2 S",
+      "Model": "S",
+      "Yıl": "2001",
+      "KM": "271000",
+      "Fiyat": "189.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-09",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2001-palio-1299220457/detay",
+      "Baslik": "Fiat Palio 1.2 S",
+      "Kimden": "ERAT AUTO",
+      "Paket": "S",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1263097243",
+      "İlan No": "1263097243",
+      "Marka": "Peugeot",
+      "Seri": "206 1.4 HDi X-Line",
+      "Model": "X-Line",
+      "Yıl": "2004",
+      "KM": "322000",
+      "Fiyat": "240.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-09",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-peugeot-2004-pegault-206-klimali-1263097243/detay",
+      "Baslik": "Peugeot 206 1.4 HDi X-Line",
+      "Kimden": "ERAT AUTO",
+      "Paket": "X-Line",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Sağ Ön Çamurluk, Sol Ön Çamurluk"
+        ],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1293920821",
+      "İlan No": "1293920821",
+      "Marka": "Mercedes-Benz",
+      "Seri": "Sprinter 315 CDI",
+      "Model": "Euro 5",
+      "Yıl": "2012",
+      "KM": "380000",
+      "Fiyat": "780.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-ticari-araclar-minibus-midibus-2012-euro-5-1293920821/detay",
+      "Baslik": "Mercedes-Benz Sprinter 315 CDI",
+      "Kimden": "ERAT AUTO",
+      "Paket": "Euro 5",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Boyalı",
+          "Ön üç parça yeni görünüm için değişmiştir, hata boya yok"
+        ],
+        "degisen": [
+          "Ön üç parça"
+        ],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1272479332",
+      "İlan No": "1272479332",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2023",
+      "KM": "51000",
+      "Fiyat": "1.149.900 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2023-egea-otomatik-51-bin-km-1272479332/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Easy",
+      "Kimden": "ERAT AUTO",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1267732401",
+      "İlan No": "1267732401",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2025",
+      "KM": "6010",
+      "Fiyat": "1.550.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-19",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-unal-otomotiv-den-20-fatura-1267732401/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Easy",
+      "Kimden": "ÜNAL OTOMOTİV",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1302368878",
+      "İlan No": "1302368878",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Urban Plus",
+      "Model": "Urban Plus",
+      "Yıl": "2019",
+      "KM": "125000",
+      "Fiyat": "880.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-26",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-otomatik-egea-1.6-urban-plus-yetkili-servis-bakimli-1302368878/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Urban Plus",
+      "Kimden": "FUAT DEMİR FD AUTO",
+      "Paket": "Urban Plus",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Boyalı",
+          "Sağ Ön Kapı, Sağ Arka Çamurluk, Sol Ön Kapı, Sol Arka Çamurluk, Bagaj Kapağı, Boyalı Parçalar: Sağ Ön Kapı, Sağ Arka Çamurluk, Sol Ön Kapı, Sol Arka Çamurluk, Bagaj Kapağı"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "18.000 TL + 180.000 TL (sigorta)"
+      }
+    },
+    {
+      "ilan_no": "1298118219",
+      "İlan No": "1298118219",
+      "Marka": "Hyundai",
+      "Seri": "Accent Blue 1.6 CRDI Mode Plus",
+      "Model": "Mode Plus",
+      "Yıl": "2015",
+      "KM": "185000",
+      "Fiyat": "779.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-safir-auto-2015-hyundai-accent-blue-mod-plus-dizl-otmtik-7-ileri-1298118219/detay",
+      "Baslik": "Hyundai Accent Blue 1.6 CRDI Mode Plus",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Mode Plus",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Boyalı",
+          "Sol Ön Çamurluk, Sağ Arka Çamurluk (Lokal), Sol Arka Çamurluk (Lokal), 3 Parça Yanda Boya (2'si Lokal)"
+        ],
+        "degisen": [
+          "Sol Ön Kapı, Sol Arka Kapı"
+        ],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1300762015",
+      "İlan No": "1300762015",
+      "Marka": "Ford",
+      "Seri": "Tourneo Courier 1.6 TDCi Titanium Plus",
+      "Model": "Titanium Plus",
+      "Yıl": "2016",
+      "KM": "130000",
+      "Fiyat": "869.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Turkuaz",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-ford-safir-auto-2016-ford-courier-1.6-dizel-titanium-plus-130-bin-km-1300762015/detay",
+      "Baslik": "Ford Tourneo Courier 1.6 TDCi Titanium Plus",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Titanium Plus",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Boyalı",
+          "Sol Ön Kapı, Sol Arka Kapı, 1.5 Parça Yanda Boya"
+        ],
+        "degisen": [
+          "Bagaj Kapağı"
+        ],
+        "tramer": "6.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1296019342",
+      "İlan No": "1296019342",
+      "Marka": "Ford",
+      "Seri": "Tourneo Courier 1.5 TDCi Delux",
+      "Model": "Delux",
+      "Yıl": "2023",
+      "KM": "30000",
+      "Fiyat": "895.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-ford-safir-auto-2023-ford-courier-1.5-delux-6-ileri-30-bin-km-de-1296019342/detay",
+      "Baslik": "Ford Tourneo Courier 1.5 TDCi Delux",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Delux",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Boyalı",
+          "Bagaj Kapağı (Boya), Motor Kaputu (Lokal)"
+        ],
+        "degisen": [],
+        "tramer": "13.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300764429",
+      "İlan No": "1300764429",
+      "Marka": "Renault",
+      "Seri": "Clio 1.5 dCi Touch",
+      "Model": "Touch",
+      "Yıl": "2016",
+      "KM": "125000",
+      "Fiyat": "945.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-safir-auto-2016-renault-clio-1.5-dizel-tauch-otomatik-125-bin-km-1300764429/detay",
+      "Baslik": "Renault Clio 1.5 dCi Touch",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Kapı, Sol Arka Kapı, Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "6.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300932841",
+      "İlan No": "1300932841",
+      "Marka": "Kia",
+      "Seri": "Rio 1.4 CRDi Comfort",
+      "Model": "Comfort",
+      "Yıl": "2015",
+      "KM": "240000",
+      "Fiyat": "595.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-kia-safir-auto-2015-model-rio-hatasiz-boyasiz-yetkili-servis-bakimli-1300932841/detay",
+      "Baslik": "Kia Rio 1.4 CRDi Comfort",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Comfort",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1296208787",
+      "İlan No": "1296208787",
+      "Marka": "Ford",
+      "Seri": "Tourneo Courier 1.6 TDCi Titanium",
+      "Model": "Titanium",
+      "Yıl": "2016",
+      "KM": "125000",
+      "Fiyat": "819.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-ford-safir-auto-2016-ford-courier-1.6-dizel-titanium-paket-125-bin-km-1296208787/detay",
+      "Baslik": "Ford Tourneo Courier 1.6 TDCi Titanium",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Titanium",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Bagaj Kapağı"
+        ],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1300959587",
+      "İlan No": "1300959587",
+      "Marka": "Kia",
+      "Seri": "Rio 1.4 CRDi Comfort",
+      "Model": "Comfort",
+      "Yıl": "2015",
+      "KM": "260000",
+      "Fiyat": "585.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-kia-safir-auto-2015-kia-rio-hatasiz-degisensiz-yetkli-servis-bakimli-1300959587/detay",
+      "Baslik": "Kia Rio 1.4 CRDi Comfort",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Comfort",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Arka Kapı (Hafif Çizik), Sol Arka Çamurluk (Hafif Çizik)"
+        ],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1299253177",
+      "İlan No": "1299253177",
+      "Marka": "Hyundai",
+      "Seri": "Accent Blue 1.6 CRDI Mode",
+      "Model": "Mode",
+      "Yıl": "2015",
+      "KM": "110000",
+      "Fiyat": "819.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-safir-auto-2015-hyundai-accent-blue-1.6-crdi-manuel-110-bin-kmde-1299253177/detay",
+      "Baslik": "Hyundai Accent Blue 1.6 CRDI Mode",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Mode",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Bagaj Kapağı, Sağ Ön Kapı"
+        ],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1299011236",
+      "İlan No": "1299011236",
+      "Marka": "Fiat",
+      "Seri": "Punto 1.3 Multijet Shine",
+      "Model": "Shine",
+      "Yıl": "2004",
+      "KM": "300000",
+      "Fiyat": "295.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-safir-auto-2004-fiat-punto-1.3-dizel-manuel-klimali-sanruflu-1299011236/detay",
+      "Baslik": "Fiat Punto 1.3 Multijet Shine",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Shine",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Komple"
+        ],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1288056958",
+      "İlan No": "1288056958",
+      "Marka": "Audi",
+      "Seri": "A3 Sedan 1.6 TDI Ambition",
+      "Model": "Ambition",
+      "Yıl": "2013",
+      "KM": "245000",
+      "Fiyat": "1.195.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-audi-safir-auto-2013-audi-a3-ambition-dizel-otomatik-cam-tavan-1288056958/detay",
+      "Baslik": "Audi A3 Sedan 1.6 TDI Ambition",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Ambition",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk, Sağ Arka Kapı, Sol Ön Kapı, Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sol Arka Kapı"
+        ],
+        "tramer": ""
+      }
+    },
+    {
+      "ilan_no": "1298140265",
+      "İlan No": "1298140265",
+      "Marka": "Opel",
+      "Seri": "Astra 1.6 Cosmo",
+      "Model": "Cosmo",
+      "Yıl": "2008",
+      "KM": "200000",
+      "Fiyat": "549.999 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Otomatik",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-opel-2008-opel-astra-otomatik-en-full-sanruflu-paket-1298140265/detay",
+      "Baslik": "Opel Astra 1.6 Cosmo",
+      "Kimden": "YILDIZ AUTO",
+      "Paket": "Cosmo",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Tavan, Sağ Ön Çamurluk, Sağ Arka Kapı, Sağ Arka Çamurluk, Sol Arka Kapı, Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Motor Kaputu, Sağ Ön Kapı, Sol Ön Çamurluk, Sol Ön Kapı, Bagaj Kapağı"
+        ],
+        "tramer": "10.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1296554086",
+      "İlan No": "1296554086",
+      "Marka": "Renault",
+      "Seri": "Clio 1.0 TCe Touch",
+      "Model": "Touch",
+      "Yıl": "2020",
+      "KM": "100000",
+      "Fiyat": "1.075.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-26",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2020-model-1.0-tce-touch-paket-hatasiz-ayarinda-1296554086/detay",
+      "Baslik": "Renault Clio 1.0 TCe Touch",
+      "Kimden": "YILDIZ AUTO",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "13.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1301495410",
+      "İlan No": "1301495410",
+      "Marka": "Dacia",
+      "Seri": "Dokker 1.5 dCi Ambiance",
+      "Model": "Ambiance",
+      "Yıl": "2019",
+      "KM": "170000",
+      "Fiyat": "539.999 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-dacia-2019-model-kapali-kasa-dokker-1.5-dci-hatasiz-ayarinda-1301495410/detay",
+      "Baslik": "Dacia Dokker 1.5 dCi Ambiance",
+      "Kimden": "YILDIZ AUTO",
+      "Paket": "Ambiance",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı, Sağ Arka Kapı"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "8.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1296971706",
+      "İlan No": "1296971706",
+      "Marka": "Opel",
+      "Seri": "Mokka 1.2 T Elegance",
+      "Model": "Elegance",
+      "Yıl": "2023",
+      "KM": "80000",
+      "Fiyat": "1.447.500 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz - Siyah",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-opel-hatasiz-boyasiz-degisensiz-cift-renk-cizik-dahi-yok-sifir-gibi-1296971706/detay",
+      "Baslik": "Opel Mokka 1.2 T Elegance",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Elegance",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1297634372",
+      "İlan No": "1297634372",
+      "Marka": "Renault",
+      "Seri": "Megane 1.5 dCi Touch",
+      "Model": "Touch",
+      "Yıl": "2018",
+      "KM": "162500",
+      "Fiyat": "1.165.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-dizel-otomatik-1-boya-harici-hatasiz-boyasiz-k.kartina-12-taksit-1297634372/detay",
+      "Baslik": "Renault Megane 1.5 dCi Touch",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1298124245",
+      "İlan No": "1298124245",
+      "Marka": "Hyundai",
+      "Seri": "i20 1.4 MPI Elite",
+      "Model": "Elite",
+      "Yıl": "2016",
+      "KM": "98500",
+      "Fiyat": "1.009.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-ilk-sahibinden-ates-kirmizi-98-binde-sanruf-ful-paket-i-20-ful-1298124245/detay",
+      "Baslik": "Hyundai i20 1.4 MPI Elite",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Elite",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk, Sağ Arka Çamurluk, Sol Ön Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Ön Kapı"
+        ],
+        "tramer": "15.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300619633",
+      "İlan No": "1300619633",
+      "Marka": "Honda",
+      "Seri": "Civic 1.6i VTEC Eco Premium",
+      "Model": "Eco Premium",
+      "Yıl": "2014",
+      "KM": "214000",
+      "Fiyat": "985.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-honda-tam-otomatk-honda-civic-2-boya-harici-hatasz-cam-gibi-lpg-lastk-1300619633/detay",
+      "Baslik": "Honda Civic 1.6i VTEC Eco Premium",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Eco Premium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1285720725",
+      "İlan No": "1285720725",
+      "Marka": "Volkswagen",
+      "Seri": "Passat 1.6 TDI BlueMotion Trendline",
+      "Model": "Trendline",
+      "Yıl": "2011",
+      "KM": "224000",
+      "Fiyat": "925.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-hatasiz-boyasiz-tramersiz-fuzulevim-eminevim-satislarimiz-1285720725/detay",
+      "Baslik": "Volkswagen Passat 1.6 TDI BlueMotion Trendline",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Trendline",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1295248607",
+      "İlan No": "1295248607",
+      "Marka": "Hyundai",
+      "Seri": "i20 1.4 CVVT Team",
+      "Model": "Team",
+      "Yıl": "2010",
+      "KM": "148000",
+      "Fiyat": "744.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Mavi",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-148,000-kmde-tam-otomatik-vites-eminevim-fuzul-evim-finaslarina-1295248607/detay",
+      "Baslik": "Hyundai i20 1.4 CVVT Team",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Team",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı, Sol Ön Çamurluk, Sol Arka Kapı, Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sol Ön Kapı"
+        ],
+        "tramer": "9.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1297640538",
+      "İlan No": "1297640538",
+      "Marka": "Citroen",
+      "Seri": "C-Elysée 1.6 HDi Confort",
+      "Model": "Confort",
+      "Yıl": "2014",
+      "KM": "249000",
+      "Fiyat": "429.500 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-citroen-hiz-sabitleme-geri-gorus-navigasyon-dvd-k.kartina-12-taksit-1297640538/detay",
+      "Baslik": "Citroen C-Elysée 1.6 HDi Confort",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Confort",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Motor Kaputu"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk, Sol Ön Çamurluk, Sol Ön Kapı"
+        ],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1300625245",
+      "İlan No": "1300625245",
+      "Marka": "Opel",
+      "Seri": "Astra 1.3 CDTI Enjoy Elegance",
+      "Model": "Enjoy Elegance",
+      "Yıl": "2009",
+      "KM": "158000",
+      "Fiyat": "655.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-opel-ilk-sahibinden-158-binde-hatsiz-degisensiz-1.3-dizel-astra-1300625245/detay",
+      "Baslik": "Opel Astra 1.3 CDTI Enjoy Elegance",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Enjoy Elegance",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "2.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300670731",
+      "İlan No": "1300670731",
+      "Marka": "Fiat",
+      "Seri": "Fiorino Combi 1.4 Fire Pop",
+      "Model": "Pop",
+      "Yıl": "2021",
+      "KM": "101000",
+      "Fiyat": "607.500 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-fiat-2022-cikisli-nokta-hatasiz-boyasiz-tramersiz-lpgli-sifir-gibi-1300670731/detay",
+      "Baslik": "Fiat Fiorino Combi 1.4 Fire Pop",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Pop",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1298127648",
+      "İlan No": "1298127648",
+      "Marka": "Honda",
+      "Seri": "Civic 1.6i VTEC Premium",
+      "Model": "Premium",
+      "Yıl": "2008",
+      "KM": "219000",
+      "Fiyat": "587.500 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-honda-bu-fiyata-yok-tum-kredi-kartlarina-12-taksit-1298127648/detay",
+      "Baslik": "Honda Civic 1.6i VTEC Premium",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Premium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Motor Kaputu, Sağ Ön Kapı, Sol Ön Kapı, Sol Arka Kapı, Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Arka Çamurluk, Sol Arka Çamurluk, Bagaj Kapağı"
+        ],
+        "tramer": "30.000 TL + 2.000-3.400 TL"
+      }
+    },
+    {
+      "ilan_no": "1286931239",
+      "İlan No": "1286931239",
+      "Marka": "Renault",
+      "Seri": "Fluence 1.5 dCi Touch",
+      "Model": "Touch",
+      "Yıl": "2014",
+      "KM": "215000",
+      "Fiyat": "717.500 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-otomatik-dizel-215,000-km-de-degisensiz-kazasiz-tertemiz-aile-ar-1286931239/detay",
+      "Baslik": "Renault Fluence 1.5 dCi Touch",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Kapı, Sol Arka Kapı, Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "10.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1295329761",
+      "İlan No": "1295329761",
+      "Marka": "Renault",
+      "Seri": "Clio 1.5 dCi Touch",
+      "Model": "Touch",
+      "Yıl": "2019",
+      "KM": "145000",
+      "Fiyat": "957.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-19",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-1,5-dizel-otomatik-145,000-km-de-1-degisen-haric-hatasiz-boyasiz-1295329761/detay",
+      "Baslik": "Renault Clio 1.5 dCi Touch",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Sol Ön Kapı"
+        ],
+        "tramer": ""
+      }
+    },
+    {
+      "ilan_no": "1277526503",
+      "İlan No": "1277526503",
+      "Marka": "Audi",
+      "Seri": "A4 Sedan 2.0 TDI",
+      "Model": "Limousine Paket",
+      "Yıl": "2014",
+      "KM": "219000",
+      "Fiyat": "1.415.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-audi-2014-audi-a4-2.0-tdi-150-bg-limousine-paket-219.000-km-de-1277526503/detay",
+      "Baslik": "Audi A4 Sedan 2.0 TDI",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Limousine Paket",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Ön Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "2,500TL - 4,400TL - 5,000TL - 6,000TL ufak tramerler"
+      }
+    },
+    {
+      "ilan_no": "1263131862",
+      "İlan No": "1263131862",
+      "Marka": "Hyundai",
+      "Seri": "i20 1.4 MPI Elite",
+      "Model": "Elite",
+      "Yıl": "2015",
+      "KM": "187000",
+      "Fiyat": "937.850 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Otomatik",
+      "Renk": "Mavi",
+      "İlan Tarihi": "2026-02-26",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-cam-tavan-otomatik-vites-katlanir-ayna-en-dolusu-karta-12-taksit-1263131862/detay",
+      "Baslik": "Hyundai i20 1.4 MPI Elite",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Elite",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sol Arka Kapı"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1301651260",
+      "İlan No": "1301651260",
+      "Marka": "Toyota",
+      "Seri": "Corolla",
+      "Model": "Advance",
+      "Yıl": "2014",
+      "KM": "193000",
+      "Fiyat": "989.018 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-toyota-2014-model-toyota-corolla-1.4-d-d4-advence-otomatik-90-bg-1301651260/detay",
+      "Baslik": "Toyota Corolla",
+      "Kimden": "GÜNDOĞDU OTOMOTİV",
+      "Paket": "Advance",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "90000 TL"
+      }
+    },
+    {
+      "ilan_no": "1290548186",
+      "İlan No": "1290548186",
+      "Marka": "Hyundai",
+      "Seri": "i20 1.4 CVVT Style",
+      "Model": "Style",
+      "Yıl": "2010",
+      "KM": "180000",
+      "Fiyat": "719.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-tam-otomatik-cam-gibi-kabut-tavan-bagaj-boyasiz-i-20-benzinli-1290548186/detay",
+      "Baslik": "Hyundai i20 1.4 CVVT Style",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Style",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı, Sağ Arka Kapı, Sağ Arka Çamurluk, Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "12.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1299622694",
+      "İlan No": "1299622694",
+      "Marka": "Honda",
+      "Seri": "Civic 1.6i VTEC Eco Premium",
+      "Model": "Eco Premium",
+      "Yıl": "2013",
+      "KM": "259000",
+      "Fiyat": "985.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-honda-otomatik-plus4-lastik-sifir-pluslpg-plustriger-diskler-sifir-2-boya-harici-h-1299622694/detay",
+      "Baslik": "Honda Civic 1.6i VTEC Eco Premium",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Eco Premium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk, Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1299633271",
+      "İlan No": "1299633271",
+      "Marka": "Renault",
+      "Seri": "Clio 1.0 TCe Joy",
+      "Model": "Joy",
+      "Yıl": "2021",
+      "KM": "117000",
+      "Fiyat": "999.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-117,000-km-de-otomatik-2-boya-harici-hatasiz-boyasiz-sifir-gibi-1299633271/detay",
+      "Baslik": "Renault Clio 1.0 TCe Joy",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Arka Kapı, Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "2.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1296781462",
+      "İlan No": "1296781462",
+      "Marka": "Renault",
+      "Seri": "Clio 1.4 Authentique",
+      "Model": "Authentique",
+      "Yıl": "2004",
+      "KM": "175000",
+      "Fiyat": "467.850 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-hatasiz-boyasiz-klima-buz-175.000-kmde-2025-yeni-sifir-lpgli-1296781462/detay",
+      "Baslik": "Renault Clio 1.4 Authentique",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Authentique",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1294568088",
+      "İlan No": "1294568088",
+      "Marka": "Hyundai",
+      "Seri": "i20 1.4 MPI Style",
+      "Model": "Style",
+      "Yıl": "2015",
+      "KM": "125000",
+      "Fiyat": "933.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-14",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-125,000-km-de-otomatik-vites-degisensiz-duble-ekran-geri-gorus-1294568088/detay",
+      "Baslik": "Hyundai i20 1.4 MPI Style",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Style",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk, Sağ Ön Kapı, Sağ Arka Kapı, Sol Arka Kapı"
+        ],
+        "degisen": [],
+        "tramer": "4.500 TL"
+      }
+    },
+    {
+      "ilan_no": "1296782666",
+      "İlan No": "1296782666",
+      "Marka": "Renault",
+      "Seri": "Fluence 1.5 dCi Joy",
+      "Model": "Joy",
+      "Yıl": "2013",
+      "KM": "218000",
+      "Fiyat": "695.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-dizel-otomatik-renault-fluence-tertemiz-cam-gibi-1296782666/detay",
+      "Baslik": "Renault Fluence 1.5 dCi Joy",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk, Sağ Ön Kapı, Sağ Arka Kapı, Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1300192362",
+      "İlan No": "1300192362",
+      "Marka": "Honda",
+      "Seri": "Civic 1.6i VTEC Premium",
+      "Model": "Premium",
+      "Yıl": "2007",
+      "KM": "280000",
+      "Fiyat": "639.500 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Şampanya",
+      "İlan Tarihi": "2026-02-14",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-honda-makyajli-kasa-plusdegisensiz-honda-bulmak-zor-k.karta-12-takst-1300192362/detay",
+      "Baslik": "Honda Civic 1.6i VTEC Premium",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Premium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Motor Kaputu, Sol Ön Çamurluk, Sol Ön Kapı, Sol Arka Kapı, Sol Arka Çamurluk, Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "18.000 TL (2025-2026)"
+      }
+    },
+    {
+      "ilan_no": "1296773101",
+      "İlan No": "1296773101",
+      "Marka": "Toyota",
+      "Seri": "Yaris 1.4 D-4D Terra",
+      "Model": "Terra",
+      "Yıl": "2007",
+      "KM": "222000",
+      "Fiyat": "525.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-toyota-nokta-hatasiz-boyasiz-tramersiz-ici-disi-sifir-gibi-termiz-1296773101/detay",
+      "Baslik": "Toyota Yaris 1.4 D-4D Terra",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Terra",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1301385006",
+      "İlan No": "1301385006",
+      "Marka": "Renault",
+      "Seri": "R 19",
+      "Model": "RNE Alize",
+      "Yıl": "1999",
+      "KM": "249000",
+      "Fiyat": "245.000 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Lacivert",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-r19-rne-alize-degisensiz-klimali-enjeksiyonlu-hidrolik-dreksiyon-1301385006/detay",
+      "Baslik": "Renault R 19",
+      "Kimden": "FER AUTO",
+      "Paket": "RNE Alize",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301346338",
+      "İlan No": "1301346338",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Touch",
+      "Yıl": "2017",
+      "KM": "144000",
+      "Fiyat": "889.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-0.99-kredi-imkani-2017-model-otomatik-144.000-km-renault-clio-1301346338/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "ELİT OTOMOTİV ÇAYIROVA",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "3250 TL"
+      }
+    },
+    {
+      "ilan_no": "1301643996",
+      "İlan No": "1301643996",
+      "Marka": "Honda",
+      "Seri": "Civic",
+      "Model": "Premium",
+      "Yıl": "2011",
+      "KM": "145000",
+      "Fiyat": "859.018 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-honda-2011-model-honda-civic-1.6-i-vtec-premium-125-bg-145-bin-km-1301643996/detay",
+      "Baslik": "Honda Civic",
+      "Kimden": "GÜNDOĞDU OTOMOTİV",
+      "Paket": "Premium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "14000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300247033",
+      "İlan No": "1300247033",
+      "Marka": "Citroen",
+      "Seri": "C-Elysée",
+      "Model": "Confort",
+      "Yıl": "2015",
+      "KM": "129000",
+      "Fiyat": "659.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-citroen-2015-model-1.6-dizel-129.000-km-servis-bakimli-karta-12-taksit-1300247033/detay",
+      "Baslik": "Citroen C-Elysée",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Confort",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "5 Bin TL"
+      }
+    },
+    {
+      "ilan_no": "1301518413",
+      "İlan No": "1301518413",
+      "Marka": "Citroen",
+      "Seri": "C-Elysée",
+      "Model": "Exclusive",
+      "Yıl": "2015",
+      "KM": "185000",
+      "Fiyat": "599.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-citroen-2015-model-citroen-c-elysee-1.6-hdi-exclusive-1301518413/detay",
+      "Baslik": "Citroen C-Elysée",
+      "Kimden": "ELİT OTOMOTİV ÇAYIROVA",
+      "Paket": "Exclusive",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "10000 TL"
+      }
+    },
+    {
+      "ilan_no": "1301522563",
+      "İlan No": "1301522563",
+      "Marka": "Hyundai",
+      "Seri": "i20",
+      "Model": "Team",
+      "Yıl": "2011",
+      "KM": "230000",
+      "Fiyat": "419.000 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-2011-model-hyundai-i20-troy-1301522563/detay",
+      "Baslik": "Hyundai i20",
+      "Kimden": "ELİT OTOMOTİV ÇAYIROVA",
+      "Paket": "Team",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Arka Kapı"
+        ],
+        "tramer": "21000 TL"
+      }
+    },
+    {
+      "ilan_no": "1293565568",
+      "İlan No": "1293565568",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Icon",
+      "Yıl": "2013",
+      "KM": "183000",
+      "Fiyat": "587.058 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2013-renoult-clio-1.2-icon-degisensiz-hasar-kayitsiz-179-binde-1293565568/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "58 TUNÇ OTOMOTİV",
+      "Paket": "Icon",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Ön Tampon",
+          "Arka Tampon",
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301451254",
+      "İlan No": "1301451254",
+      "Marka": "Renault",
+      "Seri": "Megane",
+      "Model": "Touch",
+      "Yıl": "2020",
+      "KM": "145000",
+      "Fiyat": "1.175.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-asil-motors-renault-megane-touch-1.5-blue-dci-1301451254/detay",
+      "Baslik": "Renault Megane",
+      "Kimden": "ASİL MOTORS",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Bagaj Kapağı"
+        ],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301519417",
+      "İlan No": "1301519417",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Touch",
+      "Yıl": "2015",
+      "KM": "160000",
+      "Fiyat": "849.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2015-model-renault-clio-otomatik-1.5-dci-touch-1301519417/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "ELİT OTOMOTİV ÇAYIROVA",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [
+          "Kaput"
+        ],
+        "tramer": "10000 TL"
+      }
+    },
+    {
+      "ilan_no": "1301167402",
+      "İlan No": "1301167402",
+      "Marka": "Hyundai",
+      "Seri": "i20",
+      "Model": "Jump",
+      "Yıl": "2015",
+      "KM": "185000",
+      "Fiyat": "859.058 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-19",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-2015-hyundai-i20-1.4-benzin-otomatik-1-degisen-3-boya-185-binde-1301167402/detay",
+      "Baslik": "Hyundai i20",
+      "Kimden": "58 TUNÇ OTOMOTİV",
+      "Paket": "Jump",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sol Arka Kapı"
+        ],
+        "tramer": "27000 TL"
+      }
+    },
+    {
+      "ilan_no": "1301094350",
+      "İlan No": "1301094350",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Touch",
+      "Yıl": "2018",
+      "KM": "182000",
+      "Fiyat": "789.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-ilk-sahibinden-2018-clio-touch-plus-1.5-90hp-1301094350/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "DEVRAN İNŞAAT",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301446466",
+      "İlan No": "1301446466",
+      "Marka": "Mercedes-Benz",
+      "Seri": "E Serisi",
+      "Model": "Avantgarde",
+      "Yıl": "2007",
+      "KM": "595000",
+      "Fiyat": "1.050.000 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-mercedes-benz-asil-motors-mercedes-benz-e220-cdi-avantgarde-1301446466/detay",
+      "Baslik": "Mercedes-Benz E Serisi",
+      "Kimden": "ASİL MOTORS",
+      "Paket": "Avantgarde",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "79559.51 TL"
+      }
+    },
+    {
+      "ilan_no": "1301646740",
+      "İlan No": "1301646740",
+      "Marka": "Honda",
+      "Seri": "Civic",
+      "Model": "Eco Premium",
+      "Yıl": "2013",
+      "KM": "185000",
+      "Fiyat": "1.048.018 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-honda-2013-model-honda-civic-1.6-i-vtec-eco-premium-otomatik-1301646740/detay",
+      "Baslik": "Honda Civic",
+      "Kimden": "GÜNDOĞDU OTOMOTİV",
+      "Paket": "Eco Premium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301493422",
+      "İlan No": "1301493422",
+      "Marka": "Volkswagen",
+      "Seri": "Golf",
+      "Model": "BlueMotion Comfortline",
+      "Yıl": "2017",
+      "KM": "178000",
+      "Fiyat": "1.219.000 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-2017-wv-golf-1.6-dizel-otomatik-ekstrali-1301493422/detay",
+      "Baslik": "Volkswagen Golf",
+      "Kimden": "DMR ÇAYIROVA",
+      "Paket": "BlueMotion Comfortline",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "15000 TL"
+      }
+    },
+    {
+      "ilan_no": "1296021892",
+      "İlan No": "1296021892",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Evolution",
+      "Yıl": "2023",
+      "KM": "50000",
+      "Fiyat": "1.195.000 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-safir-auto-2023-renault-clio-evolution-1.0-benzin-otomatik-km-50-1296021892/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "SAFİR AUTO",
+      "Paket": "Evolution",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "9500 TL"
+      }
+    },
+    {
+      "ilan_no": "1301492314",
+      "İlan No": "1301492314",
+      "Marka": "Citroen",
+      "Seri": "C-Elysée",
+      "Model": "Confort",
+      "Yıl": "2017",
+      "KM": "140000",
+      "Fiyat": "634.999 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-citroen-2017-yeni-kasa-c-elysee-1.6-hdi-14o-binde-hatasiz-ayarinda-1301492314/detay",
+      "Baslik": "Citroen C-Elysée",
+      "Kimden": "YILDIZ AUTO",
+      "Paket": "Confort",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "17000 TL"
+      }
+    },
+    {
+      "ilan_no": "1293407171",
+      "İlan No": "1293407171",
+      "Marka": "Mitsubishi",
+      "Seri": "L 200",
+      "Model": "4x4 Storm",
+      "Yıl": "2020",
+      "KM": "181000",
+      "Fiyat": "999.058 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-mitsubishi-2020-mitsubishi-l200-4x4-degisensiz-4-boya-aksesuarli-20-kdvli-1293407171/detay",
+      "Baslik": "Mitsubishi L 200",
+      "Kimden": "58 TUNÇ OTOMOTİV",
+      "Paket": "4x4 Storm",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [
+          "Panel"
+        ],
+        "tramer": "98000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300736113",
+      "İlan No": "1300736113",
+      "Marka": "Toyota",
+      "Seri": "Corolla",
+      "Model": "Dream",
+      "Yıl": "2023",
+      "KM": "97000",
+      "Fiyat": "1.410.000 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Mavi",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-toyota-2023-cikisli-toyota-corolla-1.8-hybrid-97.000km-emsalseiz-1300736113/detay",
+      "Baslik": "Toyota Corolla",
+      "Kimden": "Ömer Faruk Yeşilbaş",
+      "Paket": "Dream",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1302030245",
+      "İlan No": "1302030245",
+      "Marka": "Honda",
+      "Seri": "Civic",
+      "Model": "Eco Elegance",
+      "Yıl": "2018",
+      "KM": "149000",
+      "Fiyat": "1.389.018 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-honda-2018-model-honda-civic-1.6-i-vtec-eco-elegance-otomatik-149-bin-1302030245/detay",
+      "Baslik": "Honda Civic",
+      "Kimden": "GÜNDOĞDU OTOMOTİV",
+      "Paket": "Eco Elegance",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "2.500 TL"
+      }
+    },
+    {
+      "ilan_no": "1293041202",
+      "İlan No": "1293041202",
+      "Marka": "Renault",
+      "Seri": "Megane",
+      "Model": "Expression",
+      "Yıl": "2006",
+      "KM": "258000",
+      "Fiyat": "359.058 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-renoult-megane-degisensiz-hasar-kayitsiz-3-lokal-boya-258-binde-1293041202/detay",
+      "Baslik": "Renault Megane",
+      "Kimden": "58 TUNÇ OTOMOTİV",
+      "Paket": "Expression",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1295358155",
+      "İlan No": "1295358155",
+      "Marka": "Peugeot",
+      "Seri": "301",
+      "Model": "Active",
+      "Yıl": "2017",
+      "KM": "151000",
+      "Fiyat": "659.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-peugeot-2017-model-1.6-dizel-151.000-km-degisensiz-k.kart-12-taksit-1295358155/detay",
+      "Baslik": "Peugeot 301",
+      "Kimden": "GARANTİ OTOMOTİV",
+      "Paket": "Active",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1299230727",
+      "İlan No": "1299230727",
+      "Marka": "Tofaş",
+      "Seri": "Şahin",
+      "Model": "Standart",
+      "Yıl": "1996",
+      "KM": "87000",
+      "Fiyat": "139.058 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-tofas-1996-sahin-1.6-celik-jant-geri-gorus-tesisatli-k.karta-12-taksit-1299230727/detay",
+      "Baslik": "Tofaş Şahin",
+      "Kimden": "58 TUNÇ OTOMOTİV",
+      "Paket": "Standart",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1298317864",
+      "İlan No": "1298317864",
+      "Marka": "Hyundai",
+      "Seri": "i20",
+      "Model": "Jump",
+      "Yıl": "2018",
+      "KM": "189000",
+      "Fiyat": "779.058 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-19",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-2018-hyundai-i20-1.4-dizel-6-ileri-degisensiz-tramersiz-2-boya-1298317864/detay",
+      "Baslik": "Hyundai i20",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "Jump",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "12000 TL"
+      }
+    },
+    {
+      "ilan_no": "1292302151",
+      "İlan No": "1292302151",
+      "Marka": "Citroen",
+      "Seri": "C4 Cactus",
+      "Model": "Shine Edition",
+      "Yıl": "2014",
+      "KM": "210000",
+      "Fiyat": "719.058 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-citroen-2014-c4-cactus-otomatik-en-dolusu-degisensz-hasar-kayitsz-3-boya-1292302151/detay",
+      "Baslik": "Citroen C4 Cactus",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "Shine Edition",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sol Ön Kapı"
+        ],
+        "degisen": [],
+        "tramer": "12000 TL"
+      }
+    },
+    {
+      "ilan_no": "1301169730",
+      "İlan No": "1301169730",
+      "Marka": "Dacia",
+      "Seri": "Duster",
+      "Model": "Laureate",
+      "Yıl": "2017",
+      "KM": "399000",
+      "Fiyat": "729.058 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-19",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-dacia-2017-duster-1.5-dizel-110-bg-4x4-degisen-tramer-yok-motor-sifir-1301169730/detay",
+      "Baslik": "Dacia Duster",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "Laureate",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "13000 TL"
+      }
+    },
+    {
+      "ilan_no": "1294695169",
+      "İlan No": "1294695169",
+      "Marka": "Fiat",
+      "Seri": "Brava",
+      "Model": "SX",
+      "Yıl": "2000",
+      "KM": "298000",
+      "Fiyat": "169.058 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Yeşil",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2000-model-fiat-brava-1.6-sx-klima-aktif-kredi-kartina-12-taksit-1294695169/detay",
+      "Baslik": "Fiat Brava",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "SX",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Tavan",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1300794794",
+      "İlan No": "1300794794",
+      "Marka": "Renault",
+      "Seri": "Clio",
+      "Model": "Icon",
+      "Yıl": "2013",
+      "KM": "187000",
+      "Fiyat": "549.058 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2013-clio-0.9tce-90-bg-eco-icon-1-degisen-4-boya-tramersz-187-km-1300794794/detay",
+      "Baslik": "Renault Clio",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "Icon",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [
+          "Sağ Arka Kapı"
+        ],
+        "tramer": "7000 TL"
+      }
+    },
+    {
+      "ilan_no": "1289749297",
+      "İlan No": "1289749297",
+      "Marka": "Renault",
+      "Seri": "Megane",
+      "Model": "Dynamique",
+      "Yıl": "2010",
+      "KM": "387000",
+      "Fiyat": "449.058 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Füme",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2010-renoult-megane-3-1.5-dizel-tavan-boyasiz-k.karta-12-taksit-1289749297/detay",
+      "Baslik": "Renault Megane",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "Dynamique",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk",
+          "Sol Ön Kapı"
+        ],
+        "tramer": "11000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300584095",
+      "İlan No": "1300584095",
+      "Marka": "Dacia",
+      "Seri": "Duster",
+      "Model": "Laureate",
+      "Yıl": "2017",
+      "KM": "649000",
+      "Fiyat": "629.058 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-dacia-2017-duster-1.5-dci-110-bg-6-ileri-1-degisen-boyasiz-sifir-motor-1300584095/detay",
+      "Baslik": "Dacia Duster",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "Laureate",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "9000 TL"
+      }
+    },
+    {
+      "ilan_no": "1226722767",
+      "İlan No": "1226722767",
+      "Marka": "BMW",
+      "Seri": "745i",
+      "Model": "745i",
+      "Yıl": "2002",
+      "KM": "389000",
+      "Fiyat": "899.058 TL",
+      "Yakıt Tipi": "Benzin",
+      "Vites": "Otomatik",
+      "Renk": "Lacivert",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-bmw-bmw-745i-koltuk-isitma-sogutma-25-oranla-k-karta-12-taksit-1226722767/detay",
+      "Baslik": "BMW 745i",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "745i",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [
+          "Sağ Ön Kapı"
+        ],
+        "tramer": "22000 TL"
+      }
+    },
+    {
+      "ilan_no": "1294132946",
+      "İlan No": "1294132946",
+      "Marka": "Mitsubishi",
+      "Seri": "L 200 4x4 Storm",
+      "Model": "Storm",
+      "Yıl": "2020",
+      "KM": "229000",
+      "Fiyat": "1.049.058 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-mitsubishi-2020-mitsubishi-l200-4x4-degisensiz-5-boya-aksesurli-20-kdvli-1294132946/detay",
+      "Baslik": "Mitsubishi L 200 4x4 Storm",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "Storm",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "87000 TL"
+      }
+    },
+    {
+      "ilan_no": "1291320057",
+      "İlan No": "1291320057",
+      "Marka": "Renault",
+      "Seri": "Kangoo Multix 1.5 dCi Extreme",
+      "Model": "Extreme",
+      "Yıl": "2011",
+      "KM": "243000",
+      "Fiyat": "349.058 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-renault-2011-kango-1.5-dizel-110-bg-degisensiz-hasar-kayitsz-motor-sifir-1291320057/detay",
+      "Baslik": "Renault Kangoo Multix 1.5 dCi Extreme",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "Extreme",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1296763437",
+      "İlan No": "1296763437",
+      "Marka": "Dacia",
+      "Seri": "Duster 1.3 Tce Essential",
+      "Model": "Essential",
+      "Yıl": "2022",
+      "KM": "155000",
+      "Fiyat": "1.189.058 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-dacia-2022-duster-1.3-tce-4x4-170-bin-ekstra-hatasiz-boyasiz-tramersiz-1296763437/detay",
+      "Baslik": "Dacia Duster 1.3 Tce Essential",
+      "Kimden": "58 TUNÇ OTOMOTİV GAYRİMENKUL 58",
+      "Paket": "Essential",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1285057709",
+      "İlan No": "1285057709",
+      "Marka": "Kia",
+      "Seri": "Cerato 1.6 EX Comfort",
+      "Model": "EX Comfort",
+      "Yıl": "2006",
+      "KM": "298000",
+      "Fiyat": "321.500 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-kia-tek-fiat-pazarlksiz-son-24-saat-indirimde-10-yuruyeni-hatasz-1285057709/detay",
+      "Baslik": "Kia Cerato 1.6 EX Comfort",
+      "Kimden": "ANKA AUTO ÇAYIROVA",
+      "Paket": "EX Comfort",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Belirtilmemiş (Ağır Hasar Kayıtlı)"
+      }
+    },
+    {
+      "ilan_no": "1282131573",
+      "İlan No": "1282131573",
+      "Marka": "Mercedes-Benz",
+      "Seri": "Vito Tourer Select 124 CDI",
+      "Model": "Tourer Select 124 CDI",
+      "Yıl": "2022",
+      "KM": "28000",
+      "Fiyat": "2.930.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-mercedes-benz-28-bin-km-hatasiz-boyasiz-vip-otomobil-ruhsatli-otomatik-1282131573/detay",
+      "Baslik": "Mercedes-Benz Vito Tourer Select 124 CDI",
+      "Kimden": "BAŞ OTOMOTİV",
+      "Paket": "Tourer Select 124 CDI",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1292874327",
+      "İlan No": "1292874327",
+      "Marka": "Mercedes-Benz",
+      "Seri": "CLA 180 d AMG",
+      "Model": "AMG",
+      "Yıl": "2014",
+      "KM": "155000",
+      "Fiyat": "1.467.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-mercedes-benz-kaput-tavan-bagaj-orjinal-dusuk-km-masrafsiz-cam-tavan-amg-1292874327/detay",
+      "Baslik": "Mercedes-Benz CLA 180 d AMG",
+      "Kimden": "BAŞ OTOMOTİV",
+      "Paket": "AMG",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "tramer": "7.935 TL"
+      }
+    },
+    {
+      "ilan_no": "1295338477",
+      "İlan No": "1295338477",
+      "Marka": "Renault",
+      "Seri": "Clio 1.5 dCi SportTourer Touch",
+      "Model": "Touch",
+      "Yıl": "2019",
+      "KM": "195000",
+      "Fiyat": "877.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2019-model-1.5-dizel-sportourer-touch-paket-otomatik-1295338477/detay",
+      "Baslik": "Renault Clio 1.5 dCi SportTourer Touch",
+      "Kimden": "BAŞ OTOMOTİV",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Motor Kaputu"
+        ],
+        "degisen": [],
+        "tramer": "40.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1294730137",
+      "İlan No": "1294730137",
+      "Marka": "Kia",
+      "Seri": "Sportage 2.0 CRDi Plus",
+      "Model": "Plus",
+      "Yıl": "2013",
+      "KM": "395000",
+      "Fiyat": "860.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Füme",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-kia-2013-otomatik-4x4-cam-tavan-koltuk-isitma-ful-paket-1294730137/detay",
+      "Baslik": "Kia Sportage 2.0 CRDi Plus",
+      "Kimden": "BAŞ OTOMOTİV",
+      "Paket": "Plus",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [
+          "Sol Ön Kapı"
+        ],
+        "tramer": "50.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1287996357",
+      "İlan No": "1287996357",
+      "Marka": "Volkswagen",
+      "Seri": "Golf 1.6 TDI BlueMotion Comfortline",
+      "Model": "BlueMotion Comfortline",
+      "Yıl": "2015",
+      "KM": "253000",
+      "Fiyat": "862.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-dizel-otomatik-degisensiz-ww-golf-comfortline-k.kart-12-taksit-1287996357/detay",
+      "Baslik": "Volkswagen Golf 1.6 TDI BlueMotion Comfortline",
+      "Kimden": "BAŞ OTOMOTİV",
+      "Paket": "BlueMotion Comfortline",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı",
+          "Motor Kaputu"
+        ],
+        "degisen": [],
+        "tramer": "13.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1274953825",
+      "İlan No": "1274953825",
+      "Marka": "Land Rover",
+      "Seri": "Range Rover Sport 2.0 Phev HSE Dynamic",
+      "Model": "HSE Dynamic",
+      "Yıl": "2019",
+      "KM": "107000",
+      "Fiyat": "6.780.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-land-rover-2020-cikisli-hatasiz-boyasiz-ici-taba-yetkili-servis-bayi-cikis-1274953825/detay",
+      "Baslik": "Land Rover Range Rover Sport 2.0 Phev HSE Dynamic",
+      "Kimden": "BAŞ OTOMOTİV",
+      "Paket": "HSE Dynamic",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1299566275",
+      "İlan No": "1299566275",
+      "Marka": "Toyota",
+      "Seri": "Corolla 1.4 D-4D Elegant",
+      "Model": "Elegant",
+      "Yıl": "2007",
+      "KM": "193000",
+      "Fiyat": "607.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-toyota-2007-dizel-otomatik-toyota-corolla-aile-araci-1299566275/detay",
+      "Baslik": "Toyota Corolla 1.4 D-4D Elegant",
+      "Kimden": "BAŞ OTOMOTİV",
+      "Paket": "Elegant",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Tavan",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Motor Kaputu"
+        ],
+        "degisen": [
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "tramer": "13.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1295466171",
+      "İlan No": "1295466171",
+      "Marka": "Opel",
+      "Seri": "Astra 1.4 T Sport Stil",
+      "Model": "Sport Stil",
+      "Yıl": "2014",
+      "KM": "175000",
+      "Fiyat": "915.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Füme",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-opel-2014-opel-astra-degisensiz-175.000-km-en-dolusu-1295466171/detay",
+      "Baslik": "Opel Astra 1.4 T Sport Stil",
+      "Kimden": "AS AUTO CAR-SALES",
+      "Paket": "Sport Stil",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "39.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1295331284",
+      "İlan No": "1295331284",
+      "Marka": "Audi",
+      "Seri": "Q8 50 TDI Quattro",
+      "Model": "S-Line",
+      "Yıl": "2019",
+      "KM": "180000",
+      "Fiyat": "6.890.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-audi-2019-bayi-q8-s-line-ici-kirmizi-arka-aks-180.000-km-htsz-bysiz-1295331284/detay",
+      "Baslik": "Audi Q8 50 TDI Quattro",
+      "Kimden": "AS AUTO CAR-SALES",
+      "Paket": "S-Line",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301247882",
+      "İlan No": "1301247882",
+      "Marka": "Peugeot",
+      "Seri": "408 1.2 PureTech Allure",
+      "Model": "Allure",
+      "Yıl": "2025",
+      "KM": "16500",
+      "Fiyat": "1.815.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Yeşil",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-peugeot-2025-lansman-408-allure-16.500-km-hatasiz-boyasiz-tramersiz-1301247882/detay",
+      "Baslik": "Peugeot 408 1.2 PureTech Allure",
+      "Kimden": "AS AUTO CAR-SALES",
+      "Paket": "Allure",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "130 TL"
+      }
+    },
+    {
+      "ilan_no": "1301507607",
+      "İlan No": "1301507607",
+      "Marka": "Ford",
+      "Seri": "Focus 1.6 TDCi Titanium",
+      "Model": "Titanium",
+      "Yıl": "2013",
+      "KM": "124000",
+      "Fiyat": "865.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Füme",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-ford-2013-ford-focus-titanium-124.000-km-degisensiz-tramersiz-1301507607/detay",
+      "Baslik": "Ford Focus 1.6 TDCi Titanium",
+      "Kimden": "AS AUTO CAR-SALES",
+      "Paket": "Titanium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1282604390",
+      "İlan No": "1282604390",
+      "Marka": "Ford",
+      "Seri": "Focus 1.5 EcoBlue Titanium Stil",
+      "Model": "Titanium Stil",
+      "Yıl": "2024",
+      "KM": "6500",
+      "Fiyat": "1.965.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-ford-2024-ford-focus-titanium-stil-6.500-km-sifirdan-farksiz-1282604390/detay",
+      "Baslik": "Ford Focus 1.5 EcoBlue Titanium Stil",
+      "Kimden": "AS AUTO CAR-SALES",
+      "Paket": "Titanium Stil",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301364274",
+      "İlan No": "1301364274",
+      "Marka": "Chevrolet",
+      "Seri": "Aveo 1.4 LT",
+      "Model": "LT",
+      "Yıl": "2011",
+      "KM": "167000",
+      "Fiyat": "485.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-chevrolet-2011-167.000-km-chevrolet-1.4-otomatik-2-parca-boyali-tramersiz-1301364274/detay",
+      "Baslik": "Chevrolet Aveo 1.4 LT",
+      "Kimden": "AS AUTO CAR-SALES",
+      "Paket": "LT",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301341658",
+      "İlan No": "1301341658",
+      "Marka": "Audi",
+      "Seri": "A6 Sedan 45 TFSI Quattro S Line",
+      "Model": "Quattro S Line",
+      "Yıl": "2024",
+      "KM": "35000",
+      "Fiyat": "6.350.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-audi-2024-35.000-km-ilk-sahibinden-s-line-hatasiz-boyasiz-tramersiz-1301341658/detay",
+      "Baslik": "Audi A6 Sedan 45 TFSI Quattro S Line",
+      "Kimden": "AS AUTO CAR-SALES",
+      "Paket": "Quattro S Line",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "130 TL"
+      }
+    },
+    {
+      "ilan_no": "1277114580",
+      "İlan No": "1277114580",
+      "Marka": "Mercedes-Benz",
+      "Seri": "G Serisi 350",
+      "Model": "G350d",
+      "Yıl": "2016",
+      "KM": "110000",
+      "Fiyat": "8.499.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-14",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-mercedes-benz-2016-mercedes-g350d-komple-ic-dis-facelift-2024-g63-donusum-htsz-1277114580/detay",
+      "Baslik": "Mercedes-Benz G Serisi 350",
+      "Kimden": "AS AUTO CAR-SALES",
+      "Paket": "G350d",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1296905330",
+      "İlan No": "1296905330",
+      "Marka": "DS Automobiles",
+      "Seri": "DS 7 Crossback 1.5 BlueHDI Etoile",
+      "Model": "Etoile",
+      "Yıl": "2025",
+      "KM": "9500",
+      "Fiyat": "3.190.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Bej",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-ds-automobiles-2025-ds-7-etoile-1.5-dizel-otomatik-9.500-km-hatasiz-boyasiz-1296905330/detay",
+      "Baslik": "DS Automobiles DS 7 Crossback 1.5 BlueHDI Etoile",
+      "Kimden": "AS AUTO CAR-SALES",
+      "Paket": "Etoile",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1301351087",
+      "İlan No": "1301351087",
+      "Marka": "Volkswagen",
+      "Seri": "Polo 1.2 TDI Trendline",
+      "Model": "Trendline",
+      "Yıl": "2013",
+      "KM": "315000",
+      "Fiyat": "455.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-asil-motors-volkswagen-polo-1.2-tdi-trendline-1301351087/detay",
+      "Baslik": "Volkswagen Polo 1.2 TDI Trendline",
+      "Kimden": "ASİL MOTORS",
+      "Paket": "Trendline",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sol Ön Çamurluk",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Arka Kapı"
+        ],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1301440478",
+      "İlan No": "1301440478",
+      "Marka": "Audi",
+      "Seri": "A3 Sportback 1.4 TFSI Attraction",
+      "Model": "Attraction",
+      "Yıl": "2010",
+      "KM": "325000",
+      "Fiyat": "805.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-audi-asil-motors-audi-a3-sportback-1.4-tfsi-125hp-1301440478/detay",
+      "Baslik": "Audi A3 Sportback 1.4 TFSI Attraction",
+      "Kimden": "ASİL MOTORS",
+      "Paket": "Attraction",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "1.005,24 TL"
+      }
+    },
+    {
+      "ilan_no": "1278927426",
+      "İlan No": "1278927426",
+      "Marka": "Fiat",
+      "Seri": "Tipo 1.4 ie",
+      "Model": "ie",
+      "Yıl": "1998",
+      "KM": "180000",
+      "Fiyat": "189.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Mavi",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-sahin-dogan-parasina-1998-tipo-sx-arac-2-yil-muayenelidir-1278927426/detay",
+      "Baslik": "Fiat Tipo 1.4 ie",
+      "Kimden": "AUTO MEHMET",
+      "Paket": "ie",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Tavan",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1282285137",
+      "İlan No": "1282285137",
+      "Marka": "Citroen",
+      "Seri": "C-Elysée 1.5 BlueHDI Feel",
+      "Model": "Feel",
+      "Yıl": "2020",
+      "KM": "150000",
+      "Fiyat": "719.999 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-citroen-2020-model-c-elysae-degisensiz-1282285137/detay",
+      "Baslik": "Citroen C-Elysée 1.5 BlueHDI Feel",
+      "Kimden": "AUTO MEHMET",
+      "Paket": "Feel",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "32.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1294944629",
+      "İlan No": "1294944629",
+      "Marka": "Hyundai",
+      "Seri": "ix35 2.0 R Style",
+      "Model": "Style",
+      "Yıl": "2010",
+      "KM": "255000",
+      "Fiyat": "919.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-hyundai-hatasizzzz-x35-1294944629/detay",
+      "Baslik": "Hyundai ix35 2.0 R Style",
+      "Kimden": "AUTO MEHMET",
+      "Paket": "Style",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "2.950 TL"
+      }
+    },
+    {
+      "ilan_no": "1301334605",
+      "İlan No": "1301334605",
+      "Marka": "BMW",
+      "Seri": "3 Serisi 316i Comfort",
+      "Model": "Comfort",
+      "Yıl": "2011",
+      "KM": "185000",
+      "Fiyat": "959.999 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-bmw-hatasiz-bmw-316i-e90-1301334605/detay",
+      "Baslik": "BMW 3 Serisi 316i Comfort",
+      "Kimden": "AUTO MEHMET",
+      "Paket": "Comfort",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1295297919",
+      "İlan No": "1295297919",
+      "Marka": "Renault",
+      "Seri": "Symbol 1.2 Authentique",
+      "Model": "Authentique",
+      "Yıl": "2012",
+      "KM": "238000",
+      "Fiyat": "369.999 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-19",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2012-renault-makyajli-kasa-senbolll-yeni-muayeneli-1295297919/detay",
+      "Baslik": "Renault Symbol 1.2 Authentique",
+      "Kimden": "AUTO MEHMET",
+      "Paket": "Authentique",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [
+          "Kaput",
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "8.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1295284756",
+      "İlan No": "1295284756",
+      "Marka": "Skoda",
+      "Seri": "Felicia 1.3 GLXi",
+      "Model": "GLXi",
+      "Yıl": "1999",
+      "KM": "106000",
+      "Fiyat": "249.999 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-skoda-degisensiz-kayitsiz-yeni-muayeneli-1295284756/detay",
+      "Baslik": "Skoda Felicia 1.3 GLXi",
+      "Kimden": "AUTO MEHMET",
+      "Paket": "GLXi",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1295281876",
+      "İlan No": "1295281876",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2021",
+      "KM": "172000",
+      "Fiyat": "729.999 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-1,6-egea-easy-1295281876/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Easy",
+      "Kimden": "AUTO MEHMET",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1245671585",
+      "İlan No": "1245671585",
+      "Marka": "Tofaş",
+      "Seri": "Doğan S",
+      "Model": "S",
+      "Yıl": "1995",
+      "KM": "99999",
+      "Fiyat": "249.999 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-tofas-auto-mehmet-ten-5-parca-boyali-95-dogan-s-2-yil-muayeneliii-1245671585/detay",
+      "Baslik": "Tofaş Doğan S",
+      "Kimden": "AUTO MEHMET",
+      "Paket": "S",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1290760516",
+      "İlan No": "1290760516",
+      "Marka": "Kia",
+      "Seri": "Rio 1.4 EX Comfort",
+      "Model": "EX Comfort",
+      "Yıl": "2007",
+      "KM": "325000",
+      "Fiyat": "459.999 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-08",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-kia-hatasiz-ayarinda-5-parca-lokal-tam-otomatik-1290760516/detay",
+      "Baslik": "Kia Rio 1.4 EX Comfort",
+      "Kimden": "AUTO MEHMET",
+      "Paket": "EX Comfort",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "2.400 TL"
+      }
+    },
+    {
+      "ilan_no": "1290335332",
+      "İlan No": "1290335332",
+      "Marka": "Renault",
+      "Seri": "Clio 1.5 dCi Icon",
+      "Model": "Icon",
+      "Yıl": "2013",
+      "KM": "129000",
+      "Fiyat": "725.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-cilo-1.5-dizel-km-129.000-orjinal-3-parca-boyali-harici-hatasiz-1290335332/detay",
+      "Baslik": "Renault Clio 1.5 dCi Icon",
+      "Kimden": "AYAZ OTOMOTİV",
+      "Paket": "Icon",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Arka Kapı"
+        ],
+        "tramer": "9.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1301327637",
+      "İlan No": "1301327637",
+      "Marka": "Volvo",
+      "Seri": "S60 1.5 T3 Advance",
+      "Model": "Advance",
+      "Yıl": "2018",
+      "KM": "171000",
+      "Fiyat": "1.477.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volvo-volvo-s60-emsalsiz-temizlik-parca-boyali-1301327637/detay",
+      "Baslik": "Volvo S60 1.5 T3 Advance",
+      "Kimden": "AYAZ OTOMOTİV",
+      "Paket": "Advance",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "18.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1295731010",
+      "İlan No": "1295731010",
+      "Marka": "Renault",
+      "Seri": "Symbol 1.5 DCI Joy",
+      "Model": "Joy",
+      "Yıl": "2013",
+      "KM": "150000",
+      "Fiyat": "545.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2013-symbol-1.5-dizel-joy-ilk-elden-1295731010/detay",
+      "Baslik": "Renault Symbol 1.5 DCI Joy",
+      "Kimden": "AYAZ OTOMOTİV",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "7.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300298937",
+      "İlan No": "1300298937",
+      "Marka": "Volkswagen",
+      "Seri": "Polo 1.4 TDI Trendline",
+      "Model": "Trendline",
+      "Yıl": "2016",
+      "KM": "154000",
+      "Fiyat": "589.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-14",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-polo-1.4-dizel-154.000-km-orjinal-emsalsiz-1300298937/detay",
+      "Baslik": "Volkswagen Polo 1.4 TDI Trendline",
+      "Kimden": "AYAZ OTOMOTİV",
+      "Paket": "Trendline",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Tavan",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "10.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300288627",
+      "İlan No": "1300288627",
+      "Marka": "BMW",
+      "Seri": "X3 20i sDrive X Line",
+      "Model": "X Line",
+      "Yıl": "2016",
+      "KM": "195000",
+      "Fiyat": "1.550.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-14",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-bmw-bmv-x3-emsalsiz-195.000-km-orjinal-1300288627/detay",
+      "Baslik": "BMW X3 20i sDrive X Line",
+      "Kimden": "AYAZ OTOMOTİV",
+      "Paket": "X Line",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "Ağır Hasar Kayıtlı"
+      }
+    },
+    {
+      "ilan_no": "1297394550",
+      "İlan No": "1297394550",
+      "Marka": "Renault",
+      "Seri": "Symbol 1.5 DCI Joy",
+      "Model": "Joy",
+      "Yıl": "2013",
+      "KM": "102000",
+      "Fiyat": "619.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-14",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2013-symbol-1.5-dizel-joy-102-binde-emsalsiz-1297394550/detay",
+      "Baslik": "Renault Symbol 1.5 DCI Joy",
+      "Kimden": "AYAZ OTOMOTİV",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Bagaj Kapağı"
+        ],
+        "tramer": "30.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1302210203",
+      "İlan No": "1302210203",
+      "Marka": "Ford",
+      "Seri": "Tourneo Courier 1.5 EcoBlue Deluxe",
+      "Model": "Deluxe",
+      "Yıl": "2025",
+      "KM": "17000",
+      "Fiyat": "1.180.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-ford-2025-model-tourneo-courier-1.5delux-17-bin-km-de-hatasiz-boyasiz-1302210203/detay",
+      "Baslik": "Ford Tourneo Courier 1.5 EcoBlue Deluxe",
+      "Kimden": "AYF OTOMOTİV",
+      "Paket": "Deluxe",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1302173055",
+      "İlan No": "1302173055",
+      "Marka": "Chery",
+      "Seri": "Tiggo 8 Pro 1.6 TGDI Excellent",
+      "Model": "Excellent",
+      "Yıl": "2023",
+      "KM": "20000",
+      "Fiyat": "1.770.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-chery-2023-model-tiggo-8pro-excellent-20-bin-km-de-boyasiz-cam-tavan-1302173055/detay",
+      "Baslik": "Chery Tiggo 8 Pro 1.6 TGDI Excellent",
+      "Kimden": "AYF OTOMOTİV",
+      "Paket": "Excellent",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1298849747",
+      "İlan No": "1298849747",
+      "Marka": "Volkswagen",
+      "Seri": "Passat 1.5 TSI Business",
+      "Model": "Business DSG",
+      "Yıl": "2021",
+      "KM": "58000",
+      "Fiyat": "2.150.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-2021-model-volkswagen-passat-1.5-tsi-58-bin-kmde-hatasiz-boyasiz-1298849747/detay",
+      "Baslik": "Volkswagen Passat 1.5 TSI Business",
+      "Kimden": "AYF OTOMOTİV",
+      "Paket": "Business DSG",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1292245072",
+      "İlan No": "1292245072",
+      "Marka": "Volkswagen",
+      "Seri": "Transporter 2.5 TDI Camlı Van Comfortline",
+      "Model": "Comfortline",
+      "Yıl": "2004",
+      "KM": "300000",
+      "Fiyat": "395.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-volkswagen-2004-model-vw-trasporter-2.5tdi-comfortline-300-bin-km-de-9-plus1-1292245072/detay",
+      "Baslik": "Volkswagen Transporter 2.5 TDI Camlı Van Comfortline",
+      "Kimden": "AYF OTOMOTİV",
+      "Paket": "Comfortline",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Tavan",
+          "Ön Tampon",
+          "Arka Tampon",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "7.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1300797704",
+      "İlan No": "1300797704",
+      "Marka": "Toyota",
+      "Seri": "Proace City 1.5 D Flame X-Pack",
+      "Model": "Flame X-Pack",
+      "Yıl": "2021",
+      "KM": "74000",
+      "Fiyat": "1.210.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-toyota-2021-toyota-proace-ctiy-1.5d-cam-tavan-74-bin-km-de-otomatik-1300797704/detay",
+      "Baslik": "Toyota Proace City 1.5 D Flame X-Pack",
+      "Kimden": "AYF OTOMOTİV",
+      "Paket": "Flame X-Pack",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301476995",
+      "İlan No": "1301476995",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Easy",
+      "Model": "Easy DCT",
+      "Yıl": "2022",
+      "KM": "72000",
+      "Fiyat": "1.040.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2022-model-fiat-egea-1.6-mjet-otomatik-72-bin-km-de-1301476995/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Easy",
+      "Kimden": "AYF OTOMOTİV",
+      "Paket": "Easy DCT",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1297668190",
+      "İlan No": "1297668190",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2021",
+      "KM": "155000",
+      "Fiyat": "735.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2021-model-egea-1.6-dizel-manuel-155-bin-km-de-1297668190/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Easy",
+      "Kimden": "AYF OTOMOTİV",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Bagaj Kapağı"
+        ],
+        "tramer": "45.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1274000901",
+      "İlan No": "1274000901",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2021",
+      "KM": "170000",
+      "Fiyat": "730.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2021-model-fiat-egea-1.6-mjet-easy-170-bin-km-de-manuel-1274000901/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Easy",
+      "Kimden": "AYF OTOMOTİV",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1299829911",
+      "İlan No": "1299829911",
+      "Marka": "BMW",
+      "Seri": "218i Active Tourer Active Tourer",
+      "Model": "Standart Otomatik",
+      "Yıl": "2014",
+      "KM": "74000",
+      "Fiyat": "1.249.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-bmw-2014-model-bmw-218i-active-tourer-74-bin-km-de-hatasiz-boyasiz-1299829911/detay",
+      "Baslik": "BMW 218i Active Tourer Active Tourer",
+      "Kimden": "AYF OTOMOTİV",
+      "Paket": "Standart Otomatik",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      },
+      "status": "sold"
+    },
+    {
+      "ilan_no": "1301440252",
+      "İlan No": "1301440252",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.3 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2022",
+      "KM": "68000",
+      "Fiyat": "875.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2022-model-68-bin-km-de-yetkili-servis-bakimli-temizz-egea-1301440252/detay",
+      "Baslik": "Fiat Egea 1.3 Multijet Easy",
+      "Kimden": "AYHAN YAZICI AUTO",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Ön Kapı"
+        ],
+        "tramer": "4.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1283933949",
+      "İlan No": "1283933949",
+      "Marka": "Opel",
+      "Seri": "Corsa 1.4 Color Edition",
+      "Model": "Color Edition",
+      "Yıl": "2016",
+      "KM": "113000",
+      "Fiyat": "884.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-opel-2016-model-hatasiizz-full-otomatik-113-bin-km-de-opel-corsa-1283933949/detay",
+      "Baslik": "Opel Corsa 1.4 Color Edition",
+      "Kimden": "AYHAN YAZICI AUTO",
+      "Paket": "Color Edition",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "6.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1282683142",
+      "İlan No": "1282683142",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.3 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2020",
+      "KM": "249000",
+      "Fiyat": "619.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2020model-degisensiz-1.3-fiat-egea-k.kartina-12-taksit-1282683142/detay",
+      "Baslik": "Fiat Egea 1.3 Multijet Easy",
+      "Kimden": "BALCIOĞLU OTOMOTİV",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1300368049",
+      "İlan No": "1300368049",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.4 Fire Urban",
+      "Model": "Urban",
+      "Yıl": "2023",
+      "KM": "50000",
+      "Fiyat": "939.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Manuel",
+      "Renk": "Mavi",
+      "İlan Tarihi": "2026-02-15",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2023-1.4-egea-urban-k.kartina-12-taksit-1300368049/detay",
+      "Baslik": "Fiat Egea 1.4 Fire Urban",
+      "Kimden": "BALCIOĞLU OTOMOTİV",
+      "Paket": "Urban",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "0 TL"
+      },
+      "status": "active"
+    },
+    {
+      "ilan_no": "1300273950",
+      "İlan No": "1300273950",
+      "Marka": "Skoda",
+      "Seri": "Octavia 1.0 e-Tec Premium",
+      "Model": "Premium",
+      "Yıl": "2021",
+      "KM": "88000",
+      "Fiyat": "1.560.000 TL",
+      "Yakıt Tipi": "Hibrit",
+      "Vites": "Otomatik",
+      "Renk": "Mavi",
+      "İlan Tarihi": "2026-02-14",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-skoda-2021-skoda-octavia-yetkili-servis-bakimli-k.kartina-12-taksit-1300273950/detay",
+      "Baslik": "Skoda Octavia 1.0 e-Tec Premium",
+      "Kimden": "BALCIOĞLU OTOMOTİV",
+      "Paket": "Premium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Ön Tampon",
+          "Arka Tampon",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "2.400 TL"
+      }
+    },
+    {
+      "ilan_no": "1300096170",
+      "İlan No": "1300096170",
+      "Marka": "BMW",
+      "Seri": "530i Luxury Line",
+      "Model": "Luxury Line",
+      "Yıl": "2017",
+      "KM": "189000",
+      "Fiyat": "3.500.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-13",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-bmw-emsalsiz-bmw-530i-g30-k.kartina-12-taksit-1300096170/detay",
+      "Baslik": "BMW 530i Luxury Line",
+      "Kimden": "BALCIOĞLU OTOMOTİV",
+      "Paket": "Luxury Line",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1293579111",
+      "İlan No": "1293579111",
+      "Marka": "Fiat",
+      "Seri": "Fiorino Combi 1.4 Eko Premio",
+      "Model": "Eko Premio",
+      "Yıl": "2024",
+      "KM": "34000",
+      "Fiyat": "825.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-09",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-fiat-2024-1.4-eko-premio-fiat-fiorino-k.kartina-12-taksit-1293579111/detay",
+      "Baslik": "Fiat Fiorino Combi 1.4 Eko Premio",
+      "Kimden": "BALCIOĞLU OTOMOTİV",
+      "Paket": "Eko Premio",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1240011640",
+      "İlan No": "1240011640",
+      "Marka": "Fiat",
+      "Seri": "Fiorino Combi 1.3 Multijet Emotion",
+      "Model": "Emotion",
+      "Yıl": "2010",
+      "KM": "346000",
+      "Fiyat": "295.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-fiat-2010-model-temiz-bakimli-348-bin-km-de-4-lastik-teni-1240011640/detay",
+      "Baslik": "Fiat Fiorino Combi 1.3 Multijet Emotion",
+      "Kimden": "BAYRAK MOTORS",
+      "Paket": "Emotion",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Tavan",
+          "Ön Tampon",
+          "Arka Tampon",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "3.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1301567643",
+      "İlan No": "1301567643",
+      "Marka": "Mercedes-Benz",
+      "Seri": "E 200 Elegance",
+      "Model": "Elegance",
+      "Yıl": "1996",
+      "KM": "452000",
+      "Fiyat": "625.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Otomatik",
+      "Renk": "Lacivert",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-mercedes-benz-1996-model-degisensiz-temiz-bakimli-orjinal-452-bin-km-de-1301567643/detay",
+      "Baslik": "Mercedes-Benz E 200 Elegance",
+      "Kimden": "BAYRAK MOTORS",
+      "Paket": "Elegance",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Ön Tampon",
+          "Arka Tampon",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1301566617",
+      "İlan No": "1301566617",
+      "Marka": "Ford",
+      "Seri": "Transit 330 S",
+      "Model": "330 S",
+      "Yıl": "2003",
+      "KM": "279000",
+      "Fiyat": "265.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Lacivert",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-ford-2004-cikisli-279-bin-km-de-4-lastik-yeni-bakimli-arka-ceker-1301566617/detay",
+      "Baslik": "Ford Transit 330 S",
+      "Kimden": "BAYRAK MOTORS",
+      "Paket": "330 S",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1298767105",
+      "İlan No": "1298767105",
+      "Marka": "Ford",
+      "Seri": "Tourneo Connect 1.8 TDCi",
+      "Model": "1.8 TDCi",
+      "Yıl": "2010",
+      "KM": "405000",
+      "Fiyat": "315.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-ford-2010-model-405-bin-km-de-bakimlari-yeni-yapildi-klimali-1298767105/detay",
+      "Baslik": "Ford Tourneo Connect 1.8 TDCi",
+      "Kimden": "BAYRAK MOTORS",
+      "Paket": "1.8 TDCi",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sol Arka Kapı"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1301213487",
+      "İlan No": "1301213487",
+      "Marka": "Ford",
+      "Seri": "Tourneo Connect 1.8 TDCi",
+      "Model": "Deluxs",
+      "Yıl": "2007",
+      "KM": "140000",
+      "Fiyat": "455.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-ford-2007-model-140-bin-km-de-deluxs-orjinal-bakimli-1301213487/detay",
+      "Baslik": "Ford Tourneo Connect 1.8 TDCi",
+      "Kimden": "BAYRAK MOTORS",
+      "Paket": "Deluxs",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1297734416",
+      "İlan No": "1297734416",
+      "Marka": "Volkswagen",
+      "Seri": "Transporter 2.0 TDI City Van",
+      "Model": "City Van",
+      "Yıl": "2012",
+      "KM": "272000",
+      "Fiyat": "725.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-volkswagen-2012-model-uzun-sase-140-hp-degisensiz-bakimli-temiz-1297734416/detay",
+      "Baslik": "Volkswagen Transporter 2.0 TDI City Van",
+      "Kimden": "BAYRAK MOTORS",
+      "Paket": "City Van",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "8.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1299723311",
+      "İlan No": "1299723311",
+      "Marka": "Volkswagen",
+      "Seri": "Caddy 1.6 TDI Comfortline",
+      "Model": "Comfortline",
+      "Yıl": "2014",
+      "KM": "471000",
+      "Fiyat": "565.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-11",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-volkswagen-2014-model-otomatik-471-bin-km-de-temiz-bakimli-takas-olur-1299723311/detay",
+      "Baslik": "Volkswagen Caddy 1.6 TDI Comfortline",
+      "Kimden": "BAYRAK MOTORS",
+      "Paket": "Comfortline",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "9.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1302174836",
+      "İlan No": "1302174836",
+      "Marka": "Fiat",
+      "Seri": "Linea 1.3 Multijet Pop",
+      "Model": "Pop",
+      "Yıl": "2014",
+      "KM": "190000",
+      "Fiyat": "480.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-berkay-motors-degisensiz~2014~beyaz-linea-kusursuz-1302174836/detay",
+      "Baslik": "Fiat Linea 1.3 Multijet Pop",
+      "Kimden": "BERKAY MOTORS",
+      "Paket": "Pop",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "160.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1302020699",
+      "İlan No": "1302020699",
+      "Marka": "Opel",
+      "Seri": "Insignia 1.6 T Edition Elegance",
+      "Model": "Edition Elegance",
+      "Yıl": "2011",
+      "KM": "142000",
+      "Fiyat": "625.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-opel-berkay-motors-opel-insignia-142.000-km-1.6t~2011-1302020699/detay",
+      "Baslik": "Opel Insignia 1.6 T Edition Elegance",
+      "Kimden": "BERKAY MOTORS",
+      "Paket": "Edition Elegance",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "13.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1302013313",
+      "İlan No": "1302013313",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Comfort",
+      "Model": "Comfort",
+      "Yıl": "2017",
+      "KM": "169000",
+      "Fiyat": "765.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-berkay-motors-2017-egea~beyaz-renk~kaput-boyasiz~kusursuz-1302013313/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Comfort",
+      "Kimden": "BERKAY MOTORS",
+      "Paket": "Comfort",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "3.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1302010718",
+      "İlan No": "1302010718",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Comfort",
+      "Model": "Comfort",
+      "Yıl": "2017",
+      "KM": "169000",
+      "Fiyat": "795.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-berkay-motors-2017-fiat-egea~otomatik~3-parca-boyali-beyaz-1302010718/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Comfort",
+      "Kimden": "BERKAY MOTORS",
+      "Paket": "Comfort",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "4.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1299879173",
+      "İlan No": "1299879173",
+      "Marka": "Audi",
+      "Seri": "A4 Sedan 2.0 TDI",
+      "Model": "A4 Sedan",
+      "Yıl": "2011",
+      "KM": "345000",
+      "Fiyat": "945.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-audi-berkay-motors-audi-a4-jant-lastik-coil-s-line-dolu-dolu-1299879173/detay",
+      "Baslik": "Audi A4 Sedan 2.0 TDI",
+      "Kimden": "BERKAY MOTORS",
+      "Paket": "A4 Sedan",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sol Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Sağ Ön Çamurluk"
+        ],
+        "tramer": "110.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1299860529",
+      "İlan No": "1299860529",
+      "Marka": "BMW",
+      "Seri": "520i Premium",
+      "Model": "Premium",
+      "Yıl": "2015",
+      "KM": "255000",
+      "Fiyat": "1.465.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-bmw-berkay-motors-2015~vakum~hayalet~20-jant-lastik-dolu-dolu-1299860529/detay",
+      "Baslik": "BMW 520i Premium",
+      "Kimden": "BERKAY MOTORS",
+      "Paket": "Premium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sağ Ön Çamurluk"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "17.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1299906907",
+      "İlan No": "1299906907",
+      "Marka": "Opel",
+      "Seri": "Insignia 1.6 T Cosmo",
+      "Model": "Cosmo",
+      "Yıl": "2012",
+      "KM": "206000",
+      "Fiyat": "850.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-opel-berkay-motors-opel-insignia~hatasiz-boyasiz~sunruf~en-dolusu-1299906907/detay",
+      "Baslik": "Opel Insignia 1.6 T Cosmo",
+      "Kimden": "BERKAY MOTORS",
+      "Paket": "Cosmo",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      },
+      "status": "sold"
+    },
+    {
+      "ilan_no": "1284112145",
+      "İlan No": "1284112145",
+      "Marka": "Audi",
+      "Seri": "A4 Sedan 45 TFSI Quattro Advanced",
+      "Model": "Quattro Advanced",
+      "Yıl": "2020",
+      "KM": "141000",
+      "Fiyat": "2.800.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-audi-audi-a4-sedan-45-tfsi-1284112145/detay",
+      "Baslik": "Audi A4 Sedan 45 TFSI Quattro Advanced",
+      "Kimden": "PİRİ MOTORS",
+      "Paket": "Quattro Advanced",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301327795",
+      "İlan No": "1301327795",
+      "Marka": "Tata",
+      "Seri": "Vista 1.3 TDI Aura",
+      "Model": "Aura",
+      "Yıl": "2011",
+      "KM": "230000",
+      "Fiyat": "260.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-tata-2011-model-1.3-dizel-tata-vista-1301327795/detay",
+      "Baslik": "Tata Vista 1.3 TDI Aura",
+      "Kimden": "PİRİ MOTORS",
+      "Paket": "Aura",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "8.200 TL"
+      }
+    },
+    {
+      "ilan_no": "1301237710",
+      "İlan No": "1301237710",
+      "Marka": "Opel",
+      "Seri": "Crossland 1.2 T Essential",
+      "Model": "Essential",
+      "Yıl": "2024",
+      "KM": "19700",
+      "Fiyat": "1.025.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-opel-piri-motors-1301237710/detay",
+      "Baslik": "Opel Crossland 1.2 T Essential",
+      "Kimden": "PİRİ MOTORS",
+      "Paket": "Essential",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sol Ön Kapı"
+        ],
+        "degisen": [],
+        "tramer": "AĞIR HASAR KAYITLI"
+      }
+    },
+    {
+      "ilan_no": "1300535563",
+      "İlan No": "1300535563",
+      "Marka": "Opel",
+      "Seri": "Astra 1.6 Edition Plus",
+      "Model": "Edition Plus",
+      "Yıl": "2016",
+      "KM": "65000",
+      "Fiyat": "845.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Manuel",
+      "Renk": "Lacivert",
+      "İlan Tarihi": "2026-02-16",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-opel-opel-astra-hatasiz-ayarinda-emsalsiz-temiz-1300535563/detay",
+      "Baslik": "Opel Astra 1.6 Edition Plus",
+      "Kimden": "PİRİ MOTORS",
+      "Paket": "Edition Plus",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [
+          "Sol Ön Kapı"
+        ],
+        "tramer": "70.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1297488673",
+      "İlan No": "1297488673",
+      "Marka": "Renault",
+      "Seri": "Megane 1.5 dCi Touch",
+      "Model": "Touch",
+      "Yıl": "2019",
+      "KM": "110500",
+      "Fiyat": "1.210.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-15",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-meganne-sedan-1.5-dcitouch-edc-1297488673/detay",
+      "Baslik": "Renault Megane 1.5 dCi Touch",
+      "Kimden": "PİRİ MOTORS",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [
+          "Bagaj Kapağı"
+        ],
+        "tramer": "18.500 TL"
+      }
+    },
+    {
+      "ilan_no": "1297363013",
+      "İlan No": "1297363013",
+      "Marka": "Volkswagen",
+      "Seri": "Passat 1.6 TDI BlueMotion Business",
+      "Model": "Business",
+      "Yıl": "2020",
+      "KM": "120100",
+      "Fiyat": "1.935.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-14",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-hatasiz-boyasiz-hasar-kayitsiz-1297363013/detay",
+      "Baslik": "Volkswagen Passat 1.6 TDI BlueMotion Business",
+      "Kimden": "PİRİ MOTORS",
+      "Paket": "Business",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "129 TL"
+      }
+    },
+    {
+      "ilan_no": "1268533198",
+      "İlan No": "1268533198",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.6 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2022",
+      "KM": "82000",
+      "Fiyat": "1.059.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-14",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2023-cikisli-egea-1,6-dizel-otomatik-easy-karta-12-taksit-1268533198/detay",
+      "Baslik": "Fiat Egea 1.6 Multijet Easy",
+      "Kimden": "PİRİ MOTORS",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1296912014",
+      "İlan No": "1296912014",
+      "Marka": "Ford",
+      "Seri": "Focus 1.5 Ti-VCT Trend X",
+      "Model": "Trend X",
+      "Yıl": "2021",
+      "KM": "125000",
+      "Fiyat": "1.070.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-12",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-ford-ford-fokus-sedan-otomatik-1296912014/detay",
+      "Baslik": "Ford Focus 1.5 Ti-VCT Trend X",
+      "Kimden": "PİRİ MOTORS",
+      "Paket": "Trend X",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Sol Ön Kapı"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "190.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1216793525",
+      "İlan No": "1216793525",
+      "Marka": "Fiat",
+      "Seri": "Egea 1.3 Multijet Easy",
+      "Model": "Easy",
+      "Yıl": "2017",
+      "KM": "212000",
+      "Fiyat": "689.500 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-fiat-2017-egea-bakimli-masrafsiz-temiz-kredi-karta-12-taksit-1216793525/detay",
+      "Baslik": "Fiat Egea 1.3 Multijet Easy",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Easy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "2.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1299390526",
+      "İlan No": "1299390526",
+      "Marka": "Volkswagen",
+      "Seri": "Polo 1.6 Comfortline Classic",
+      "Model": "Comfortline Classic",
+      "Yıl": "2000",
+      "KM": "203000",
+      "Fiyat": "295.850 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-hatasiz-boyasiz-sifir-lpgli-203,000-km-de-tum-k.karta-12-taksit-1299390526/detay",
+      "Baslik": "Volkswagen Polo 1.6 Comfortline Classic",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Comfortline Classic",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      },
+      "status": "sold"
+    },
+    {
+      "ilan_no": "1302176998",
+      "İlan No": "1302176998",
+      "Marka": "Renault",
+      "Seri": "Clio 1.0 TCe Touch",
+      "Model": "Touch",
+      "Yıl": "2022",
+      "KM": "83000",
+      "Fiyat": "1.047.500 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-83,000-km-de-otomatik-touch-2-kapi-boya-harici-hatasiz-boyasiz-1302176998/detay",
+      "Baslik": "Renault Clio 1.0 TCe Touch",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1275726541",
+      "İlan No": "1275726541",
+      "Marka": "Renault",
+      "Seri": "Trafic 2.0 BlueDCi Grand Confort",
+      "Model": "Grand Confort",
+      "Yıl": "2020",
+      "KM": "230000",
+      "Fiyat": "717.500 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-renault-2020-trafic-2.0-bluedci-grand-comfort....kredi-kartina-12-taksit-1275726541/detay",
+      "Baslik": "Renault Trafic 2.0 BlueDCi Grand Confort",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Grand Confort",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1299234676",
+      "İlan No": "1299234676",
+      "Marka": "Renault",
+      "Seri": "Megane 1.5 Blue DCI Icon",
+      "Model": "Icon",
+      "Yıl": "2021",
+      "KM": "102000",
+      "Fiyat": "1.685.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-hatasiz-boyasiz-cam-tavan-icon-full-plusfull-paket-cizik-dahi-yok-1299234676/detay",
+      "Baslik": "Renault Megane 1.5 Blue DCI Icon",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Icon",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      },
+      "status": "sold"
+    },
+    {
+      "ilan_no": "1276057775",
+      "İlan No": "1276057775",
+      "Marka": "Opel",
+      "Seri": "Corsa 1.2 Twinport Enjoy 111",
+      "Model": "Enjoy 111",
+      "Yıl": "2010",
+      "KM": "68000",
+      "Fiyat": "687.500 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-opel-68.000-km-hatasiz-boyasiz-111.ozel-seri-bu-kmde-trde-yok-1276057775/detay",
+      "Baslik": "Opel Corsa 1.2 Twinport Enjoy 111",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Enjoy 111",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1302166338",
+      "İlan No": "1302166338",
+      "Marka": "Renault",
+      "Seri": "Clio 1.5 dCi Joy",
+      "Model": "Joy",
+      "Yıl": "2016",
+      "KM": "128000",
+      "Fiyat": "747.850 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Kırmızı",
+      "İlan Tarihi": "2026-02-25",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-128,000-kmde-kazasiz-tertemiz-aile-arabasi-k.kartlarina-12-takst-1302166338/detay",
+      "Baslik": "Renault Clio 1.5 dCi Joy",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301957234",
+      "İlan No": "1301957234",
+      "Marka": "Peugeot",
+      "Seri": "307 1.6 HDi Look",
+      "Model": "Look",
+      "Yıl": "2005",
+      "KM": "285000",
+      "Fiyat": "377.500 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Gümüş Gri",
+      "İlan Tarihi": "2026-02-24",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-peugeot-tum-kredi-kartlarina-12-taksit-cam-gibi-tertemiz-pegeout-307-1301957234/detay",
+      "Baslik": "Peugeot 307 1.6 HDi Look",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Look",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Kaput",
+          "Ön Tampon",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1254172727",
+      "İlan No": "1254172727",
+      "Marka": "Hyundai",
+      "Seri": "i20 1.4 MPI Jump",
+      "Model": "Jump",
+      "Yıl": "2015",
+      "KM": "189500",
+      "Fiyat": "880.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-tam-otomatik-i-20-kazasiz-degisensiz-hasar-kayitsiz-1254172727/detay",
+      "Baslik": "Hyundai i20 1.4 MPI Jump",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Jump",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1301885902",
+      "İlan No": "1301885902",
+      "Marka": "Renault",
+      "Seri": "Megane 1.5 dCi Touch",
+      "Model": "Touch",
+      "Yıl": "2016",
+      "KM": "148000",
+      "Fiyat": "1.139.500 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-23",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-dizel-otomatik-megane-4-148-binde-yok-boyle-temizi-cok-bakimli-1301885902/detay",
+      "Baslik": "Renault Megane 1.5 dCi Touch",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1239857347",
+      "İlan No": "1239857347",
+      "Marka": "Ford",
+      "Seri": "Tourneo Courier 1.5 TDCi Journey Titanium",
+      "Model": "Journey Titanium",
+      "Yıl": "2019",
+      "KM": "118000",
+      "Fiyat": "867.500 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-minivan-panelvan-ford-2019-courier-titanyum-2.5-boya-harici-hatasiz-boyasiz-1239857347/detay",
+      "Baslik": "Ford Tourneo Courier 1.5 TDCi Journey Titanium",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Journey Titanium",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Kapı",
+          "Sağ Arka Çamurluk",
+          "Bagaj Kapağı"
+        ],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1298720757",
+      "İlan No": "1298720757",
+      "Marka": "Tofaş",
+      "Seri": "Doğan SLX",
+      "Model": "SLX",
+      "Yıl": "1995",
+      "KM": "101000",
+      "Fiyat": "285.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Bordo",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-tofas-iddaaa-ediyoruz-bundan-temizi-yok-sifir-muayene-cam-gibi-1298720757/detay",
+      "Baslik": "Tofaş Doğan SLX",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "SLX",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "0 TL"
+      }
+    },
+    {
+      "ilan_no": "1281149641",
+      "İlan No": "1281149641",
+      "Marka": "Audi",
+      "Seri": "Q7 3.0 TDI Quattro",
+      "Model": "S Line",
+      "Yıl": "2008",
+      "KM": "199000",
+      "Fiyat": "1.857.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-arazi-suv-pickup-audi-199.000-kmde-2013-facelift-gorunumlu-hatasiz-boyasiz-s-line-1281149641/detay",
+      "Baslik": "Audi Q7 3.0 TDI Quattro",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "S Line",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1301663265",
+      "İlan No": "1301663265",
+      "Marka": "Hyundai",
+      "Seri": "i20 1.4 MPI Elite Smart",
+      "Model": "Elite Smart",
+      "Yıl": "2017",
+      "KM": "72000",
+      "Fiyat": "1.125.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Gri",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-otomatik-cam-tavan-elitte-smart-full-plusfull-k.kartina-12-taksit-1301663265/detay",
+      "Baslik": "Hyundai i20 1.4 MPI Elite Smart",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Elite Smart",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sol Arka Çamurluk",
+          "Bel Altı"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1301426130",
+      "İlan No": "1301426130",
+      "Marka": "Volkswagen",
+      "Seri": "Passat 1.4 TSI BlueMotion Comfortline",
+      "Model": "Comfortline",
+      "Yıl": "2015",
+      "KM": "165000",
+      "Fiyat": "1.395.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-21",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-derin-siyah-plus-ici-bej-plus-elektikli-koltuk-plus-otomatik-passat-ful-pakt-1301426130/detay",
+      "Baslik": "Volkswagen Passat 1.4 TSI BlueMotion Comfortline",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Comfortline",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Çamurluk",
+          "Sol Ön Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1292278604",
+      "İlan No": "1292278604",
+      "Marka": "Honda",
+      "Seri": "Civic 1.6i VTEC Eco Elegance",
+      "Model": "Eco Elegance",
+      "Yıl": "2013",
+      "KM": "195000",
+      "Fiyat": "887.500 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-honda-195.000-km-sanruflu-full-plusfull-paket-koltuk-isitma-geri-gorus-1292278604/detay",
+      "Baslik": "Honda Civic 1.6i VTEC Eco Elegance",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Eco Elegance",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Sol Ön Kapı",
+          "Sol Arka Kapı"
+        ],
+        "degisen": [
+          "Sol Ön Çamurluk"
+        ],
+        "tramer": "20.000 TL"
+      }
+    },
+    {
+      "ilan_no": "1298476681",
+      "İlan No": "1298476681",
+      "Marka": "Volkswagen",
+      "Seri": "Jetta 1.4 TSI Comfortline",
+      "Model": "Comfortline",
+      "Yıl": "2007",
+      "KM": "287000",
+      "Fiyat": "510.000 TL",
+      "Yakıt Tipi": "Benzinli",
+      "Vites": "Manuel",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-2007-1.4-tsi-cam-gibi-lekesiz-cizksiz-kredi-kartlarina-12-taksit-1298476681/detay",
+      "Baslik": "Volkswagen Jetta 1.4 TSI Comfortline",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Comfortline",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Tavan",
+          "Ön Tampon",
+          "Arka Tampon",
+          "Sağ Ön Çamurluk",
+          "Sol Ön Çamurluk",
+          "Sağ Ön Kapı",
+          "Sol Ön Kapı",
+          "Sağ Arka Kapı",
+          "Sol Arka Kapı",
+          "Sağ Arka Çamurluk",
+          "Sol Arka Çamurluk",
+          "Bagaj Kapağı",
+          "Motor Kaputu"
+        ],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1298435254",
+      "İlan No": "1298435254",
+      "Marka": "Opel",
+      "Seri": "Insignia 1.6 CDTI Grand Sport T Design",
+      "Model": "Grand Sport T Design",
+      "Yıl": "2017",
+      "KM": "154000",
+      "Fiyat": "1.285.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-20",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-opel-154.000-kmde-hatasiz-boyasiz-tramersiz-plusgerigorus-plusnavi-pluspalayer-1298435254/detay",
+      "Baslik": "Opel Insignia 1.6 CDTI Grand Sport T Design",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Grand Sport T Design",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1265392775",
+      "İlan No": "1265392775",
+      "Marka": "Hyundai",
+      "Seri": "Accent Blue 1.6 CRDI Biz",
+      "Model": "Biz",
+      "Yıl": "2012",
+      "KM": "209000",
+      "Fiyat": "679.500 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Manuel",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-18",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-hyundai-hatasiz-boyasiz-tramersiz-sifir-gibi-kredi-kartina-12-taksit-1265392775/detay",
+      "Baslik": "Hyundai Accent Blue 1.6 CRDI Biz",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Biz",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      },
+      "status": "sold"
+    },
+    {
+      "ilan_no": "1262933460",
+      "İlan No": "1262933460",
+      "Marka": "Volkswagen",
+      "Seri": "Golf 1.6 Comfortline",
+      "Model": "Comfortline",
+      "Yıl": "1999",
+      "KM": "345000",
+      "Fiyat": "355.000 TL",
+      "Yakıt Tipi": "Benzin & LPG",
+      "Vites": "Manuel",
+      "Renk": "Lacivert",
+      "İlan Tarihi": "2026-02-17",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-volkswagen-golf-4-klima-buz-tertemiz-lpg-tanki-sifir-k-kartina-12-taksit-1262933460/detay",
+      "Baslik": "Volkswagen Golf 1.6 Comfortline",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Comfortline",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "-"
+      }
+    },
+    {
+      "ilan_no": "1301174823",
+      "İlan No": "1301174823",
+      "Marka": "Renault",
+      "Seri": "Megane 1.5 dCi Touch",
+      "Model": "Touch",
+      "Yıl": "2016",
+      "KM": "149000",
+      "Fiyat": "1.235.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-19",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-nokta-hatasiz-boyasiz-1.5-dci-otomatik-megan-4-emsalsiz-temizlik-1301174823/detay",
+      "Baslik": "Renault Megane 1.5 dCi Touch",
+      "Kimden": "İSMAİL ÇİÇEK",
+      "Paket": "Touch",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1298883581",
+      "İlan No": "1298883581",
+      "Marka": "Renault",
+      "Seri": "Megane 1.5 Blue DCI Joy",
+      "Model": "Joy",
+      "Yıl": "2021",
+      "KM": "150000",
+      "Fiyat": "1.209.999 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Beyaz",
+      "İlan Tarihi": "2026-02-22",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-2021-model-1.5-blue-dci-otomatik-megane-hatasiz-ayarinda-1298883581/detay",
+      "Baslik": "Renault Megane 1.5 Blue DCI Joy",
+      "Kimden": "YILDIZ AUTO",
+      "Paket": "Joy",
+      "ekspertiz_ozeti": {
+        "boya": [
+          "Motor Kaputu, Sol Ön Kapı"
+        ],
+        "degisen": [],
+        "tramer": "Yok"
+      }
+    },
+    {
+      "ilan_no": "1302474746",
+      "İlan No": "1302474746",
+      "Marka": "Renault",
+      "Seri": "Megane 1.5 Blue DCI Icon",
+      "Model": "Icon",
+      "Yıl": "2020",
+      "KM": "135000",
+      "Fiyat": "1.485.000 TL",
+      "Yakıt Tipi": "Dizel",
+      "Vites": "Otomatik",
+      "Renk": "Siyah",
+      "İlan Tarihi": "2026-02-26",
+      "url": "https://www.sahibinden.com/ilan/vasita-otomobil-renault-asil-motors-renault-megane-icon-1.5-blue-dci-1302474746/detay",
+      "Baslik": "Renault Megane 1.5 Blue DCI Icon",
+      "Kimden": "ASİL MOTORS",
+      "Paket": "Icon",
+      "ekspertiz_ozeti": {
+        "boya": [],
+        "degisen": [],
+        "tramer": "Yok",
+        "Lokal Boya": "Sağ Arka Kapı, Sağ Arka Çamurluk"
+      }
+    }
+  ]
+}

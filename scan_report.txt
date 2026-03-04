@@ -1,0 +1,16 @@
+all_data.json: LISTE 62 kayit
+all_data_backup_before_clear.json: LISTE 1 kayit
+bot_state.json: DICT keys=['last_check_date', 'checked_ads_today', 'last_checked_index'] (no vehicles)
+cars_data.json: DICT vehicles=62
+cars_data_backup_before_clear.json: DICT vehicles=38
+cars_data_cleaned.json: DICT vehicles=36
+cars_data_dashboard_ready.json: LISTE 38 kayit
+cars_data_final.json: DICT vehicles=9
+cars_data_final_invalid.json: HATA Expecting ',' delimiter: line 3 column 11 (char 28)
+cars_data_firstblock.json: DICT vehicles=9
+cars_data_fixed.json: HATA Expecting ',' delimiter: line 3 column 11 (char 28)
+cars_data_fixed_clean.json: HATA Expecting ',' delimiter: line 3 column 11 (char 28)
+cars_data_secondblock_invalid.json: HATA Extra data: line 1 column 13 (char 12)
+check_report_20260225_050617.json: DICT keys=['timestamp', 'results'] (no vehicles)
+ilan_sonuc.json: LISTE 3 kayit
+rich_data_input.json: DICT vehicles=21

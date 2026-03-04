@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Takip - Araç Listesi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            margin-bottom: 40px;
+            color: white;
+        }
+        
+        .header h1 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 2.2em;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .header p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1em;
+            font-weight: 300;
+        }
+        
+        .region-container {
+            margin-bottom: 40px;
+        }
+        
+        .region-title {
+            background: white;
+            padding: 18px 25px;
+            border-left: 5px solid #14b8a6;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-size: 1.3em;
+            color: #1a365d;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .vehicles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .vehicle-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .vehicle-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+        }
+        
+        .vehicle-header {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+            padding: 18px;
+        }
+        
+        .vehicle-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-bottom: 6px;
+            letter-spacing: -0.3px;
+        }
+        
+        .vehicle-location {
+            font-size: 0.85em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .vehicle-body {
+            padding: 18px;
+        }
+        
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.9em;
+        }
+        
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            color: #64748b;
+            font-weight: 600;
+            flex: 1;
+        }
+        
+        .info-value {
+            color: #1a365d;
+            font-weight: 500;
+            text-align: right;
+        }
+        
+        .days-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-top: 8px;
+            box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+        }
+        
+        .price-tag {
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: bold;
+            padding: 8px 0;
+            border-top: 1px solid #eee;
+            margin-top: 10px;
+        }
+        
+        .seller-info {
+            background: #f5f5f5;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 0.8em;
+        }
+        
+        .seller-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2px;
+        }
+        
+        .seller-phone {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .empty-region {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        .features {
+            background: #f9f9f9;
+            padding: 6px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 0.8em;
+        }
+        
+        .feature-tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 2px 6px;
+            border-radius: 2px;
+            margin: 2px 2px 2px 0;
+            font-size: 0.8em;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid #14b8a6;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #14b8a6;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #64748b;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+        
+        .filter-container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .filter-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 18px;
+        }
+        
+        .filter-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .filter-label {
+            font-weight: 600;
+            color: #64748b;
+            font-size: 0.9em;
+        }
+        
+        .filter-input, .filter-select, .filter-checkbox {
+            padding: 8px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.9em;
+            font-family: inherit;
+        }
+        
+        .filter-input:focus, .filter-select:focus {
+            outline: none;
+            border-color: #14b8a6;
+            box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.1);
+        }
+        
+        .filter-checkbox-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+        
+        .filter-checkbox input {
+            cursor: pointer;
+        }
+        
+        .filter-button {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 15px;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .filter-apply {
+            background: #14b8a6;
+            color: white;
+        }
+        
+        .filter-apply:hover {
+            background: #0d9488;
+        }
+        
+        .filter-reset {
+            background: #f1f5f9;
+            color: #64748b;
+        }
+        
+        .filter-reset:hover {
+            background: #e2e8f0;
+        }
+        
+        .no-results {
+            background: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            color: #64748b;
+        }
+        
+        .no-results-text {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+            background: #f8fafc;
+            padding: 0;
+            border-radius: 8px;
+            margin-top: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .inspection-title {
+            font-weight: 600;
+            color: #1a365d;
+            margin: 0;
+            padding: 12px 15px;
+            font-size: 0.95em;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            background: #f1f5f9;
+        }
+        
+        .inspection-title:hover {
+            background: #e2e8f0;
+        }
+        
+        .inspection-content {
+            display: none;
+            padding: 10px 12px;
+        }
+        
+        .inspection-content.open {
+            display: block;
+        }
+        
+        .collapse-icon {
+            font-size: 0.8em;
+            transition: transform 0.2s ease;
+        }
+        
+        .collapse-icon.open {
+            transform: rotate(180deg);
+        }
+        
+        .inspection-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+        
+        .inspection-table thead {
+            background: #1a365d;
+            color: white;
+        }
+        
+        .inspection-table th {
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        .inspection-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .inspection-table tr:hover {
+            background: #f1f5f9;
+        }
+        
+        .status-original {
+            background: #10b981;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .status-painted {
+            background: #f59e0b;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .status-local {
+            background: #14b8a6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .status-changed {
+            background: #ef4444;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .status-tramer {
+            background: #f97316;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 0.8em;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .legend-box {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Galeri Takip Sistemi</h1>
+            <p>Araç Envanteri - Bölgelere Göre Kategorize</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="total-vehicles">0</div>
+                <div class="stat-label">Toplam Araç</div>
+            </div>
+        </div>
+        
+        <div class="filter-container">
+            <div class="filter-title">🔍 Filtrele</div>
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label class="filter-label">Arama (Marka/Model)</label>
+                    <input type="text" id="searchInput" class="filter-input" placeholder="Örn: Toyota Corolla, Honda...">
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Bölge</label>
+                    <select id="regionFilter" class="filter-select">
+                        <option value="">Tüm Bölgeler</option>
+                        <option value="Çayırova">Çayırova</option>
+                        <option value="Gebze">Gebze</option>
+                        <option value="DerÇiftliği">DerÇiftliği</option>
+                        <option value="İzmit">İzmit</option>
+                        <option value="Diğer">Diğer</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Fiyat Aralığı (TL)</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="priceMin" class="filter-input" placeholder="Min" style="flex: 1;">
+                        <input type="number" id="priceMax" class="filter-input" placeholder="Max" style="flex: 1;">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Yıl Aralığı</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="yearMin" class="filter-input" placeholder="Min" style="flex: 1;">
+                        <input type="number" id="yearMax" class="filter-input" placeholder="Max" style="flex: 1;">
+                    </div>
+                </div>
+            </div>
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label class="filter-label">Galeri</label>
+                    <input type="text" id="galerFilter" class="filter-input" placeholder="Örn: GARANTİ, GÜNDOĞDU...">
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">İlanda Kaç Gün</label>
+                    <div class="filter-checkbox-group">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="days" value="0"> 0 gün
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="days" value="1"> 1 gün
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="days" value="2+"> 2+ gün
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-button">
+                <button class="filter-btn filter-apply" onclick="applyFilters()">Filtrele</button>
+                <button class="filter-btn filter-reset" onclick="resetFilters()">Sıfırla</button>
+            </div>
+        </div>
+        
+        <div id="regions-container"></div>
+    </div>
+    
+    <script>
+        let allVehicles = []; // Tüm araçları tut
+        let filteredVehicles = []; // Filtrelenmiş araçları tut
+        
+        // Tarih farkını dinamik olarak hesapla (publishDate'ten bugüne kadar)
+        function calculateDaysListed(publishDate) {
+            const pubDate = new Date(publishDate);
+            const today = new Date();
+            const diffTime = today - pubDate;
+            return Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        }
+
+        function parseNumber(value) {
+            if (value === null || value === undefined) return 0;
+            if (typeof value === 'number') return Number.isFinite(value) ? value : 0;
+            const cleaned = String(value).replace(/\./g, '').replace(/,/g, '.').replace(/[^\d.\-]/g, '');
+            const parsed = Number(cleaned);
+            return Number.isFinite(parsed) ? parsed : 0;
+        }
+
+        function normalizeRegion(rawRegion) {
+            const region = String(rawRegion || '').trim();
+            if (!region) return 'Diğer';
+            if (region.includes('Çayırova')) return 'Çayırova';
+            if (region.includes('Gebze')) return 'Gebze';
+            if (region.includes('İzmit')) return 'İzmit';
+            if (region.includes('Derince') || region.includes('Çiftlik')) return 'DerÇiftliği';
+            return region;
+        }
+
+        function normalizeVehicle(raw) {
+            if (raw && raw.vehicle && raw.location && raw.seller) {
+                return {
+                    ...raw,
+                    adNo: raw.adNo || raw.ilan_no || raw['İlan No'] || '-',
+                    adUrl: raw.adUrl || raw.url || raw.ilan_url || '',
+                    publishDate: raw.publishDate || raw['İlan Tarihi'] || raw.tarih || '-',
+                    price: parseNumber(raw.price ?? raw.fiyat ?? raw['Fiyat']),
+                    seller: {
+                        name: raw.seller?.name || raw.galeri || raw['Galeri'] || raw['Kimden'] || 'Bilinmiyor',
+                        phone: raw.seller?.phone || raw.telefon || raw.phone || '-'
+                    },
+                    location: {
+                        ...raw.location,
+                        region: normalizeRegion(raw.location?.region)
+                    },
+                    vehicle: {
+                        ...raw.vehicle,
+                        brand: raw.vehicle?.brand || '-',
+                        model: raw.vehicle?.model || '-',
+                        year: Number(raw.vehicle?.year) || raw.vehicle?.year || '-',
+                        fuel: raw.vehicle?.fuel || '-',
+                        engine: raw.vehicle?.engine || '-',
+                        km: parseNumber(raw.vehicle?.km),
+                        body_type: raw.vehicle?.body_type || '-',
+                        transmission: raw.vehicle?.transmission || '-',
+                        package: raw.vehicle?.package || '-'
+                    },
+                    inspection: raw.inspection || {}
+                };
+            }
+
+            return {
+                adNo: raw?.adNo || raw?.ilan_no || raw?.['İlan No'] || '-',
+                adUrl: raw?.adUrl || raw?.url || raw?.ilan_url || '',
+                publishDate: raw?.publishDate || raw?.['İlan Tarihi'] || raw?.tarih || '-',
+                price: parseNumber(raw?.price ?? raw?.fiyat ?? raw?.['Fiyat']),
+                seller: {
+                    name: raw?.galeri || raw?.['Galeri'] || raw?.seller?.name || raw?.['Kimden'] || 'Bilinmiyor',
+                    phone: raw?.telefon || raw?.phone || raw?.seller?.phone || '-'
+                },
+                location: {
+                    region: normalizeRegion(raw?.location?.region || raw?.bolge || raw?.['Bölge'])
+                },
+                vehicle: {
+                    brand: raw?.brand || raw?.marka || raw?.['Marka'] || '-',
+                    model: raw?.model || raw?.['Model'] || '-',
+                    year: Number(raw?.year || raw?.yil || raw?.['Yıl']) || raw?.year || raw?.yil || raw?.['Yıl'] || '-',
+                    fuel: raw?.fuel || raw?.yakit || raw?.['Yakıt Tipi'] || raw?.['Yakıt'] || '-',
+                    engine: raw?.engine || raw?.motor || raw?.['Motor'] || '-',
+                    km: parseNumber(raw?.km || raw?.['KM']),
+                    body_type: raw?.body_type || raw?.kasa_tipi || raw?.['Kasa Tipi'] || '-',
+                    transmission: raw?.transmission || raw?.vites || raw?.['Vites'] || '-',
+                    package: raw?.package || raw?.paket || raw?.['Paket'] || '-'
+                },
+                inspection: raw?.inspection || raw?.ekspertiz_ozeti || {},
+                features: Array.isArray(raw?.features) ? raw.features : []
+            };
+        }
+        
+        // JSON verilerini yükle ve dashboard'ı oluştur
+        async function loadDashboard() {
+            try {
+                const response = await fetch('cars_data.json');
+                const data = await response.json();
+                const rawVehicles = Array.isArray(data) ? data : (data?.vehicles || []);
+                const normalizedVehicles = rawVehicles.map(normalizeVehicle);
+                
+                // Tüm araçları kaydet
+                allVehicles = normalizedVehicles;
+                filteredVehicles = normalizedVehicles;
+                
+                // Toplam araç sayısını güncelle
+                document.getElementById('total-vehicles').textContent = normalizedVehicles.length;
+                
+                // Bölgelere göre araçları grupla
+                const vehiclesByRegion = {};
+                const fixedRegions = ["Çayırova", "Gebze", "DerÇiftliği", "İzmit", "Diğer"];
+                const dataRegions = Array.isArray(data?.regions)
+                    ? data.regions.map(normalizeRegion)
+                    : [];
+                const discoveredRegions = [...new Set(normalizedVehicles.map(v => v.location?.region).filter(Boolean))];
+                const regions = [...new Set([...fixedRegions, ...dataRegions, ...discoveredRegions])];
+                
+                regions.forEach(region => {
+                    vehiclesByRegion[region] = [];
+                });
+                
+                normalizedVehicles.forEach(vehicle => {
+                    const region = vehicle.location?.region || 'Diğer';
+                    if (!vehiclesByRegion[region]) {
+                        vehiclesByRegion[region] = [];
+                    }
+                    vehiclesByRegion[region].push(vehicle);
+                });
+                
+                // HTML oluştur
+                const container = document.getElementById('regions-container');
+                
+                regions.forEach(region => {
+                    const vehicles = vehiclesByRegion[region] || [];
+                    
+                    const regionDiv = document.createElement('div');
+                    regionDiv.className = 'region-container';
+                    
+                    const titleDiv = document.createElement('div');
+                    titleDiv.className = 'region-title';
+                    titleDiv.textContent = `📍 ${region} Bölgesi`;
+                    regionDiv.appendChild(titleDiv);
+                    
+                    if (vehicles.length === 0) {
+                        const emptyDiv = document.createElement('div');
+                        emptyDiv.className = 'empty-region';
+                        emptyDiv.textContent = 'Bu bölgede henüz araç yok.';
+                        regionDiv.appendChild(emptyDiv);
+                    } else {
+                        const gridDiv = document.createElement('div');
+                        gridDiv.className = 'vehicles-grid';
+                        
+                        vehicles.forEach(vehicle => {
+                            gridDiv.appendChild(createVehicleCard(vehicle));
+                        });
+                        
+                        regionDiv.appendChild(gridDiv);
+                    }
+                    
+                    container.appendChild(regionDiv);
+                });
+                
+            } catch (error) {
+                console.error('Hata:', error);
+                document.getElementById('regions-container').innerHTML = 
+                    '<div class="empty-region"><p>❌ Veriler yüklenirken hata oluştu.</p></div>';
+            }
+        }
+        
+        function createVehicleCard(vehicle) {
+            const v = vehicle.vehicle;
+            const card = document.createElement('div');
+            card.className = 'vehicle-card';
+            
+            // Parça adlarını Türkçeye çevir
+            const translatePart = (part) => {
+                const translations = {
+                    'frontBumper': 'Ön Tampon',
+                    'leftFender': 'Sol Çamurluk',
+                    'rightRearDoor': 'Sağ Arka Kapı',
+                    'hood': 'Kaput',
+                    'motor': 'Motor',
+                    'şanzıman': 'Şanzıman',
+                    'motorhood': 'Motor Kapağı',
+                    'rightFender': 'Sağ Çamurluk',
+                    'leftRearDoor': 'Sol Arka Kapı',
+                    'rearBumper': 'Arka Tampon'
+                };
+                return translations[part] || part;
+            };
+            
+            // Hasar durumunu kategorize et
+            const getStatusClass = (status) => {
+                const lower = status.toLowerCase();
+                if (lower.includes('tramer') || lower.includes('tl')) return 'status-tramer';
+                if (lower.includes('lokal')) return 'status-local';
+                if (lower.includes('orijinal')) return 'status-original';
+                if (lower.includes('boyalı') || lower.includes('boya')) return 'status-painted';
+                if (lower.includes('değişti') || lower.includes('değişen')) return 'status-changed';
+                return 'status-original';
+            };
+            
+            // Durum adını Türkçeye çevir
+            const translateStatus = (status) => {
+                const lower = status.toLowerCase();
+                if (lower.includes('tramer') || lower.includes('tl')) return status; // Tramer olduğu gibi kalır
+                if (lower.includes('lokal boyal') || (lower.includes('lokal') && lower.includes('boyal'))) return 'Lokal Boyalı';
+                if (lower.includes('orijinal')) return 'Orijinal';
+                if (lower.includes('boyalı') || lower.includes('boya')) return 'Boyalı';
+                if (lower.includes('değişti') || lower.includes('değişen') || lower.includes('changed')) return 'Değişti';
+                return status;
+            };
+            
+            // İnspeksiyon satırlarını oluştur
+            let inspectionRows = '';
+            if (vehicle.inspection && Object.keys(vehicle.inspection).length > 0) {
+                Object.entries(vehicle.inspection).forEach(([part, status]) => {
+                    const partTr = translatePart(part);
+                    const statusTr = translateStatus(status);
+                    inspectionRows += `
+                        <tr>
+                            <td>${partTr}</td>
+                            <td><span class="${getStatusClass(status)}">${statusTr}</span></td>
+                        </tr>`;
+                });
+            }
+            
+            // Özellikler
+            let featuresHtml = '';
+            if (vehicle.features && vehicle.features.length > 0) {
+                featuresHtml = '<div class="features"><strong style="display: block; margin-bottom: 8px;">Özellikler:</strong>';
+                vehicle.features.forEach(feature => {
+                    featuresHtml += `<span class="feature-tag">${feature}</span>`;
+                });
+                featuresHtml += '</div>';
+            }
+            
+            // Telefon linki
+            let phoneHtml = '';
+            if (vehicle.seller.phone) {
+                phoneHtml = `<a href="tel:${vehicle.seller.phone}" class="seller-phone">📞 ${vehicle.seller.phone}</a>`;
+            }
+            
+            card.innerHTML = `
+                <div class="vehicle-header">
+                    <div class="vehicle-title">${v.year} ${v.brand} ${v.model} ${v.engine}${v.package ? ' ' + v.package : ''}</div>
+                    <div class="vehicle-location">${vehicle.location?.region || 'Diğer'}</div>
+                </div>
+                <div class="vehicle-body">
+                    <div class="info-row">
+                        <span class="info-label">İlan No:</span>
+                        <a href="${vehicle.adUrl || `https://www.sahibinden.com/kelime-ile-arama?query_text=${encodeURIComponent(vehicle.adNo || '')}`}" target="_blank" class="info-value" style="color: #667eea; font-weight: bold; text-decoration: none; cursor: pointer;">🔗 ${vehicle.adNo || 'N/A'}</a>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Yıl:</span>
+                        <span class="info-value" style="font-weight: bold;">${v.year || '-'}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Yayın:</span>
+                        <span class="info-value">${Number.isNaN(new Date(vehicle.publishDate).getTime()) ? '-' : new Date(vehicle.publishDate).toLocaleDateString('tr-TR')}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">İlanda:</span>
+                        <span class="info-value">${calculateDaysListed(vehicle.publishDate)} gün</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Fiyat:</span>
+                        <span class="info-value" style="color: #667eea; font-weight: bold;">${vehicle.price ? vehicle.price.toLocaleString('tr-TR') + ' TL' : 'Ziyaret Et'}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">KM:</span>
+                        <span class="info-value">${v.km ? v.km.toLocaleString('tr-TR') + ' km' : '-'}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Motor:</span>
+                        <span class="info-value">${v.engine}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Yakıt:</span>
+                        <span class="info-value">${v.fuel}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Kasa Tipi:</span>
+                        <span class="info-value">${v.body_type || '-'}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Vites:</span>
+                        <span class="info-value">${v.transmission || '-'}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Galeri:</span>
+                        <span class="info-value">${vehicle.seller.name}</span>
+                    </div>
+                    
+                    ${inspectionRows ? `
+                    <div class="inspection-section" data-vehicle-id="${vehicle.id}">
+                        <div class="inspection-title">
+                            <span>🔍 Durum</span>
+                            <span class="collapse-icon">▼</span>
+                        </div>
+                        <div class="inspection-content">
+                            <table class="inspection-table">
+                                <thead>
+                                    <tr>
+                                        <th>Parça</th>
+                                        <th>Durum</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${inspectionRows}
+                                </tbody>
+                            </table>
+                            <div class="legend">
+                                <div class="legend-item">
+                                    <div class="legend-box" style="background: #10b981;"></div>
+                                    <span>Orijinal</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-box" style="background: #fbbf24;"></div>
+                                    <span>Boyalı</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-box" style="background: #3b82f6;"></div>
+                                    <span>Lokal Boyalı</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-box" style="background: #ef4444;"></div>
+                                    <span>Değişti</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-box" style="background: #f97316;"></div>
+                                    <span>Tramer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+            
+            // Event listener'ı HEMEN ekle
+            const inspectionTitle = card.querySelector('.inspection-title');
+            if (inspectionTitle) {
+                inspectionTitle.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const section = this.closest('.inspection-section');
+                    const content = section.querySelector('.inspection-content');
+                    const icon = section.querySelector('.collapse-icon');
+                    
+                    const isOpen = content.classList.contains('open');
+                    
+                    // Tüm inspection content'leri KAPAT
+                    document.querySelectorAll('.inspection-content').forEach(c => {
+                        c.classList.remove('open');
+                    });
+                    document.querySelectorAll('.collapse-icon').forEach(i => {
+                        i.classList.remove('open');
+                    });
+                    
+                    // Eğer kapalıysa aç, açıksa kapalı tut (toggle)
+                    if (!isOpen) {
+                        content.classList.add('open');
+                        icon.classList.add('open');
+                    }
+                });
+            }
+            
+            return card;
+        }
+        
+        // Filtreleme Fonksiyonları
+        function applyFilters() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const region = document.getElementById('regionFilter').value;
+            const priceMin = parseInt(document.getElementById('priceMin').value) || 0;
+            const priceMax = parseInt(document.getElementById('priceMax').value) || Infinity;
+            const yearMin = parseInt(document.getElementById('yearMin').value) || 0;
+            const yearMax = parseInt(document.getElementById('yearMax').value) || Infinity;
+            const galerSearch = document.getElementById('galerFilter').value.toLowerCase();
+            const selectedDays = Array.from(document.querySelectorAll('input[name="days"]:checked')).map(cb => cb.value);
+            
+            filteredVehicles = allVehicles.filter(vehicle => {
+                const v = vehicle.vehicle;
+                
+                // Arama (Marka/Model)
+                if (search) {
+                    const fullName = `${v.brand} ${v.model}`.toLowerCase();
+                    if (!fullName.includes(search)) return false;
+                }
+                
+                // Bölge
+                if (region && (vehicle.location?.region || 'Diğer') !== region) return false;
+                
+                // Fiyat
+                if (vehicle.price < priceMin || vehicle.price > priceMax) return false;
+                
+                // Yıl
+                if (v.year < yearMin || v.year > yearMax) return false;
+                
+                // Galeri
+                if (galerSearch) {
+                    const galerName = vehicle.seller.name.toLowerCase();
+                    if (!galerName.includes(galerSearch)) return false;
+                }
+                
+                // İlanda kaç gün
+                if (selectedDays.length > 0) {
+                    let dayMatch = false;
+                    const daysListed = calculateDaysListed(vehicle.publishDate);
+                    selectedDays.forEach(day => {
+                        if (day === '2+') {
+                            if (daysListed >= 2) dayMatch = true;
+                        } else {
+                            if (daysListed === parseInt(day)) dayMatch = true;
+                        }
+                    });
+                    if (!dayMatch) return false;
+                }
+                
+                return true;
+            });
+            
+            renderFilteredDashboard(filteredVehicles);
+        }
+        
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('regionFilter').value = '';
+            document.getElementById('priceMin').value = '';
+            document.getElementById('priceMax').value = '';
+            document.getElementById('yearMin').value = '';
+            document.getElementById('yearMax').value = '';
+            document.getElementById('galerFilter').value = '';
+            document.querySelectorAll('input[name="days"]:checked').forEach(cb => cb.checked = false);
+            filteredVehicles = allVehicles;
+            renderFilteredDashboard(allVehicles);
+        }
+        
+        function renderFilteredDashboard(vehicles) {
+            const container = document.getElementById('regions-container');
+            container.innerHTML = '';
+            
+            if (vehicles.length === 0) {
+                const noResults = document.createElement('div');
+                noResults.className = 'no-results';
+                noResults.innerHTML = `<div class="no-results-text">❌ Filtrelerinize uygun araç bulunamadı.</div>`;
+                container.appendChild(noResults);
+                return;
+            }
+            
+            // Bölgelere göre araçları grupla
+            const vehiclesByRegion = {};
+            const regions = ["Çayırova", "Gebze", "DerÇiftliği", "İzmit", "Diğer"];
+            
+            regions.forEach(region => {
+                vehiclesByRegion[region] = [];
+            });
+            
+            vehicles.forEach(vehicle => {
+                const region = vehicle.location?.region || 'Diğer';
+                if (!vehiclesByRegion[region]) {
+                    vehiclesByRegion[region] = [];
+                }
+                vehiclesByRegion[region].push(vehicle);
+            });
+            
+            regions.forEach(region => {
+                const regionVehicles = vehiclesByRegion[region] || [];
+                
+                if (regionVehicles.length > 0) {
+                    const regionDiv = document.createElement('div');
+                    regionDiv.className = 'region-container';
+                    
+                    const titleDiv = document.createElement('div');
+                    titleDiv.className = 'region-title';
+                    titleDiv.textContent = `📍 ${region} Bölgesi (${regionVehicles.length})`;
+                    regionDiv.appendChild(titleDiv);
+                    
+                    const gridDiv = document.createElement('div');
+                    gridDiv.className = 'vehicles-grid';
+                    
+                    regionVehicles.forEach(vehicle => {
+                        gridDiv.appendChild(createVehicleCard(vehicle));
+                    });
+                    
+                    regionDiv.appendChild(gridDiv);
+                    container.appendChild(regionDiv);
+                }
+            });
+        }
+        
+        // Sayfa yüklenince dashboard'ı oluştur
+        window.addEventListener('DOMContentLoaded', loadDashboard);
+    </script>
+</body>
+</html>

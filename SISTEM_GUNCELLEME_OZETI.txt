@@ -1,0 +1,29 @@
+# ARAÇ TAKİP SİSTEMİ - GÜNCELLEME ÖZETİ (04.03.2026)
+
+Tüm sistem genelinde veri tutarlılığı sağlandı ve dashboard üzerindeki hatalar giderildi.
+
+YAPILAN ANA DEĞİŞİKLİKLER:
+
+1. Hasar Analiz Sistemi (Yeni Algoritma)
+---------------------------------------
+Geliştirdiğimiz 'advanced_damage_parser.py' ile ilan metinleri artık şu kurallara göre taranıyor:
+- Anahtar Kelime Önceliği: "Boyalı", "Değişen", "Tramer" gibi kelimeler varsa araç asla otomatik "Hatasız" sayılmaz.
+- Parça Eşleştirme: Hangi parçanın boyalı olduğu (ör: "Sağ arka kapı") otomatik tespit edilir.
+- Tramer Yakalama: Metin içindeki TL tutarları Tramer bilgisine eklenir.
+
+2. Dashboard Görsel Güncellemeleri
+----------------------------------
+- Hatasız Araçlar: Daha önce "Detay" butonu çıkmayan sıfır hata araçlar için buton aktifleştirildi.
+- Badge Sistemi: Hatasız araçlarda yeşil "Hatasız / Orijinal" etiketi, hasarlı araçlarda ise ilgili parça detayları görünür hale getirildi.
+
+3. Veri Güvenliği ve Yedekleme
+------------------------------
+- Tüm 'cars_data.json' güncellemeleri Git üzerine commit edildi.
+- 'cars_data_backup_20260304_132031.json' adıyla yerel bir yedek dosyası oluşturuldu.
+
+DOĞRULAMA SONUÇLARI:
+- 'check_missing.py' çalıştırılarak aktif araçlarda eksik veri kalmadığı onaylandı.
+- Belirttiğiniz İlan No'lar (1301754916, 1298435254, 1262913791, 1302474746) manuel ve otomatik testlerle doğrulandı.
+
+Sistem şu an stabil ve veriler günceldir.
+🦾 İyi çalışmalar!

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galericiler Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f7f7f7; }
+        .galeri-card { min-width: 260px; max-width: 340px; margin: 12px auto; box-shadow: 0 2px 12px #0001; border-radius: 12px; border: none; transition: transform 0.15s; }
+        .galeri-card:hover { transform: translateY(-4px) scale(1.03); box-shadow: 0 4px 18px #0002; }
+        .galeri-title { font-size: 1.2rem; font-weight: 600; color: #1976d2; }
+        .search-bar { max-width: 400px; margin: 0 auto 24px auto; }
+        .close-btn { position: fixed; top: 24px; right: 32px; z-index: 10; }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <button class="btn btn-outline-danger close-btn d-none d-md-block" onclick="window.close()">Kapat ✖</button>
+        <h2 class="text-center mb-2">Galericiler Dashboard</h2>
+        <div class="mb-4" id="istatistikOzet"></div>
+        <div class="search-bar mb-4">
+            <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Galeri adı ile ara..." onkeyup="filterGaleriler()">
+        </div>
+                <div class="row" id="galeriListesi">
+                        <!-- Galeri kartları buraya gelecek -->
+                </div>
+                <!-- Galeri Detay Modal -->
+                <div class="modal fade" id="galeriDetayModal" tabindex="-1" aria-labelledby="galeriDetayLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="galeriDetayLabel">Galeri Detayları</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                            </div>
+                            <div class="modal-body" id="galeriDetayBody">
+                                <!-- Dinamik içerik -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <button class="btn btn-danger w-100 d-md-none mt-4" onclick="window.close()">Kapat ✖</button>
+    </div>
+    <script>
+        // Galeri için bugünkü kontrolü kaydeden fonksiyon
+        function kontrolKaydet(galeri) {
+            const key = 'kontrolGecmisi_' + galeri;
+            let gecmis = JSON.parse(localStorage.getItem(key) || '[]');
+            const bugun = new Date();
+            const tarihStr = bugun.getFullYear() + '-' + (bugun.getMonth()+1).toString().padStart(2,'0') + '-' + bugun.getDate().toString().padStart(2,'0');
+            if (!gecmis.includes(tarihStr)) {
+                gecmis.push(tarihStr);
+                localStorage.setItem(key, JSON.stringify(gecmis));
+            }
+            renderGaleriler(galeriler);
+            istatistikOzetGuncelle();
+        }
+    // Galerici isimleri
+    const galeriler = [
+        "ANKA AUTO ÇAYIROVA","AS AUTO CAR SALES","ASİL MOTORS","AUTO MEHMET ÇAYIROVA","AYAZ OTO","AYF OTO","AYHAN YAZICI AUTO","BALCIOĞLU OTO","BAŞ OTO","BAYRAK MOTORS","BERKAY MOTORS","BK","CENTER MOTORS","CESA GROUP","CNG PRESTİJ AUTO","CR AUTO","DAŞKIN İNŞAAT OTO","DAYF OTO","DEMİRCAN OTO","DEVRAN İNŞAAT","DMR ÇAYIROVA","EA AUTO","EFADAŞ OTO","ELİT OTO ÇAYIROVA","EMR MOTORS TURİZM","ERAT AUTO","ERGO OTO","ERGİNLER OTO","FEDA OTO","FER AUTO","FMH AUTO","FMH OTO","FUAT DMR FD AUTO","GALERİ ÇAYIROVA","GALİP OTO","GARANTİ OTO","GLR OTO","GLR OTOMOTİV","GMG MOTORS","GÖK GARAGE","GÖKAY OTO","GÜLBAŞ OTOMOTİV","GÜNDOĞDU OTO","GÜNEŞ OTO","HAS OTOMOTİV","IŞIK OTO","İSMAİL ÇİÇEK","KARABACAKLAR OTO","KARACA MOTORS","KARACA MOTOS","KARAT OTO","KIZILKIŞ AUTO","KOÇERLER AUTO","LİDER OTO","LOFT CARS","MERTSAN 2.EL","MESA GROUP OTO","MGK OTO","MTK","OKAN OTOMOTİV","OSMANLI OTO","OSMANLI OTO ÇAYIROVA","ÖMER FARUK YEŞİL BAŞ","ÖZ BAYAR OTO","ÖZAY MOTORS","ÖZBAYAR OTO","PİRİ MOTO","POLAT AUTO","REPAS ÇAYIROVA","SAFİR AUTO","SEREN AUTO KOCAELİ","SERRA GALERİ","SEYİR OTO","SHN GROUP OTO","SOYLU OTOMOTİV","ST MOTORS ÇAYIROVA","ŞEMSETTİN","TABAN MOTORS","TAŞKIRAN OTO","TECMEN OTO","TEK AUTO","TUFAN MOTORS","TUNÇ OTO","TUNCAY GENÇ OTO","UĞUR MOTO","UĞUR MOTORS","ÜNAL OTO","VENTURE MOTORS","YILDIZ AUTO","YILMAZ MOTORS","YUNUS AUTO","YSR MOTORS","ZEK- CAR","Diğer"
+    ];
+    function getTodayKey() {
+        const d = new Date();
+        return 'galeriKontrol_' + d.getFullYear() + '_' + (d.getMonth()+1) + '_' + d.getDate();
+    }
+    function getKontrolDurum() {
+        const key = getTodayKey();
+        const data = localStorage.getItem(key);
+        return data ? JSON.parse(data) : {};
+    }
+    function setKontrolDurum(obj) {
+        const key = getTodayKey();
+        localStorage.setItem(key, JSON.stringify(obj));
+    }
+    function renderGaleriler(list) {
+        const galeriListesi = document.getElementById('galeriListesi');
+        const kontrolDurum = getKontrolDurum();
+        galeriListesi.innerHTML = '';
+        list.forEach(function(galeri, idx) {
+            // Bugün kontrol edildi mi?
+            const key = 'kontrolGecmisi_' + galeri;
+            let gecmis = JSON.parse(localStorage.getItem(key) || '[]');
+            const bugun = new Date();
+            const tarihStr = bugun.getFullYear() + '-' + (bugun.getMonth()+1).toString().padStart(2,'0') + '-' + bugun.getDate().toString().padStart(2,'0');
+            const bugunKontrol = gecmis.includes(tarihStr);
+            galeriListesi.innerHTML += `
+            <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+                <div class="card galeri-card w-100 mb-3" style="cursor:pointer;" onclick="showGaleriDetay('${galeri.replace(/'/g, "\\'")}')">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                            <span class="galeri-title">${galeri}</span>
+                            <span>
+                                ${bugunKontrol
+                                    ? '<span style="color:#28a745;font-weight:bold;font-size:1.2em;">&#10003; Kontrol Edildi</span>'
+                                    : '<span style="color:#dc3545;font-weight:bold;font-size:1.1em;">&#10007; Kontrol Edilmedi</span>'}
+                            </span>
+                        </div>
+                        <div class="d-flex flex-column gap-2 mt-auto">
+                            <button class="btn btn-success btn-sm w-100" onclick="event.stopPropagation();kontrolKaydet('${galeri.replace(/'/g, "\\'")}')">Bugün Kontrol Et</button>
+                            <div class="mt-2" id="istatistik_${idx}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+            setTimeout(() => guncelleIstatistik(galeri, idx), 0);
+        });
+    }
+        // Galeri Detay Modalı aç
+        async function showGaleriDetay(galeri) {
+            // cars_data.json dosyasını oku
+            let data = window._carsData;
+            if (!data) {
+                try {
+                    const resp = await fetch('cars_data.json');
+                    data = await resp.json();
+                    window._carsData = data;
+                } catch (e) {
+                    alert('Araç verisi yüklenemedi!');
+                    return;
+                }
+            }
+            // Normalize fonksiyonu: harfleri küçült, Türkçe karakterleri düzelt, boşluk ve özel karakterleri kaldır
+            function normalize(str) {
+                if (!str) return '';
+                const map = {
+                    'ğ':'g','Ğ':'g','ü':'u','Ü':'u','ş':'s','Ş':'s','ı':'i','İ':'i','ö':'o','Ö':'o','ç':'c','Ç':'c',
+                    '�':'', 'Ã§':'c', 'Ã¼':'u', 'Ã¶':'o', 'Ãœ':'u', 'Ã–':'o', 'ÃŸ':'ss', 'Ã ': 'a', 'Ã¡':'a', 'Ã¢':'a', 'Ã£':'a', 'Ã¤':'a', 'Ã¥':'a', 'Ã¦':'ae', 'Ã¨':'e', 'Ã©':'e', 'Ãª':'e', 'Ã«':'e', 'Ã¬':'i', 'Ã­':'i', 'Ã®':'i', 'Ã¯':'i', 'Ã°':'d', 'Ã±':'n', 'Ã²':'o', 'Ã³':'o', 'Ã´':'o', 'Ãµ':'o', 'Ã¸':'o', 'Ã¹':'u', 'Ãº':'u', 'Ã»':'u', 'Ã½':'y', 'Ã¿':'y'
+                };
+                let out = '';
+                for (let i = 0; i < str.length; i++) {
+                    let c = str[i];
+                    out += map[c] !== undefined ? map[c] : c;
+                }
+                return out.toLocaleLowerCase('tr-TR').replace(/[^a-z0-9]/g, '');
+            }
+
+            // Levenshtein mesafesi ile en yakın galeri bulucu
+            function levenshtein(a, b) {
+                const an = a.length, bn = b.length;
+            // cars_data.json dosyasını oku
+            let data = window._carsData;
+            if (!data) {
+                try {
+                    const resp = await fetch('cars_data.json');
+                    data = await resp.json();
+                    window._carsData = data;
+                } catch (e) {
+                    alert('Araç verisi yüklenemedi!');
+                    return;
+                }
+            }
+            // Normalize fonksiyonu: harfleri küçült, Türkçe karakterleri düzelt, boşluk ve özel karakterleri kaldır
+            function normalize(str) {
+                if (!str) return '';
+                const map = {
+                    'ğ':'g','Ğ':'g','ü':'u','Ü':'u','ş':'s','Ş':'s','ı':'i','İ':'i','ö':'o','Ö':'o','ç':'c','Ç':'c',
+                    '�':'', 'Ã§':'c', 'Ã¼':'u', 'Ã¶':'o', 'Ãœ':'u', 'Ã–':'o', 'ÃŸ':'ss', 'Ã ': 'a', 'Ã¡':'a', 'Ã¢':'a', 'Ã£':'a', 'Ã¤':'a', 'Ã¥':'a', 'Ã¦':'ae', 'Ã¨':'e', 'Ã©':'e', 'Ãª':'e', 'Ã«':'e', 'Ã¬':'i', 'Ã­':'i', 'Ã®':'i', 'Ã¯':'i', 'Ã°':'d', 'Ã±':'n', 'Ã²':'o', 'Ã³':'o', 'Ã´':'o', 'Ãµ':'o', 'Ã¸':'o', 'Ã¹':'u', 'Ãº':'u', 'Ã»':'u', 'Ã½':'y', 'Ã¿':'y'
+                };
+                let out = '';
+                for (let i = 0; i < str.length; i++) {
+                    let c = str[i];
+                    out += map[c] !== undefined ? map[c] : c;
+                }
+                return out.toLocaleLowerCase('tr-TR').replace(/[^a-z0-9]/g, '');
+            }
+            // Levenshtein mesafesi ile en yakın galeri bulucu
+            function levenshtein(a, b) {
+                const an = a.length, bn = b.length;
+                if (an === 0) return bn;
+                if (bn === 0) return an;
+                let matrix = [];
+                for (let i = 0; i <= bn; i++) matrix[i] = [i];
+                for (let j = 0; j <= an; j++) matrix[0][j] = j;
+                for (let i = 1; i <= bn; i++) {
+                    for (let j = 1; j <= an; j++) {
+                        if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                            matrix[i][j] = matrix[i - 1][j - 1];
+                        } else {
+                            matrix[i][j] = Math.min(
+                                matrix[i - 1][j - 1] + 1,
+                                Math.min(matrix[i][j - 1] + 1, matrix[i - 1][j] + 1)
+                            );
+                        }
+                    }
+                }
+                return matrix[bn][an];
+            }
+            // galeriNorms zaten yukarıda tanımlandı
+            const galeriNorm = normalize(galeri);
+            const galeriNorms = galeriler.map(normalize);
+            function findClosestGaleriNorm(sellerName) {
+                const norm = normalize(sellerName);
+                let idx = galeriNorms.indexOf(norm);
+                if (idx !== -1) return galeriNorms[idx];
+                // En uzun ortak substring ile en yakın galeri bul
+                let maxMatch = 0, bestIdx = -1;
+                for (let i = 0; i < galeriNorms.length; i++) {
+                    let match = 0;
+                    for (let j = 0; j < Math.min(norm.length, galeriNorms[i].length); j++) {
+                        if (norm[j] === galeriNorms[i][j]) match++;
+                        else break;
+                    }
+                    if (match > maxMatch) { maxMatch = match; bestIdx = i; }
+                }
+                if (maxMatch >= 6) return galeriNorms[bestIdx]; // 6 harf ve üzeri ortaklık varsa ata
+                return null;
+            }
+            let ilanlar = data.vehicles.filter(v => {
+                if (!(v.seller && v.seller.name)) return galeri === 'Diğer';
+                const sellerNorm = normalize(v.seller.name);
+                const closest = findClosestGaleriNorm(v.seller.name);
+                if (galeri === 'Diğer') {
+                    return !closest || closest !== galeriNorm;
+                }
+                return closest === galeriNorm;
+            }).filter(v => v.status === 'active' || v.status === 'sold');
+            // Stok süresi (gün) = daysListed
+            // Durum: aktif/kayboldu (status)
+            // İletişim bilgisi ilk araçtan alınır
+            let iletisim = { yetkili: '', tel: '', mail: '' };
+            if (ilanlar.length > 0) {
+                const s = ilanlar[0].seller;
+                iletisim.yetkili = s.name || galeri;
+                iletisim.tel = s.phone || '-';
+                iletisim.mail = (s.url && s.url.includes('@')) ? s.url : (galeri.replace(/ /g,'').toLowerCase()+'@mail.com');
+            } else {
+                iletisim.yetkili = galeri;
+                iletisim.tel = '-';
+                iletisim.mail = galeri.replace(/ /g,'').toLowerCase()+'@mail.com';
+            }
+            // İstatistikler
+            const toplamSatis = ilanlar.length;
+            const ortFiyat = toplamSatis > 0 ? (ilanlar.reduce((a,b)=>a+b.price,0)/toplamSatis).toLocaleString('tr-TR', {maximumFractionDigits:0}) + ' TL' : '-';
+            // Modal içeriği oluştur
+            let html = `
+            <div class="row">
+                <div class="col-md-7">
+                    <h5 class="mb-2">Araçlar</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-sm align-middle">
+                            <thead class="table-light">
+                                <tr><th>ID</th><th>Model</th><th>Fiyat</th><th>Stok Süresi (gün)</th><th>Durum</th></tr>
+                            </thead>
+                            <tbody>
+                                ${ilanlar.map(v=>`<tr><td>${v.id}</td><td>${v.vehicle.brand} ${v.vehicle.model}</td><td>${v.price.toLocaleString('tr-TR')} TL</td><td>${v.daysListed}</td><td>${v.status==='active'?'Aktif':'Satıldı'}</td></tr>`).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h5 class="mb-2">İletişim</h5>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item"><b>Yetkili:</b> ${iletisim.yetkili}</li>
+                        <li class="list-group-item"><b>Telefon:</b> ${iletisim.tel}</li>
+                        <li class="list-group-item"><b>Email:</b> ${iletisim.mail}</li>
+                    </ul>
+                    <h5 class="mb-2">İstatistik</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item"><b>Toplam Araç:</b> ${toplamSatis}</li>
+                        <li class="list-group-item"><b>Ortalama Fiyat:</b> ${ortFiyat}</li>
+                    </ul>
+                </div>
+            </div>`;
+            document.getElementById('galeriDetayBody').innerHTML = html;
+            var modal = new bootstrap.Modal(document.getElementById('galeriDetayModal'));
+            modal.show();
+        }
+        const qNorm = normalize(q);
+        // 1. Tam normalize eşleşme
+        let filtered = galeriler.filter(galeri => normalize(galeri) === qNorm);
+        // 2. Parça eşleşme (her kelime galeri adında geçmeli)
+        if(filtered.length === 0) {
+            const kelimeler = q.split(/\s+/).filter(Boolean);
+            filtered = galeriler.filter(galeri => {
+                const galeriLower = galeri.toLowerCase();
+                return kelimeler.every(kelime => galeriLower.includes(kelime));
+            });
+        }
+        // 3. Normalize parça eşleşme (her kelime normalize edilmiş galeri adında geçmeli)
+        if(filtered.length === 0) {
+            const kelimeler = q.split(/\s+/).filter(Boolean).map(normalize);
+            filtered = galeriler.filter(galeri => {
+                const galeriNorm = normalize(galeri);
+                return kelimeler.every(kelime => galeriNorm.includes(kelime));
+            });
+        }
+        renderGaleriler(filtered);
+    }
+    // İstatistik özetini hesapla ve göster
+    function istatistikOzetGuncelle() {
+        // Toplam kontrol sayısı
+        let toplamKontrol = 0;
+        let gunlukKontrol = {};
+        let galeriSkorList = [];
+        const bugun = new Date();
+        for(const galeri of galeriler) {
+            const key = 'kontrolGecmisi_' + galeri;
+            let gecmis = JSON.parse(localStorage.getItem(key) || '[]');
+            toplamKontrol += gecmis.length;
+            // Son 7 gün için skor
+            let sayac = 0;
+            for(let i=6; i>=0; i--) {
+                let d = new Date(bugun);
+                d.setDate(bugun.getDate()-i);
+                const tarihStr = d.getFullYear() + '-' + (d.getMonth()+1).toString().padStart(2,'0') + '-' + d.getDate().toString().padStart(2,'0');
+                if(gecmis.includes(tarihStr)) {
+                    sayac++;
+                    gunlukKontrol[tarihStr] = (gunlukKontrol[tarihStr]||0)+1;
+                }
+            }
+            galeriSkorList.push({galeri, skor:sayac});
+        }
+        // Galeri bazlı sıralama (en çok kontrol edilenler)
+        galeriSkorList.sort((a,b)=>b.skor-a.skor);
+        // Günlük grafik (son 7 gün)
+        let gunler = [];
+        let gunlerLabel = [];
+        for(let i=6; i>=0; i--) {
+            let d = new Date(bugun);
+            d.setDate(bugun.getDate()-i);
+            const tarihStr = d.getFullYear() + '-' + (d.getMonth()+1).toString().padStart(2,'0') + '-' + d.getDate().toString().padStart(2,'0');
+            gunler.push(gunlukKontrol[tarihStr]||0);
+            gunlerLabel.push((d.getMonth()+1)+'.'+d.getDate());
+        }
+        // HTML oluştur
+        let html = `<div class="row g-2">
+            <div class="col-12 col-md-4">
+                <div class="card p-3 mb-2">
+                    <div class="fw-bold">Toplam Kontrol</div>
+                    <div style="font-size:2rem; color:#1976d2;">${toplamKontrol}</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card p-3 mb-2">
+                    <div class="fw-bold mb-1">Günlük Kontrol Grafiği (7g)</div>
+                    <div style="height:60px; display:flex; align-items:end; gap:2px;">
+                        ${gunler.map((v,i)=>`<div title="${gunlerLabel[i]}: ${v}" style="width:12%; min-width:12px; height:${v*12+8}px; background:#1976d2; border-radius:3px 3px 0 0;"></div>`).join('')}
+                    </div>
+                    <div class="d-flex justify-content-between" style="font-size:11px; color:#888;">
+                        ${gunlerLabel.map(l=>`<span>${l}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card p-3 mb-2">
+                    <div class="fw-bold mb-1">En Çok Kontrol Edilen Galeriler (7g)</div>
+                    <ol class="mb-0" style="font-size:15px;">
+                        ${galeriSkorList.slice(0,5).map(g=>`<li>${g.galeri} <span style='color:#1976d2;font-weight:600;'>${g.skor}/7</span></li>`).join('')}
+                    </ol>
+                </div>
+            </div>
+        </div>`;
+        document.getElementById('istatistikOzet').innerHTML = html;
+    }
+
+    // Sayfa yüklenince istatistik ve galeriler gösterilsin
+    istatistikOzetGuncelle();
+    renderGaleriler(galeriler);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

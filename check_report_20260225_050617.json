@@ -1,0 +1,146 @@
+{
+  "timestamp": "2026-02-25T05:06:17.466534",
+  "results": {
+    "checked": 27,
+    "active": 0,
+    "sold": 0,
+    "error": 27,
+    "details": [
+      {
+        "adNo": "1302004975",
+        "car": "2015 Renault Symbol",
+        "status": "error"
+      },
+      {
+        "adNo": "1302030245",
+        "car": "2018 Honda Civic",
+        "status": "error"
+      },
+      {
+        "adNo": "1300736113",
+        "car": "2023 Toyota Corolla",
+        "status": "error"
+      },
+      {
+        "adNo": "1300247033",
+        "car": "2015 Citroen C-Elysée",
+        "status": "error"
+      },
+      {
+        "adNo": "1301761057",
+        "car": "2016 Renault Clio",
+        "status": "error"
+      },
+      {
+        "adNo": "1301754916",
+        "car": "2013 Renault Clio",
+        "status": "error"
+      },
+      {
+        "adNo": "1301743539",
+        "car": "2020 Citroen C-Elysée",
+        "status": "error"
+      },
+      {
+        "adNo": "1295358155",
+        "car": "2017 Peugeot 301",
+        "status": "error"
+      },
+      {
+        "adNo": "1296021892",
+        "car": "2023 Renault Clio",
+        "status": "error"
+      },
+      {
+        "adNo": "1301651260",
+        "car": "2014 Toyota Corolla",
+        "status": "error"
+      },
+      {
+        "adNo": "1301646740",
+        "car": "2013 Honda Civic",
+        "status": "error"
+      },
+      {
+        "adNo": "1301643996",
+        "car": "2011 Honda Civic",
+        "status": "error"
+      },
+      {
+        "adNo": "1301094350",
+        "car": "2018 Renault Clio",
+        "status": "error"
+      },
+      {
+        "adNo": "1301522563",
+        "car": "2011 Hyundai i20",
+        "status": "error"
+      },
+      {
+        "adNo": "1301519417",
+        "car": "2015 Renault Clio",
+        "status": "error"
+      },
+      {
+        "adNo": "1301518413",
+        "car": "2015 Citroen C-Elysée",
+        "status": "error"
+      },
+      {
+        "adNo": "1301493422",
+        "car": "2017 Volkswagen Golf",
+        "status": "error"
+      },
+      {
+        "adNo": "1301492314",
+        "car": "2017 Citroen C-Elysée",
+        "status": "error"
+      },
+      {
+        "adNo": "1301451254",
+        "car": "2020 Renault Megane",
+        "status": "error"
+      },
+      {
+        "adNo": "1301446466",
+        "car": "2007 Mercedes-Benz E Serisi",
+        "status": "error"
+      },
+      {
+        "adNo": "1301385006",
+        "car": "1999 Renault R 19",
+        "status": "error"
+      },
+      {
+        "adNo": "1301346338",
+        "car": "2017 Renault Clio",
+        "status": "error"
+      },
+      {
+        "adNo": "1293565568",
+        "car": "2013 Renault Clio",
+        "status": "error"
+      },
+      {
+        "adNo": "1299230727",
+        "car": "1996 Tofaş Şahin",
+        "status": "error"
+      },
+      {
+        "adNo": "1293407171",
+        "car": "2020 Mitsubishi L 200",
+        "status": "error"
+      },
+      {
+        "adNo": "1293041202",
+        "car": "2006 Renault Megane",
+        "status": "error"
+      },
+      {
+        "adNo": "1301167402",
+        "car": "2015 Hyundai i20",
+        "status": "error"
+      }
+    ]
+  }
+}

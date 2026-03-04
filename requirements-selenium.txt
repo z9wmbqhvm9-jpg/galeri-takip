@@ -1,0 +1,4 @@
+# Selenium Bot için gerekli paketler
+selenium>=4.16.0
+undetected-chromedriver>=3.5.4
+requests>=2.31.0

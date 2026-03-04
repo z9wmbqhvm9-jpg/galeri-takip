@@ -1,0 +1,650 @@
+{
+    "vehicles": [
+        {
+            "id": "1302004975",
+            "adNo": "1302004975",
+            "publishDate": "2026-02-24",
+            "daysListed": 0,
+            "vehicle": {
+                "year": 2015,
+                "brand": "Renault",
+                "model": "Symbol",
+                "engine": "1.5 DCI",
+                "package": "Joy",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "km": 140000,
+                "hp": 75,
+                "color": "Beyaz"
+            },
+            "price": 700000,
+            "seller": {
+                "name": "BATUHAN KAYA OTOMOTİV",
+                "type": "Galeri",
+                "phone": "(530) 384 93 00",
+                "url": "https://batuhankayaotomotiv.sahibinden.com/"
+            },
+            "location": {
+                "city": "Kocaeli",
+                "district": "Çayırova",
+                "region": "Çayırova",
+                "neighborhood": "Çayırova Mh."
+            },
+            "condition": {
+                "status": "İkinci El",
+                "heavyDamaged": false,
+                "warranty": false,
+                "exchange": true
+            },
+            "description": "MOTORUNDA, ŞANZIMANINDA EN UFAK SIKINTI PROBLEM YOKTUR. ARACIMIZIN İÇ VE DIŞ KOZMETİĞİNDE EN UFAK BİR DEFORME BULUNMAMAKTADIR. ARACIMIZIN MOTOR VE ŞANZIMAN PERORMANSI İLK GÜN KADAR İYİ SEVİYEDEDİR.",
+            "features": [
+                "Klima",
+                "Otomatik Cam",
+                "Eco Sürüş Modu",
+                "Bluetooth",
+                "USB - CD - AUX",
+                "Airbag",
+                "Yokuş Kalkış Desteği",
+                "Yol Bilgisayarı",
+                "ABS - AFU - ASR - ESC"
+            ],
+            "inspection": {
+                "frontBumper": "Değişti",
+                "leftFender": "Boyalı",
+                "rightRearDoor": "Boyalı",
+                "hood": "Değişen"
+            }
+        },
+        {
+            "id": "1940026587",
+            "adNo": "1940026587",
+            "publishDate": "2026-02-23",
+            "daysListed": 1,
+            "vehicle": {
+                "year": 2018,
+                "brand": "Honda",
+                "model": "Civic",
+                "engine": "1.6i VTEC",
+                "package": "Eco Elegance",
+                "fuel": "Benzin",
+                "transmission": "Manuel",
+                "km": 149000,
+                "hp": 0,
+                "color": "Beyaz"
+            },
+            "price": 1389018,
+            "seller": {
+                "name": "GÜNDOĞDU OTOMOTİV",
+                "type": "Galeri",
+                "phone": "(541) 862 18 18",
+                "url": ""
+            },
+            "location": {
+                "city": "Kocaeli",
+                "district": "Çayırova",
+                "region": "Çayırova",
+                "neighborhood": ""
+            },
+            "condition": {
+                "status": "İkinci El",
+                "heavyDamaged": false,
+                "warranty": false,
+                "exchange": false
+            },
+            "description": "",
+            "features": [],
+            "inspection": {
+                "Motor Kaputu": "Boyalı",
+                "Sol Ön Çamurluk": "Boyalı",
+                "Sol Arka Çamurluk": "Boyalı",
+                "Tramer": "2.500 TL"
+            }
+        },
+        {
+            "id": "1940334985",
+            "adNo": "1940334985",
+            "publishDate": "2026-02-23",
+            "daysListed": 1,
+            "vehicle": {
+                "year": 2022,
+                "brand": "Toyota",
+                "model": "Corolla",
+                "engine": "1.8 Hybrid",
+                "package": "Dream",
+                "fuel": "Benzin",
+                "transmission": "Manuel",
+                "km": 97000,
+                "hp": 0,
+                "color": "Mavi"
+            },
+            "price": 1410000,
+            "seller": {
+                "name": "Ömer Faruk Yeşilbaş",
+                "type": "Galeri",
+                "phone": "(542) 544 60 17",
+                "url": ""
+            },
+            "location": {
+                "city": "Kocaeli",
+                "district": "Çayırova",
+                "region": "Çayırova",
+                "neighborhood": ""
+            },
+            "condition": {
+                "status": "İkinci El",
+                "heavyDamaged": false,
+                "warranty": false,
+                "exchange": false
+            },
+            "description": "",
+            "features": [],
+            "inspection": {
+                "Sağ Arka Çamurluk Ağzı": "Lokal Boyalı"
+            }
+        },
+        {
+            "id": "1941268701",
+            "adNo": "1941268701",
+            "publishDate": "2026-02-23",
+            "daysListed": 1,
+            "vehicle": {
+                "year": 2015,
+                "brand": "Citroen",
+                "model": "C-Elysée",
+                "engine": "1.6 HDi Dizel",
+                "package": "Confort",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "km": 129000,
+                "hp": 0,
+                "color": "Beyaz"
+            },
+            "price": 659000,
+            "seller": {
+                "name": "GARANTİ OTOMOTİV",
+                "type": "Galeri",
+                "phone": "(543) 598 26 18",
+                "url": ""
+            },
+            "location": {
+                "city": "Kocaeli",
+                "district": "Çayırova",
+                "region": "Çayırova",
+                "neighborhood": ""
+            },
+            "condition": {
+                "status": "İkinci El",
+                "heavyDamaged": false,
+                "warranty": false,
+                "exchange": false
+            },
+            "description": "",
+            "features": [],
+            "inspection": {
+                "Motor Kaputu": "Lokal Boyalı",
+                "Sol Arka Kapı": "Lokal Boyalı",
+                "Sağ Ön Çamurluk": "Boyalı",
+                "Sol Ön Çamurluk": "Boyalı",
+                "Sol Arka Çamurluk": "Boyalı",
+                "Tramer": "5 Bin TL"
+            }
+        },
+        {
+            "id": "1941426096",
+            "adNo": "1941426096",
+            "publishDate": "2026-02-23",
+            "daysListed": 1,
+            "vehicle": {
+                "year": 2016,
+                "brand": "Renault",
+                "model": "Clio",
+                "engine": "1.5 dCi Dizel",
+                "package": "Joy",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "km": 169000,
+                "hp": 0,
+                "color": "Beyaz"
+            },
+            "price": 710000,
+            "seller": {
+                "name": "GARANTİ OTOMOTİV",
+                "type": "Galeri",
+                "phone": "(543) 598 26 18",
+                "url": ""
+            },
+            "location": {
+                "city": "Kocaeli",
+                "district": "Çayırova",
+                "region": "Çayırova",
+                "neighborhood": ""
+            },
+            "condition": {
+                "status": "İkinci El",
+                "heavyDamaged": false,
+                "warranty": false,
+                "exchange": false
+            },
+            "description": "",
+            "features": [],
+            "inspection": {
+                "Motor Kaputu": "Lokal Boyalı",
+                "Sol Arka Çamurluk": "Lokal Boyalı",
+                "Sağ Arka Kapı": "Boyalı",
+                "Sağ Arka Çamurluk": "Boyalı",
+                "Bagaj Kapağı": "Değişti",
+                "Tramer": "34 Bin TL"
+            }
+        },
+        {
+            "id": "1941609108",
+            "adNo": "1941609108",
+            "publishDate": "2026-02-23",
+            "daysListed": 1,
+            "vehicle": {
+                "year": 2013,
+                "brand": "Renault",
+                "model": "Clio",
+                "engine": "1.5 dCi Dizel",
+                "package": "Icon",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "km": 96000,
+                "hp": 0,
+                "color": "Kırmızı"
+            },
+            "price": 799000,
+            "seller": {
+                "name": "GARANTİ OTOMOTİV",
+                "type": "Galeri",
+                "phone": "(535) 458 20 87",
+                "url": ""
+            },
+            "location": {
+                "city": "Kocaeli",
+                "district": "Çayırova",
+                "region": "Çayırova",
+                "neighborhood": ""
+            },
+            "condition": {
+                "status": "İkinci El",
+                "heavyDamaged": false,
+                "warranty": false,
+                "exchange": false
+            },
+            "description": "",
+            "features": [],
+            "inspection": {
+                "Sol Arka Kapı": "Değişti",
+                "Sol Arka Çamurluk": "Lokal Boyalı",
+                "Tramer": "8200 TL"
+            }
+        },
+        {
+            "id": "1941765888",
+            "adNo": "1941765888",
+            "publishDate": "2026-02-23",
+            "daysListed": 1,
+            "vehicle": {
+                "year": 2013,
+                "brand": "Renault",
+                "model": "Clio",
+                "engine": "1.5 dCi Dizel",
+                "package": "Icon",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "km": 96000,
+                "hp": 0,
+                "color": "Kırmızı"
+            },
+            "price": 799000,
+            "seller": {
+                "name": "GARANTİ OTOMOTİV",
+                "type": "Galeri",
+                "phone": "(535) 458 20 87",
+                "url": ""
+            },
+            "location": {
+                "city": "Kocaeli",
+                "district": "Çayırova",
+                "region": "Çayırova",
+                "neighborhood": ""
+            },
+            "condition": {
+                "status": "İkinci El",
+                "heavyDamaged": false,
+                "warranty": false,
+                "exchange": false
+            },
+            "description": "",
+            "features": [],
+            "inspection": {
+                "Sol Arka Kapı": "Değişti",
+                "Sol Arka Çamurluk": "Lokal Boyalı"
+            }
+        },
+        {
+            "id": "1941785769",
+            "adNo": "1941785769",
+            "publishDate": "2026-02-23",
+            "daysListed": 1,
+            "vehicle": {
+                "year": 2020,
+                "brand": "Citroen",
+                "model": "C-Elysée",
+                "engine": "1.5 BlueHDI Dizel",
+                "package": "Shine",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "km": 130000,
+                "hp": 0,
+                "color": "Beyaz"
+            },
+            "price": 789000,
+            "seller": {
+                "name": "GARANTİ OTOMOTİV",
+                "type": "Galeri",
+                "phone": "(535) 458 20 87",
+                "url": ""
+            },
+            "location": {
+                "city": "Kocaeli",
+                "district": "Çayırova",
+                "region": "Çayırova",
+                "neighborhood": ""
+            },
+            "condition": {
+                "status": "İkinci El",
+                "heavyDamaged": false,
+                "warranty": false,
+                "exchange": false
+            },
+            "description": "",
+            "features": [],
+            "inspection": {
+                "Sol Ön Çamurluk": "Değişti",
+                "Sağ Ön Çamurluk": "Lokal Boyalı",
+                "Kaput": "Söktaklı"
+            }
+        },
+        {
+            "id": "1941886543",
+            "adNo": "1941886543",
+            "publishDate": "2026-02-23",
+            "daysListed": 1,
+            "vehicle": {
+                "year": 2017,
+                "brand": "Peugeot",
+                "model": "301",
+                "engine": "1.6 HDi Dizel",
+                "package": "Active",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "km": 151000,
+                "hp": 0,
+                "color": "Beyaz"
+            },
+            "price": 659000,
+            "seller": {
+                "name": "GARANTİ OTOMOTİV",
+                "type": "Galeri",
+                "phone": "(535) 458 20 87",
+                "url": ""
+            },
+            "location": {
+                "city": "Kocaeli",
+                "district": "Çayırova",
+                "region": "Çayırova",
+                "neighborhood": ""
+            },
+            "condition": {
+                "status": "İkinci El",
+                "heavyDamaged": false,
+                "warranty": false,
+                "exchange": false
+            },
+            "description": "",
+            "features": [],
+            "inspection": {
+                "Motor Kaputu": "Boyalı",
+                "Sağ Ön Çamurluk": "Boyalı",
+                "Sağ Ön Kapı": "Boyalı",
+                "Sol Ön Çamurluk": "Boyalı",
+                "Bagaj Kapağı": "Boyalı",
+                "Sağ Arka Çamurluk": "Lokal Boyalı",
+                "Sol Arka Çamurluk": "Lokal Boyalı"
+            }
+        },
+        {
+            "id": "1262913791",
+            "adNo": "1262913791",
+            "publishDate": "2026-02-18",
+            "vehicle": {
+                "year": 2008,
+                "brand": "Renault",
+                "model": "Clio",
+                "engine": "1.5 dCi",
+                "package": "Authentique",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "color": "Gümüş Gri"
+            },
+            "price": 339700,
+            "seller": {
+                "name": "ANKA AUTO ÇAYIROVA"
+            }
+        },
+        {
+            "id": "1286078096",
+            "adNo": "1286078096",
+            "publishDate": "2026-02-18",
+            "vehicle": {
+                "year": 2009,
+                "brand": "Hyundai",
+                "model": "Accent Era",
+                "engine": "1.4",
+                "package": "Team",
+                "fuel": "Benzin & LPG",
+                "transmission": "Manuel",
+                "color": "Gri"
+            },
+            "price": 375750,
+            "seller": {
+                "name": "ANKA AUTO ÇAYIROVA"
+            }
+        },
+        {
+            "id": "1300745923",
+            "adNo": "1300745923",
+            "publishDate": "2026-02-17",
+            "vehicle": {
+                "year": 2023,
+                "brand": "Fiat",
+                "model": "Egea",
+                "engine": "1.6 Multijet",
+                "package": "Easy",
+                "fuel": "Dizel",
+                "transmission": "Otomatik",
+                "km": 108000,
+                "color": "Füme"
+            },
+            "price": 1090000,
+            "seller": {
+                "name": "DAŞKIN İNŞAAT OTOMOTİV"
+            }
+        },
+        {
+            "id": "1299262712",
+            "adNo": "1299262712",
+            "publishDate": "2026-02-22",
+            "vehicle": {
+                "year": 2020,
+                "brand": "Peugeot",
+                "model": "2008",
+                "engine": "1.5 BlueHDI",
+                "package": "Active",
+                "fuel": "Dizel",
+                "transmission": "Otomatik",
+                "km": 149500,
+                "color": "Turuncu"
+            },
+            "price": 1395000,
+            "seller": {
+                "name": "DAŞKIN İNŞAAT OTOMOTİV"
+            }
+        },
+        {
+            "id": "1301570869",
+            "adNo": "1301570869",
+            "publishDate": "2026-02-22",
+            "vehicle": {
+                "year": 2020,
+                "brand": "Skoda",
+                "model": "Scala",
+                "engine": "1.6 TDI",
+                "package": "Premium",
+                "fuel": "Dizel",
+                "transmission": "Otomatik",
+                "km": 171000,
+                "color": "Füme"
+            },
+            "price": 1175000,
+            "seller": {
+                "name": "DAŞKIN İNŞAAT OTOMOTİV"
+            }
+        },
+        {
+            "id": "1301359379",
+            "adNo": "1301359379",
+            "publishDate": "2026-02-20",
+            "vehicle": {
+                "year": 2022,
+                "brand": "Fiat",
+                "model": "Egea",
+                "package": "Easy",
+                "fuel": "Dizel",
+                "transmission": "Otomatik",
+                "km": 98000,
+                "color": "Beyaz"
+            },
+            "price": 1049000,
+            "seller": {
+                "name": "ÖZBAYAR OTOMOTİV"
+            }
+        },
+        {
+            "id": "1302428980",
+            "adNo": "1302428980",
+            "publishDate": "2026-02-26",
+            "vehicle": {
+                "year": 2013,
+                "brand": "Fiat",
+                "model": "Linea",
+                "package": "Lounge",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "km": 208000,
+                "color": "Gri"
+            },
+            "price": 630000,
+            "seller": {
+                "name": "CR AUTO"
+            }
+        },
+        {
+            "id": "1294361515",
+            "adNo": "1294361515",
+            "publishDate": "2026-02-13",
+            "vehicle": {
+                "year": 2017,
+                "brand": "Renault",
+                "model": "Symbol",
+                "package": "Joy",
+                "fuel": "Dizel",
+                "transmission": "Manuel",
+                "km": 160000,
+                "color": "Gümüş Gri"
+            },
+            "price": 649000,
+            "seller": {
+                "name": "SAFİR AUTO"
+            }
+        },
+        {
+            "id": "1296964371",
+            "adNo": "1296964371",
+            "publishDate": "2026-02-12",
+            "vehicle": {
+                "year": 2015,
+                "brand": "Honda",
+                "model": "CR-V",
+                "package": "Executive",
+                "fuel": "Dizel",
+                "transmission": "Otomatik",
+                "km": 175000,
+                "color": "Siyah"
+            },
+            "price": 1530000,
+            "seller": {
+                "name": "SAFİR AUTO"
+            }
+        },
+        {
+            "id": "1297813431",
+            "adNo": "1297813431",
+            "publishDate": "2026-02-17",
+            "vehicle": {
+                "year": 2022,
+                "brand": "Mercedes-Benz",
+                "model": "C 200",
+                "package": "AMG",
+                "fuel": "Hibrit",
+                "transmission": "Otomatik",
+                "km": 37200,
+                "color": "Gri"
+            },
+            "price": 3850000,
+            "seller": {
+                "name": "SAFİR AUTO"
+            }
+        },
+        {
+            "id": "1298803130",
+            "adNo": "1298803130",
+            "publishDate": "2026-02-22",
+            "vehicle": {
+                "year": 2023,
+                "brand": "Toyota",
+                "model": "Corolla Cross",
+                "package": "Flame X-Pack",
+                "fuel": "Hibrit",
+                "transmission": "Otomatik",
+                "km": 95000,
+                "color": "Beyaz"
+            },
+            "price": 2050000,
+            "seller": {
+                "name": "SAFİR AUTO"
+            }
+        },
+        {
+            "id": "1297639242",
+            "adNo": "1297639242",
+            "publishDate": "2026-02-16",
+            "vehicle": {
+                "year": 2025,
+                "brand": "BYD",
+                "model": "Seal U",
+                "package": "Design",
+                "fuel": "Hibrit",
+                "transmission": "Otomatik",
+                "km": 9900,
+                "color": "Siyah"
+            },
+            "price": 2475000,
+            "seller": {
+                "name": "İSMAİL ÇİÇEK"
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+﻿=== NORMAL JSON DOSYALARI ===
+  all_data.json: 62 ham, 62 eklendi
+  all_data_backup_before_clear.json: 1 ham, 1 eklendi
+  cars_data_backup_before_clear.json: 38 ham, 12 eklendi
+  cars_data_cleaned.json: 36 ham, 0 eklendi
+  cars_data_dashboard_ready.json: 38 ham, 26 eklendi
+  cars_data_final.json: 9 ham, 9 eklendi
+  cars_data_firstblock.json: 9 ham, 0 eklendi
+  ilan_sonuc.json: 3 ham, 3 eklendi
+  rich_data_input.json: 21 ham, 12 eklendi
+
+Normal dosyalardan toplam: 62 benzersiz
+
+=== BOZUK JSON DOSYALARI ===
+
+  cars_data_fixed.json (395,038 bytes) parse ediliyor...
+  cars_data_fixed.json: 206 arac baslangici bulundu
+  Toplam parse edilen arac: 206
+  cars_data_fixed.json: 195 yeni eklendi
+
+  cars_data_fixed_clean.json (395,454 bytes) parse ediliyor...
+  cars_data_fixed_clean.json: 206 arac baslangici bulundu
+  Toplam parse edilen arac: 205
+  cars_data_fixed_clean.json: 0 yeni eklendi
+
+  cars_data_final_invalid.json (396,455 bytes) parse ediliyor...
+  cars_data_final_invalid.json: 206 arac baslangici bulundu
+  Toplam parse edilen arac: 205
+  cars_data_final_invalid.json: 0 yeni eklendi
+
+  cars_data_secondblock_invalid.json (7,025 bytes) parse ediliyor...
+  cars_data_secondblock_invalid.json: 5 arac baslangici bulundu
+  Toplam parse edilen arac: 4
+  cars_data_secondblock_invalid.json: 0 yeni eklendi
+
+  cars_data.json (mevcut): 62 ham, 27 eklendi
+
+==================================================
+TOPLAM BENZERSIZ ARAC: 240
+==================================================
+Kaydedildi: cars_data.json (240), all_data.json (240)
